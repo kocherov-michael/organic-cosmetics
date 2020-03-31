@@ -3,12 +3,16 @@
 }
 body {
 	padding: 0;
-	margin: 0;
+    margin: 0;
+    background-color: rgb(166, 204, 248);
 }
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto; 
+    // width: 100%;
+    // padding-right: 15px;
+    // padding-left: 15px;
+    // margin-right: auto;
+    // margin-left: auto; 
+}
+.br {
+    border: 1px solid red;
 }

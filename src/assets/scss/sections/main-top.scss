@@ -1,0 +1,34 @@
+.slider__img {
+    max-width: 100%;
+}
+.main-top__slider-wrapper {
+    // position: relative;
+}
+.main-top__image {
+    @media (max-width: 575px) {
+        padding: 0;
+        margin-top: 15px;
+
+    }
+
+}
+.main-top__slider {
+    // margin-left: -15px;
+    // margin-right: -15px;
+}
+.main-top__images-wrapper {
+    // position: absolute;
+    @media (min-width: 576px) {
+        margin-top: 15px;
+    }
+    @media (min-width: 768px) {
+        transform: translateY(-30%);
+    
+    }
+}
+
+.main-top__images {
+}
+.main-top__img {
+    max-width: 100%;
+}
