@@ -1,10 +1,20 @@
 $mainFont                : 'Open Sans', sans-serif;
 $secondaryFont           : 'BebasNeue Regular', sans-serif;
+$iconicFont              : 'Material-Design-Iconic-Font';
 
-$primary-color           : #00abdf;
-$secondary-color         : #ffc920;
-$default-color           : #fff;
-$danger-color            : #ff663d;
-$neutral-primary-color   : #A7A7A7;
-$neutral-secondary-color : #636363;
-$dark-color              : #232323;
+// $primary-color           : #00abdf;
+// $secondary-color         : #ffc920;
+// $default-color           : #fff;
+// $danger-color            : #ff663d;
+// $neutral-primary-color   : #A7A7A7;
+// $neutral-secondary-color : #636363;
+// $dark-color              : #232323;
+
+$primary-color:            #96cd00;
+$secondary-color:          #f8f8f8;
+$default-color:            #fff;
+$info-color:               #0579fc;
+$warning-color:            #ffb400;
+$danger-color:             #ff138c;
+$neutral-primary-color:    #888;
+$neutral-secondary-color:  #003046;
