@@ -1,0 +1,12 @@
+mixin goodCard(options)
+
+    //- |
+        //- options = {new}
+
+    .good-card
+        .good-card__img
+            //- if options.sale
+                .good-card__billet on sale
+            if options.new
+                .good-card__billet new
+            .good-card__billet pack

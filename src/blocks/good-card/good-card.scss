@@ -1,0 +1,88 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.good-card__img {
+    background-color: rgb(209, 209, 252);
+}
+.good-card__img img {
+    max-width: 100%;
+}
+.good-card__header {
+    position: relative;
+}
+.good-card__billets {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.good-card__billet {
+    display: inline-block;
+    padding-top: 4px;
+    padding-left: 7px;
+    padding-right: 3px;
+    height: 25px;
+    // background-color: green;
+    margin-bottom: 10px;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    &:after {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 100%;
+        top: 0;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 15px solid green;
+        border-top: 25px solid transparent;
+    }
+}
+.good-card__billet--sale {
+    background-color: $primary-color;
+    &:after {
+        border-left-color: $primary-color;
+    }
+}
+
+.good-card__billet--new {
+    background-color: $info-color;
+    &:after {
+        border-left-color: $info-color;
+    }
+}
+.good-card__billet--pack {
+    background-color: $warning-color;
+    &:after {
+        border-left-color: $warning-color;
+    }
+}
+.good-card__main {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+.good-card__oferta {
+    display: inline-block;
+    padding: 4px 7px;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+}
+.good-card__title {
+    color: $primary-color;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.good-card__price {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.good-card__old-price {
+    text-decoration: line-through;
+    color: $neutral-primary-color;
+    font-size: 14px;
+}

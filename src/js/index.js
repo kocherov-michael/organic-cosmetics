@@ -1,0 +1,1 @@
+import './../blocks/good-card/good-card.js'

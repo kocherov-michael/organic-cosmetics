@@ -1,0 +1,27 @@
+mixin goodCard(options)
+
+
+    .good-card
+        .good-card__header
+            .good-card__img
+                img(src=options.src, alt="")
+            .good-card__billets
+                if options.sale
+                    .good-card__billet-wrapper
+                        .good-card__billet.good-card__billet--sale on sale
+                if options.new
+                    .good-card__billet-wrapper
+                        .good-card__billet.good-card__billet--new new
+                if options.pack
+                    .good-card__billet-wrapper
+                        .good-card__billet.good-card__billet--pack pack
+        
+        .good-card__main
+            if options.oferta
+                .good-card__oferta -20% 
+            .good-card__title #{options.title}
+            .good-card__desc #{options.desc}
+            .good-card__price $#{options.price}
+            if options.oferta
+                .good-card__old-price $#{options.oldprice}
+        .good-card__footer
