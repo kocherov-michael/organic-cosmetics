@@ -1,5 +1,23 @@
+@import "../../assets/scss/utils/vars.scss";
+
 .goods__title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 576px) {
+        margin-top: 15px;
+        flex-direction: row;
+    }
+}
+.goods__title-text {
     text-transform: uppercase;
+    margin: 10px 15px;
+    cursor: pointer;
+    transition: all .4s ease;
+    &:hover {
+        color: $primary-color;
+    }
 }
 .goods__card {
     margin-bottom: 15px;
