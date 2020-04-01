@@ -1,0 +1,23 @@
+@import "../../assets/scss/utils/vars.scss";
+.footer-subscribe {
+    background-color: $primary-color;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-subscribe__text {
+    color: $default-color;
+}
+
+.footer-subscribe__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-subscribe__input {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
