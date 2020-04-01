@@ -1,0 +1,30 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.footer-contacts {
+    background-color: $neutral-secondary-color;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-contacts__desc {
+    color: $default-color;
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-contacts__list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-list__item {
+    color: $default-color;
+    margin: 10px;
+    font-size: 14px;
+    transition: all .4s ease;
+    &:hover {
+        color: $neutral-primary-color;
+        text-decoration: none;
+    }
+}
