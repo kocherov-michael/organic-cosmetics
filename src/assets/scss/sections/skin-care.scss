@@ -1,0 +1,15 @@
+.skin-care__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.skin-care__link {
+    text-transform: uppercase;
+    color: $neutral-secondary-color;
+    transition: all .4s ease;
+
+    &:hover {
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
