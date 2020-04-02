@@ -1,5 +1,9 @@
 @import "../../assets/scss/utils/vars.scss";
-
+.good-card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
 .good-card__img {
     background-color: $card-background-color;
 }
@@ -60,9 +64,13 @@
     }
 }
 .good-card__main {
+    flex-grow: 1;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #fff;
+}
+.good-card__oferta-wrapper {
+    min-height: 25px;
 }
 .good-card__oferta {
     display: inline-block;

@@ -1,6 +1,5 @@
 mixin goodCard(options)
 
-
     .good-card
         .good-card__header
             .good-card__img
@@ -17,8 +16,9 @@ mixin goodCard(options)
                         .good-card__billet.good-card__billet--pack pack
         
         .good-card__main
-            if options.oferta
-                .good-card__oferta -20% 
+            .good-card__oferta-wrapper
+                if options.oferta
+                    .good-card__oferta -20% 
             .good-card__title #{options.group}
             .good-card__desc #{options.title}
             .good-card__price $#{options.price}
