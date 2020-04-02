@@ -1,9 +1,10 @@
 *, :after, :before {
 	box-sizing: border-box;
 }
-body {
+html, body {
 	padding: 0;
     margin: 0;
+    font-family: $mainFont;
     // background-color: rgb(166, 204, 248);
 }
 .container {
@@ -16,8 +17,8 @@ body {
 .br {
     border: 1px solid red;
 }
-.middle {
-    img {
-        max-width: 100%;
-    }
-}
+// .middle {
+//     img {
+//         max-width: 100%;
+//     }
+// }

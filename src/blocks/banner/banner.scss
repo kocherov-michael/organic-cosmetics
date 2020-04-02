@@ -1,0 +1,59 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.banner {
+    display: block;
+    position: relative;
+    padding: 0;
+    background-color: #c7d2d6;
+    color: $dark-color;
+    font-size: 16px;
+    height: 250px;
+    transition: all .4s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    @media (min-width: 768px) {
+        font-size: 24px;
+        height: 350px;
+        &:hover {
+            color: $dark-color;
+            .banner__bg {
+    
+                box-shadow: $box-shadow;
+                transform: scale(1.02,1.01);
+            }
+        }
+    }
+    
+    @media (min-width: 992px) {
+        font-size: 30px;
+        height: 425px;
+    }
+    
+
+}
+.banner__bg {
+    height: 100%;
+    background-image: url("/../../assets/img/bg/bg-middle.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: all .4s ease;
+}
+.banner__text {
+    font-family: $secondaryFont;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 450px;
+}
+.banner__title {
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.banner__subtitle {
+    font-weight: 300;
+}
