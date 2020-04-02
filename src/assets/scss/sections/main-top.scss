@@ -39,14 +39,18 @@
 }
 .main-top__img {
     max-width: 100%;
+    transition: all .4s ease;
 }
 .main-top__link {
     position: relative;
     display: block;
     transition: all .4s ease;
     &:hover {
-        transform: scale(1.01, 1.01);
-        box-shadow: 5px 3px 10px 2px $neutral-primary-color;
+        .main-top__img {
+            transform: scale(1.02, 1.015);
+            box-shadow: $box-shadow;
+
+        }
     }
 }
 .main-top__link-text {

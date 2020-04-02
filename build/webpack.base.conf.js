@@ -121,8 +121,9 @@ module.exports = {
       { from: `${PATHS.src}/static`, to: '' },
     ]),
     new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery'
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
     }),
 
     ...PAGES.map(page => new HtmlWebpackPlugin({

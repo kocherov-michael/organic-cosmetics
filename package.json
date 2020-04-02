@@ -63,6 +63,7 @@
   },
   "dependencies": {
     "air-datepicker": "^2.2.3",
+    "owl.carousel": "^2.3.4",
     "vue": "^2.6.11"
   }
 }
