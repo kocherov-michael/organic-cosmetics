@@ -12,6 +12,13 @@
 }
 .good-card__header {
     position: relative;
+
+    &:hover {
+        .good-card__look-button {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1,1);
+        }
+    }
 }
 .good-card__billets {
     position: absolute;
@@ -63,6 +70,40 @@
         border-left-color: $warning-color;
     }
 }
+
+.good-card__look {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    
+}
+
+.good-card__look-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 50%) scale(0,0);
+    min-width: 180px;
+    background-color: rgba(255,255,255,0.8);
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    transition: all .4s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 255, 255,1);
+    }
+}
+
+
+
 .good-card__main {
     flex-grow: 1;
     padding-top: 10px;
