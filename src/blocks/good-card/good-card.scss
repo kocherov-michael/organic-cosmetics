@@ -25,50 +25,9 @@
     top: 20px;
     left: 0;
 }
-.good-card__billet {
-    display: inline-block;
-    padding-top: 4px;
-    padding-left: 7px;
-    padding-right: 3px;
-    height: 25px;
-    // background-color: green;
-    margin-bottom: 10px;
-    position: relative;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
-    &:after {
-        position: absolute;
-        display: block;
-        bottom: 0;
-        left: 100%;
-        top: 0;
-        content: "";
-        width: 0;
-        height: 0;
-        border-left: 15px solid $primary-color;
-        border-top: 25px solid transparent;
-    }
-}
-.good-card__billet--sale {
-    background-color: $primary-color;
-    &:after {
-        border-left-color: $primary-color;
-    }
-}
 
-.good-card__billet--new {
-    background-color: $info-color;
-    &:after {
-        border-left-color: $info-color;
-    }
-}
-.good-card__billet--pack {
-    background-color: $warning-color;
-    &:after {
-        border-left-color: $warning-color;
-    }
+.good-card__billet-wrapper {
+    margin-bottom: 10px;
 }
 
 .good-card__look {

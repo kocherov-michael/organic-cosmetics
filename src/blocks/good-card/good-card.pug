@@ -7,13 +7,13 @@ mixin goodCard(options)
             .good-card__billets
                 if options.sale
                     .good-card__billet-wrapper
-                        .good-card__billet.good-card__billet--sale on sale
+                        +billet('sale')
                 if options.new
                     .good-card__billet-wrapper
-                        .good-card__billet.good-card__billet--new new
+                        +billet('new')
                 if options.pack
                     .good-card__billet-wrapper
-                        .good-card__billet.good-card__billet--pack pack
+                        +billet('pack')
             .good-card__look
                 .good-card__look-button быстрый просмотр
         
