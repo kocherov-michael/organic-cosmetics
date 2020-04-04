@@ -1,1 +1,70 @@
 @import "../../assets/scss/utils/vars.scss";
+
+.big-card-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 800px;
+    background-color: #999;
+    z-index: 100;
+    padding-top: 30px;
+}
+
+.big-card {
+    min-height: 500px;
+    background-color: #fff;
+}
+.big-card__row {
+    // min-height: 100%;
+}
+
+.big-card__header {
+    height: 100%;
+    // background-color: green;
+    // position: relative;
+}
+.big-card__header-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.big-card__main {
+    height: 100%;
+    // background-color: rgb(136, 136, 175);
+}
+
+.card-desc {
+    padding: 40px 10px;
+    font-family: $secondaryFont;
+}
+
+.card-desc__title {
+    font-size: 26px;
+}
+
+.card-desc__text {
+    margin-top: 20px;
+}
+
+.card-desc__price {
+    display: flex;
+    align-items: baseline;
+}
+.card-desc__new-price {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.card-desc__old-price {
+    margin-left: 20px;
+    text-decoration: line-through;
+    font-size: 20px;
+    color: $neutral-primary-color;
+}
+
+.card-desc__quantity-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
