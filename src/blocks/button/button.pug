@@ -1,0 +1,6 @@
+mixin button(options)
+    
+    .button.button--primary(class="button--"+options.color)
+        if options.icon=="cart"
+            i.button__icon.zmdi.zmdi-shopping-cart
+        .button__text #{options.text}

@@ -1,0 +1,25 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--primary {
+        background-color: $primary-color;
+    }
+
+}
+
+.button__icon {
+    color: $default-color;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.button__text {
+    text-transform: uppercase;
+    color: $default-color;
+    font-size: 14px;
+}
