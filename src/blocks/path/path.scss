@@ -1,0 +1,23 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.path {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.path__item {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $neutral-secondary-color;
+    cursor: pointer;
+    transition: all .4s ease;
+    
+    &:hover {
+        text-decoration: none;
+        color: $neutral-primary-color;
+    }
+
+    &:not(:last-child) {
+        border-right: 1px solid $border-color;
+    }
+}
