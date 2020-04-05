@@ -1,4 +1,5 @@
-import './big-card-wrapper.scss'
+import './big-card-wrapper.scss';
+import {splitUrl, fillCard} from './../good-card/good-card.js';
 
 showBigCard()
 
@@ -11,8 +12,13 @@ function showBigCard() {
     for(let i = 0; i < goodCardButtonsList.length; i++) {
 
         goodCardButtonsList[i].addEventListener('click', () => {
-            // console.log(wrapperElement)
-           
+            // console.log(goodCardButtonsList[i])
+            const href = getHref(goodCardButtonsList[i])
+            const obj = splitUrl(href)
+            // console.log(obj)
+            // заполняем попап карточку
+            fillCard(obj)
+
             wrapperElement.classList.add('big-card-wrapper--translate')
             setTimeout(() => {
                 wrapperElement.classList.add('big-card-wrapper--transition-none')
@@ -35,4 +41,11 @@ function showBigCard() {
             },40)
         },40)
     })
+}
+
+function getHref(elem) {
+    const cardElement = elem.closest('[data-goods-card]')
+    const linkElement = cardElement.querySelector('[data-goods-link]')
+    
+    return linkElement.href
 }
