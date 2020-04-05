@@ -1,0 +1,38 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.big-card-wrapper {
+    position: fixed;
+    // position: absolute;
+    top: 0;
+    opacity: 0;
+    // top: 0;
+    left: 0;
+    right: 0;
+    // bottom: 0;
+    height: 100vh;// именно так для прокрутки
+    background-color: $backgrount-transparent;
+    z-index: 100;
+    padding: 30px 10px;
+    transform: translateY(-100%);
+    transition: all .4s ease;
+    // добавить, когда показывается карточка
+    overflow-y: hidden;
+    &--show {
+        position: absolute;
+        overflow-y: scroll;
+        min-height: 100vh;
+        // top: 0;
+    }
+    &--translate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    &--transition-none {
+        transition: none;
+
+    }
+}
+body {
+    // добавить, когда показывается карточка
+    // overflow: hidden;
+}

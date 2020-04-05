@@ -15,14 +15,16 @@ mixin goodCard(options)
                     .good-card__billet-wrapper
                         +billet('pack')
             .good-card__look
-                .good-card__look-button быстрый просмотр
+                .good-card__look-button(data-card-look) быстрый просмотр
         
         .good-card__main
             .good-card__oferta-wrapper
                 if options.oferta
                     .good-card__oferta -20% 
-            .good-card__title #{options.group}
-            .good-card__desc #{options.title}
+            .good-card__group #{options.group}
+            //- в ссылке get запросом передать параметры товара,
+            //- и на целевой странице скриптом создать нужные товары
+            a.good-card__title(href="#") #{options.title}
             .good-card__price $#{options.price}
             if options.oferta
                 .good-card__old-price $#{options.oldprice}

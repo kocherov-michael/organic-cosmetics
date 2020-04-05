@@ -1,29 +1,14 @@
 @import "../../assets/scss/utils/vars.scss";
 
-.big-card-wrapper {
-    // position: fixed;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    // min-height: 800px;
-    background-color: #999;
-    z-index: 100;
-    padding: 30px 10px;
-    // добавить, когда показывается карточка
-    // overflow-y: scroll;
-}
-body {
-    // добавить, когда показывается карточка
-    // overflow: hidden;
-}
+
 
 .big-card {
     min-height: 500px;
     background-color: #fff;
     padding: 30px;
     background-color: $card-background-color;
+    position: relative;
+    margin-bottom: 30px;
 }
 .big-card__row {
     // min-height: 100%;
@@ -94,4 +79,25 @@ body {
 .card-desc__add-to-cart {
     width: 145px;
     height: 45px;
+}
+
+.big-card__close {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    
+    i {
+        transition: all .4s ease;
+    }
+    
+    &:hover {
+        i {
+            transform: scale(1.5,1.5);
+        }
+    }
 }
