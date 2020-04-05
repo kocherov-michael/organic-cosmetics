@@ -3,7 +3,7 @@ mixin goodCard(options)
     .good-card
         .good-card__header
             .good-card__img
-                img(src=options.src, alt="")
+                img(src=options.src, alt=options.title)
             .good-card__billets
                 if options.sale
                     .good-card__billet-wrapper
@@ -24,8 +24,8 @@ mixin goodCard(options)
             .good-card__group #{options.group}
             //- в ссылке get запросом передать параметры товара,
             //- и на целевой странице скриптом создать нужные товары
-            a.good-card__title(href="#") #{options.title}
-            .good-card__price $#{options.price}
+            a.good-card__title(data-goods-link href="product.html?title="+options.title+"&price="+options.price+"&oldprice="+options.oldprice+"&src="+options.src) #{options.title}
+            .good-card__price #{options.price}
             if options.oferta
-                .good-card__old-price $#{options.oldprice}
+                .good-card__old-price #{options.oldprice}
         .good-card__footer

@@ -4,6 +4,8 @@
 }
 .header__top {
     // border: 1px solid red;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .header__left-space {
     display: none;
@@ -33,6 +35,8 @@
 
 .header__list {
     background-color: $primary-color;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .header-list {
     display: flex;

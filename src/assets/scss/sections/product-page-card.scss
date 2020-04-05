@@ -1,0 +1,34 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.product-page-card {
+    box-shadow: $box-shadow;
+    .big-card__close {
+        display: none;
+    }
+}
+
+.product-page-card__description {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.product-page-card__title {
+    border-bottom: 1px solid $border-color;
+}
+
+.product-page-card__title-item {
+    display: inline-block;
+    border: 1px solid $border-color;
+    border-bottom: none;
+    background-color: #fff;
+    transform: translateY(1px);
+    padding: 10px;
+}
+
+.product-page-card__text {
+    padding-top: 40px;
+    font-family: $secondaryFont;
+    color: $neutral-primary-color;
+    padding-bottom: 40px;
+    
+}

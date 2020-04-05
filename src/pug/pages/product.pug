@@ -1,0 +1,15 @@
+extends ../layout/page.pug
+
+block variables
+	- var title = 'Product';
+
+block content
+	include ../includes/header.pug
+	
+	include ../includes/product-page-card.pug
+	//- include ../includes/goods.pug
+	//- include ../../blocks/banner/banner.pug
+	//- .middle.container
+		img(src="./assets/img/bg/bg-middle.jpg", alt="").medium__img
+	//- include ../includes/skin-care.pug
+	include ../includes/footer.pug
