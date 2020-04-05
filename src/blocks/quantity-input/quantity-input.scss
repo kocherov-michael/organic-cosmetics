@@ -1,1 +1,45 @@
 @import "../../assets/scss/utils/vars.scss";
+
+.quantity-input {
+    width: 90px;
+    height: 45px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #fff;
+    transition: all .4s ease;
+
+    &--shadow {
+        box-shadow: $box-shadow;
+    }
+}
+
+.quantity-input__field {
+    max-width: 70%;
+    // max-width: 100%;
+    border: none;
+    height: 100%;
+    padding-left: 15px;
+    outline: none;
+}
+
+.quantity-input__plus, .quantity-input__minus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    padding-right: 5px;
+    overflow: hidden;
+    user-select: none;
+    height: 22px;
+    transition: all .4s ease;
+    // width: 22px;
+    &:hover {
+        color: $neutral-primary-color;
+    }
+}
+
+.quantity-input__minus {
+    font-size: 24px;
+}
