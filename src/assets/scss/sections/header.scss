@@ -18,7 +18,11 @@
     justify-content: space-between;
 }
 
-.cart {
+.header__icons {
+    position: relative;
+}
+
+.icon-cart__icon {
     font-size: 22px;
     color: $primary-color;
     width: 2em;
@@ -32,6 +36,8 @@
     border-radius: 50%;
     box-shadow: 0.35714rem 0 3.57143rem rgba(0,48,70,.2);
 }
+
+
 
 .header__list {
     background-color: $primary-color;
