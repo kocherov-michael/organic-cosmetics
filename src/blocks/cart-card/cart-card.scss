@@ -7,10 +7,20 @@
     background-color: $default-color;
     min-height: 300px;
     right: 0;
-    top: 60px;
+    top: 55px;
     width: 275px;
     padding: 25px;
     box-shadow: $box-shadow;
+    display: none;
+    opacity: 0;
+    transition: all .4s ease;
+
+    &--display {
+        display: block;
+    }
+    &--opacity {
+        opacity: 1;
+    }
 }
 
 .cart-card__close {

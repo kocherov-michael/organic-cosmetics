@@ -1,5 +1,5 @@
-.cart-card
-    .cart-card__close
+.cart-card(data-cart-card)
+    .cart-card__close(data-cart-card-close)
         i.zmdi.zmdi-close
     .cart-card__title Cart
     .cart-card__main
@@ -22,4 +22,4 @@
                 .cart-card-result__item-value 60.50 $
     .cart-card__button
         +button({text: "Proceed to checkout"})
-    .cart-card__continue Continue shopping
+    .cart-card__continue(data-cart-card-close) Continue shopping
