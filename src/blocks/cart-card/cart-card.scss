@@ -13,6 +13,24 @@
     box-shadow: $box-shadow;
 }
 
+.cart-card__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+    color: $neutral-primary-color;
+
+    &:hover {
+        color: $neutral-secondary-color;
+    }
+}
+
 .cart-card__title {
     font-size: 20px;
     padding-bottom: 20px;
@@ -22,7 +40,7 @@
     color: $neutral-primary-color;
     padding-bottom: 20px;
     padding-top: 20px;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $card-background-color;
 }
 
 .cart-card-result__item {

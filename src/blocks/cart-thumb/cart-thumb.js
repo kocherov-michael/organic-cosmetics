@@ -1,0 +1,1 @@
+import './cart-thumb.scss'

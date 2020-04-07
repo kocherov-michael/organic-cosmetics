@@ -1,0 +1,67 @@
+@import "../../assets/scss/utils/vars.scss";
+
+
+
+.cart-thumb__main {
+    display: flex;
+}
+
+.cart-thumb__img {
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+    background-color: $card-background-color;
+    flex: 0 0 75px;
+}
+
+.cart-thumb__desc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    
+}
+
+.cart-thumb__title {
+    font-size: 14px;
+    flex: 0 1 80%;
+    color: $neutral-secondary-color;
+    transition: all .4s ease;
+    &:hover {
+        color: $border-color;
+        text-decoration: none;
+    }
+}
+
+.cart-thumb__close {
+    height: 25px;
+    flex: 0 0 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s ease;
+    color: $neutral-primary-color;
+
+    &:hover {
+        color: $neutral-secondary-color;
+    }
+}
+
+.card-thumb__price {
+    flex: 1 0 100%;
+    font-weight: 600;
+}
+
+.cart-thumb__bottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.cart-thumb__count {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: $card-background-color;
+}
