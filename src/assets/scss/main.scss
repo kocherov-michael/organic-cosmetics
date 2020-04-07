@@ -4,10 +4,15 @@
 //Base
 @import "base/base";
 
+//Pages
+@import "pages/cart";
+
+
 //Sections
 @import "sections/header";
 @import "sections/main-top";
 @import "sections/goods";
 @import "sections/skin-care";
 @import "sections/product-page-card";
+@import "sections/card-goods";
 @import "sections/footer";

@@ -7,15 +7,34 @@
     align-items: center;
     cursor: pointer;
     transition: all .4s ease;
+    font-size: 14px;
 
     &:hover {
         text-decoration: none;
     }
 
     &--primary {
+        color: $default-color;
+        text-transform: uppercase;
         background-color: $primary-color;
         &:hover {
             background-color: $primary-alternative-color;
+            color: $default-color;
+        }
+    }
+    &--secondary {
+        color: $neutral-secondary-color;
+        background-color: $primary-color;
+        &:hover {
+            color: $default-color;
+            background-color: $primary-alternative-color;
+        }
+    }
+    &--tertiary {
+        color: $default-color;
+        background-color: $neutral-secondary-color;
+        &:hover {
+            background-color: $dark-color;
         }
     }
 
@@ -28,7 +47,7 @@
 }
 
 .button__text {
-    text-transform: uppercase;
-    color: $default-color;
-    font-size: 14px;
+    // text-transform: uppercase;
+    // color: $default-color;
+    // font-size: 14px;
 }

@@ -1,2 +1,14 @@
 mixin cartItem(options)
-    .cart-item
+    .cart-item.container
+        .row
+            .cart-item__close.col-1
+                .cart-item__close-icon
+                    i.zmdi.zmdi-close
+            .cart-item__picture.col-4.col-sm-5.col-md-2
+                img.cart-item__img(src="./assets/img/goods/make-up-1.png" data-cart-thumb-card-img)
+            .cart-item__title.col-6.col-md-3
+                a.cart-item__link(href="product.html") Organic Green Tea Volumizing Mascara and Black Eyeliner
+            .cart-item__price.col-3.col-sm-6.col-md-2 $25.60
+            .cart-item__input.col-6.col-sm-3.col-md-2
+                +quantityInput({color: "blue"})
+            .cart-item__total.col-3.col-md-2 $25.60

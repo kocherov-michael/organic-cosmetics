@@ -1,12 +1,19 @@
 @import "../../assets/scss/utils/vars.scss";
 
 .quantity-input {
-    width: 100%;
-    height: 100%;
+    width: 90px;
+    height: 45px;
     display: flex;
     flex-flow: column wrap;
-    background-color: #fff;
+    background-color: $default-color;
     transition: all .4s ease;
+
+    &--blue{
+        background-color: $card-background-color;
+        .quantity-input__field {
+            background-color: $card-background-color;
+        }
+    }
 
     &--shadow {
         box-shadow: $box-shadow;

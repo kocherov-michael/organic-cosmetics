@@ -1,6 +1,6 @@
 mixin button(options)
     
-    a.button.button--primary(href=options.href class="button--"+options.color)
+    a.button(href=options.href || "#" class="button--"+options.color)
         if options.icon=="cart"
             i.button__icon.zmdi.zmdi-shopping-cart
         .button__text #{options.text}

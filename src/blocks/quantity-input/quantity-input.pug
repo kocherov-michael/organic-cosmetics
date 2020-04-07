@@ -1,5 +1,6 @@
-mixin quantityInput()
-    .quantity-input(data-quantity-input)
+mixin quantityInput(options)
+
+    .quantity-input(data-quantity-input class="quantity-input--"+options.color)
         input.quantity-input__field(value="1" data-input-value)
         .quantity-input__plus(data-input-plus) +
         .quantity-input__minus(data-input-minus) -

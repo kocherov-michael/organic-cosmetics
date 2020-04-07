@@ -1,0 +1,11 @@
+.cart-page-title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 26px;
+
+    @media (min-width: 576px) {
+        font-size: 36px;
+    }
+}
