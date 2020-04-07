@@ -1,0 +1,33 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.cart-total {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cart-total__result {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.cart-total__string {
+    display: flex;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    align-items: flex-end;
+
+    &--total {
+        font-size: 16px;
+    }
+}
+
+.cart-total__string-text {
+    color: $neutral-secondary-color;
+}
+
+.cart-total__string-value {
+    padding-left: 10px;
+    color: $primary-color;
+}
