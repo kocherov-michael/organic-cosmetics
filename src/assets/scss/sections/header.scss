@@ -16,6 +16,25 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.header__logo {
+    max-width: 60%;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.logo__img {
+    max-width: 100%;
 }
 
 .header__icons {

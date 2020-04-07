@@ -14,7 +14,7 @@ function quantityInput() {
             valueElement.focus()
         })
         minusElement.addEventListener('click', () => {
-            if (valueElement.value > 0) {
+            if (valueElement.value > 1) {
                 valueElement.value = +valueElement.value - 1
             }
             valueElement.focus()

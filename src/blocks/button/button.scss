@@ -6,9 +6,17 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all .4s ease;
+
+    &:hover {
+        text-decoration: none;
+    }
 
     &--primary {
         background-color: $primary-color;
+        &:hover {
+            background-color: $primary-alternative-color;
+        }
     }
 
 }
