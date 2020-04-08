@@ -1,0 +1,73 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.checkbox {
+  min-width: 200px;
+  cursor: pointer;
+  position: relative;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  display: flex;
+}
+/* Cкрываем стандартный чекбокс */
+.checkbox__input {
+  display: none;
+}
+/* Новый чекбокс */
+.checkbox__new-input {
+  flex-shrink: 0;
+  // left: -30px;
+//   font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  // color: $dark-shade-50;
+  color: greenyellow;
+  width: 20px;
+  height: 20px;
+  position: relative;
+
+//   background: #ffffff;
+  background: $neutral-primary-color;
+
+  // border: 1px solid $dark-shade-25;
+  box-sizing: border-box;
+//   border-radius: 4px;
+}
+/* Новый чекбокс при выборе */
+.checkbox__input:checked + .checkbox__new-input {
+  // border-color: $purple;
+  background-color: $dark-color;
+
+  .checkbox__check-item {
+    display: block;
+  }
+}
+.checkbox__check-item {
+  display: none;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 6px;
+  height: 8px;
+  transform: rotate(45deg);
+  background-color: $default-color;
+  &:after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 2px;
+    right: 2px;
+    width: 5px;
+    height: 7px;
+    background-color: $dark-color;
+  }
+}
+.checkbox__text {
+  padding-left: 10px;
+  font-family: $secondaryFont;
+  line-height: 1.5;
+}
+
