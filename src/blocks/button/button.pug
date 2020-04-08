@@ -1,4 +1,8 @@
 mixin button(options)
+    //- color: primary, secondary, tertiary
+    //- text
+    //- href
+    //- icon: cart
     
     a.button(href=options.href || "#" class="button--"+options.color)
         if options.icon=="cart"
