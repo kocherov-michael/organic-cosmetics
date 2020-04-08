@@ -1,0 +1,18 @@
+extends ../layout/page.pug
+
+block variables
+    - var title = 'Cart';
+
+block content
+    include ../includes/header.pug
+        //- +path({main: 'Home', subdir: 'Make-Up'})
+    .container
+        +path({main: 'Home', subdir: 'Make-Up'})
+    //- include ../includes/product-page-card.pug
+    //- include ../includes/cart-goods.pug
+    //- include ../includes/cart-total.pug
+    //- include ../../blocks/catr-/banner.pug
+    //- .middle.container
+        img(src="./assets/img/bg/bg-middle.jpg", alt="").medium__img
+    //- include ../includes/skin-care.pug
+    include ../includes/footer.pug
