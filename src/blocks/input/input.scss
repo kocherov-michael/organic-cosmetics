@@ -1,0 +1,13 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.input {
+    padding: 10px;
+    background-color: $card-background-color;
+    border: none;
+    transition: all .4s ease;
+
+    &:focus {
+        outline: none;
+        box-shadow: $box-shadow;
+    }
+}

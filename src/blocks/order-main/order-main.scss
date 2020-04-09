@@ -1,1 +1,61 @@
 @import "../../assets/scss/utils/vars.scss";
+
+
+.order-steps {
+    position: relative;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45px;
+        display: block;
+        content: '';
+        height: 100%;
+        border-right: 1px solid $border-color;
+    }
+}
+.order-step {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    font-family: $secondaryFont;
+    margin: 15px 0;
+    background-color: $default-color;
+}
+
+.order-step__num {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $border-color;
+    color: $primary-color;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.order-step__text {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.order-form__title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.order-form__input {
+    padding-bottom: 10px;
+}
+
+.order-form__submit {
+    margin-top: 30px;
+}

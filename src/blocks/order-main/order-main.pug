@@ -1,1 +1,34 @@
-h1 ORDER MAIN
+.order-main
+    .order-main__steps
+        .order-steps
+            .order-step
+                .order-step__num 1
+                .order-step__text Fill the form
+            .order-step
+                .order-step__num 2
+                .order-step__text Wait for call of our manager
+            .order-step
+                .order-step__num 3
+                .order-step__text Delivery 1 - 3 days
+            .order-step
+                .order-step__num 4
+                .order-step__text Pay after delivery
+    .order-main__form
+        form.order-form(action="#" method="post")
+            .order-form__title Name
+            .order-form__input
+                +input('Name', 'name')
+            .order-form__title Contact phone number
+            .order-form__input
+                +input('Phone', 'phone')
+            .order-form__title E-mail
+            .order-form__input
+                +input('E-mail', 'email')
+            .order-form__submit
+                +button({
+                    submit: true, 
+                    color: "primary",
+                    text: "order now"
+                    })
+
+    
