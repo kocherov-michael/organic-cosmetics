@@ -1,1 +1,43 @@
 @import "../../assets/scss/utils/vars.scss";
+
+.category-main {
+    box-shadow: $box-shadow;
+}
+
+.category-main__header {
+    // display: flex;
+    // flex-wrap: wrap;
+    font-family: $secondaryFont;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $neutral-primary-color;
+}
+
+.category-header__title {
+    // flex: 1 0 100%;
+    font-weight: 600;
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+
+.category-main__picture {
+    // flex-basis: 20%;
+}
+
+.category-header__img {
+    max-width: 100%;
+}
+
+.category-main__desc {
+    // flex-basis: 80%;
+}
+
+.category-main__options {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.category-grid__card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

@@ -4,15 +4,17 @@ block variables
     - var title = 'Cart';
 
 block content
+    include ../../blocks/big-card-wrapper/big-card-wrapper.pug
     include ../includes/header.pug
         //- +path({main: 'Home', subdir: 'Make-Up'})
     .container
         +path({main: 'Home', subdir: 'Make-Up'})
-    .container
+    .category-content.container
         .row
             .col-12.col-md-3
                 include ../../blocks/filter/filter.pug
             .col-12.col-md-9
+                include ../../blocks/category-main/category-main.pug
     //- include ../includes/product-page-card.pug
     //- include ../includes/cart-goods.pug
     //- include ../includes/cart-total.pug
