@@ -1,1 +1,47 @@
 @import "../../assets/scss/utils/vars.scss";
+
+.order-aside {
+    background-color: $card-background-color;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.order-aside__item {
+    padding-bottom: 10px;
+    .cart-thumb__count {
+        background-color: $default-color;
+    }
+    .cart-thumb__close {
+        display: none;
+    }
+}
+
+.order-aside__string {
+    display: flex;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &--total {
+        font-size: 16px;
+        display: flex;
+        
+        @media (min-width:576px) {
+            flex: 0 1 auto;
+        }
+    }
+}
+
+.order-aside__string-text {
+    color: $neutral-secondary-color;
+}
+
+.order-aside__string-value {
+    padding-left: 10px;
+    color: $primary-color;
+}
