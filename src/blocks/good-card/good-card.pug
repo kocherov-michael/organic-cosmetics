@@ -2,8 +2,8 @@ mixin goodCard(options)
 
     .good-card(data-goods-card)
         .good-card__header
-            .good-card__img
-                img(src=options.src, alt=options.title)
+            .good-card__picture
+                img.good-card__img(src=options.src, alt=options.title)
             .good-card__billets
                 if options.sale
                     .good-card__billet-wrapper
