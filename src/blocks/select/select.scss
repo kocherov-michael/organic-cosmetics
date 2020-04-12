@@ -1,0 +1,10 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.select {
+    background-color: $card-background-color;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+    color: $neutral-secondary-color;
+}
