@@ -1,7 +1,7 @@
 import './big-card-wrapper.scss';
 import {splitUrl, fillCard} from './../good-card/good-card.js';
 
-showBigCard()
+// showBigCard()
 
 function showBigCard() {
     const goodCardButtonsList = document.querySelectorAll('[data-card-look]')

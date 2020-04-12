@@ -8,8 +8,12 @@
                 .card-desc__title(data-big-card-title) Organics Thickening Shampoo
                 p.card-desc__text(data-big-card-subtitle) Our company advocates the postulate that the health is the biggest value in our lives. The point is that science and nature are easily combined in products that we are glad to offer you today.
                 .card-desc__price
-                    .card-desc__new-price(data-big-card-price) 7,68 $
-                    .card-desc__old-price(data-big-card-oldprice) 9,60 $
+                    .card-desc__new-price
+                        span $
+                        span(data-big-card-price) 7,68 
+                    .card-desc__old-price
+                        span $
+                        span(data-big-card-oldprice) 9,60 
                 .card-desc__subtitle Size
                 .card-desc__info 125ml
                 .card-desc__subtitle Skin type
@@ -17,12 +21,12 @@
                 .card-desc__subtitle Quantity
                 .card-desc__quantity-buttons
                     .card-desc__quantity-input
-                        +quantityInput({color:"white"})
+                        +quantityInput({color:"white"})(data-big-card-count)
                     .card-desc__add-to-cart
                         +button({
                             text: "add to cart",
                             icon: "cart",
                             color: "primary"
-                            })
+                            })(data-big-card-to-cart)
     .big-card__close(data-card-close)
         i.zmdi.zmdi-close

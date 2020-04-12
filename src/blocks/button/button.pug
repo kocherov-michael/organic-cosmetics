@@ -4,11 +4,15 @@ mixin button(options)
     //- href
     //- icon: cart
     if options.submit
-        button.button(type="submit" class="button--"+options.color)
+        button.button(type="submit" class="button--"+options.color)&attributes(attributes)
+            .button__text #{options.text}
+
+    if options.href
+        a.button(href=options.href || "#" class="button--"+options.color)&attributes(attributes)
+            if options.icon=="cart"
+                i.button__icon.zmdi.zmdi-shopping-cart
             .button__text #{options.text}
     
     else
-        a.button(href=options.href || "#" class="button--"+options.color)
-            if options.icon=="cart"
-                i.button__icon.zmdi.zmdi-shopping-cart
+        button.button(class="button--"+options.color)&attributes(attributes)
             .button__text #{options.text}
