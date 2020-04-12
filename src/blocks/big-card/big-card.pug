@@ -1,11 +1,12 @@
 .big-card.container(data-big-card)
     .big-card__row.row
         .big-card__header.col-md-6
-            img.big-card__header-img(src="./assets/img/goods/make-up-1.png" data-big-card-img)
+            .big-card__header-img-wrapper
+                img.big-card__header-img(src="./assets/img/goods/make-up-1.png" data-big-card-img)
         .big-card__main.col-md-6
             .card-desc
                 .card-desc__title(data-big-card-title) Organics Thickening Shampoo
-                p.card-desc__text Our company advocates the postulate that the health is the biggest value in our lives. The point is that science and nature are easily combined in products that we are glad to offer you today.
+                p.card-desc__text(data-big-card-subtitle) Our company advocates the postulate that the health is the biggest value in our lives. The point is that science and nature are easily combined in products that we are glad to offer you today.
                 .card-desc__price
                     .card-desc__new-price(data-big-card-price) 7,68 $
                     .card-desc__old-price(data-big-card-oldprice) 9,60 $

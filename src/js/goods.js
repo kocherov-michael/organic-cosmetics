@@ -20,6 +20,7 @@ export const goodsArr = [
             value: '125ml',
             src: 'dr-scheller.png',
             price: '7.30',
+            oldprice: '',
             category: 'face',
             subcategory: 'face cleaners',
             id: '10101001'
@@ -55,6 +56,7 @@ export const goodsArr = [
             value: '150ml',
             src: 'bio-vegane.png',
             price: '9.95',
+            oldprice: '',
             category: 'face',
             subcategory: 'face cleaners',
             id: '10101002'
@@ -88,6 +90,7 @@ export const goodsArr = [
             value: '200ml',
             src: 'reinigungsmilch.png',
             price: '18.90',
+            oldprice: '',
             category: 'face',
             subcategory: 'face cleaners',
             id: '10101003'
@@ -111,6 +114,7 @@ export const goodsArr = [
             value: '50ml',
             src: 'goji-day-cream.png',
             price: '16.80',
+            oldprice: '',
             category: 'face',
             subcategory: 'anti-aiging',
             id: '10102004'
@@ -138,6 +142,7 @@ export const goodsArr = [
             value: '50ml',
             src: 'chamomile.png',
             price: '8.95',
+            oldprice: '',
             category: 'face',
             subcategory: 'anti-aiging',
             id: '10102005'
@@ -160,6 +165,7 @@ export const goodsArr = [
             value: '50ml',
             src: 'pomegranade.png',
             price: '10.95',
+            oldprice: '',
             category: 'face',
             subcategory: 'anti-aiging',
             id: '10102006'
@@ -185,6 +191,7 @@ export const goodsArr = [
             value: '75ml',
             src: 'sante.png',
             price: '7.90',
+            oldprice: '',
             category: 'face',
             subcategory: 'Night Creams',
             id: '10103007'
@@ -209,6 +216,7 @@ export const goodsArr = [
             value: '200ml',
             src: 'chi_duschgel.png',
             price: '18.90',
+            oldprice: '',
             category: 'body',
             subcategory: 'shower gels',
             id: '10204008'
@@ -227,6 +235,7 @@ export const goodsArr = [
             value: '335ml',
             src: 'avalon.png',
             price: '12.95',
+            oldprice: '',
             category: 'body',
             subcategory: 'shower gels',
             id: '10204009'
@@ -246,6 +255,7 @@ export const goodsArr = [
             value: '250ml',
             src: 'faithinnature.png',
             price: '6.30',
+            oldprice: '',
             category: 'body',
             subcategory: 'shower gels',
             id: '10204010'
@@ -270,6 +280,7 @@ export const goodsArr = [
             value: '75ml',
             src: 'almond-calendula.png',
             price: '5.20',
+            oldprice: '',
             category: 'body',
             subcategory: 'hand care',
             id: '10205011'
@@ -300,6 +311,7 @@ export const goodsArr = [
             value: '75ml',
             src: 'argan-amaranth.png',
             price: '5.20',
+            oldprice: '',
             category: 'body',
             subcategory: 'hand care',
             id: '10205012'
@@ -320,6 +332,7 @@ export const goodsArr = [
             value: '340ml',
             src: 'nourishing.png',
             price: '13.70',
+            oldprice: '',
             category: 'body',
             subcategory: 'hand care',
             id: '10205013'
@@ -345,6 +358,7 @@ export const goodsArr = [
             value: '75ml',
             src: 'handcreme.png',
             price: '3.70',
+            oldprice: '',
             category: 'body',
             subcategory: 'hand care',
             id: '10205014'
@@ -361,6 +375,7 @@ export const goodsArr = [
             value: '200ml',
             src: 'wildroseshmapoo.png',
             price: '3.98',
+            oldprice: '',
             category: 'hair',
             subcategory: 'shampoo',
             id: '10306015'
@@ -377,6 +392,7 @@ export const goodsArr = [
             value: '200ml',
             src: 'avocadoshampoo.png',
             price: '3.98',
+            oldprice: '',
             category: 'hair',
             subcategory: 'shampoo',
             id: '10306016'
@@ -400,6 +416,7 @@ export const goodsArr = [
             value: '250ml',
             src: 'feuchtigkeit.png',
             price: '5.90',
+            oldprice: '',
             category: 'hair',
             subcategory: 'shampoo',
             id: '10306017'
@@ -422,6 +439,7 @@ export const goodsArr = [
             value: '250ml',
             src: 'repairpflege.png',
             price: '5.90',
+            oldprice: '',
             category: 'hair',
             subcategory: 'shampoo',
             id: '10306018'
@@ -438,6 +456,7 @@ export const goodsArr = [
             value: '200ml',
             src: 'wildroseshmapoo.png',
             price: '3.98',
+            oldprice: '',
             category: 'hair',
             subcategory: 'hair oils',
             id: '10307019'
