@@ -44,7 +44,7 @@
 .icon-cart {
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0.35714rem 0 3.57143rem rgba(0,48,70,.2);
+    box-shadow: $blure-box-shadow;
 
     &:hover {
         .icon-cart__bg {
@@ -61,16 +61,16 @@
     left: 0;
     background: $default-color;
     border-radius: 50%;
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     transition: all .4s ease;
 }
 
 .icon-cart__icon {
-    font-size: 22px;
+    font-size: 20px;
     color: $primary-color;
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +79,12 @@
     background: #fff;
     border-radius: 50%;
     
+}
+.icon-cart__value {
+    position: absolute;
+    top: 4px;
+    left: 35px;
+    font-size: 14px;
 }
 
 

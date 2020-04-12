@@ -28,7 +28,7 @@
     color: $neutral-secondary-color;
     transition: all .4s ease;
     &:hover {
-        color: $border-color;
+        color: $neutral-primary-color;
         text-decoration: none;
     }
 }
@@ -49,6 +49,13 @@
 .card-thumb__price {
     flex: 1 0 100%;
     font-weight: 600;
+}
+
+.card-thumb__info {
+    flex: 1 0 100%;
+    color: $secondary-text-color;
+    font-size: 12px;
+    padding-top: 15px;
 }
 
 .cart-thumb__bottom {

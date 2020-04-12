@@ -40,7 +40,15 @@
 .cart-item__title {
     // flex: 0 0 30%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cart-item__info {
+    font-size: 12px;
+    color: $secondary-text-color;
+    padding-top: 10px;
 }
 .cart-item__link {
     color: $neutral-secondary-color;

@@ -60,9 +60,15 @@
     color: $neutral-primary-color;
 }
 
-.card-desc__quantity-title {
+.card-desc__subtitle {
     font-size: 20px;
     margin-top: 20px;
+}
+
+.card-desc__info {
+    padding-top: 5px;
+    font-size: 14px;
+    color: $secondary-text-color;
 }
 
 .card-desc__quantity-buttons {

@@ -1,14 +1,24 @@
 .container
     .product-page-card.row
         include ../../blocks/big-card/big-card.pug
-        .product-page-card__description
+        .product-page-card__info
             .product-page-card__title
-                .product-page-card__title-item Description
+                .product-page-card__title-item.product-page-card__title-item--active Details
+                .product-page-card__title-item Usage
+                .product-page-card__title-item Ingredients
             .product-page-card__text
-                .col-md-8
-                    p Our company advocates the postulate that the health is the biggest value in our lives. The point is that science and nature are easily combined in products that we are glad to offer you today. Our goal is to help you stay healthy as well as gorgeous at the same time. Soon you’ll discover how it is possible to use organic cosmetics for your body.
-                    p You can shop with the confidence that you are in the place which has over twenty years of experience in organic cosmetics industry. We’ve collected all our knowledge to deliver you only the best organic, biodynamic, natural, wild-harvested cosmetology brands in the world.
-                    p Also you can always contact our consultants that are always glad to provide you with full information about our goods and natural products that are used in the process of production of organic cosmetics. Our goal is to satisfy all our clients despite of their age, gender and race with premium, modern, effective alternatives to conventional beauty products.
+                .product-page-card__description.product-page-card__description--active.col-md-8
+                    p   Suitable for all skin types
+                    p   Removes make-up & dirt
+                    p   Deep cleanser
+                    p   Alcohol-free
+                    p   The natural, alcohol-free cleanser gently yet effectively cleanses the skin, getting rid of any make-up residues. A deep-cleansing gel that is free from any chemical substances that irritate the skin.
+                .product-page-card__description.col-md-8
+                    p Apply to wet skin, massage to cleanse and rinse with water.
+                .product-page-card__description.col-md-8
+                    p Aqua (Water)GlycerinSodium Cocoyl GlutamateCoco GlucosideCitrus Aurantium Dulcis (Orange) Fruit Extrakt [1]Dehydroxanthan GumPeach ExtractAloe Barbadensis Leaf Juice [1]Chondrus Crispus (Carrageenan)Perfume (Fragrance) [2]Benzyl AlcoholSodium ChlorideSodium BenzoatePotassium SorbateCitric Acid
+                    p    from controlled organic agriculture
+                    p   from natural essential oils
         .product-page-card__skincare
             include skin-care.pug
         
