@@ -3,6 +3,7 @@ import {goodsArr} from './goods.js'
 export default class MainPage {
     constructor(args = {}) {
         this.goodsArr = goodsArr[0]
+        this.showCartLength()
         this.fillMainPage()
         this.listenAddCartButton()
     }
@@ -154,8 +155,18 @@ export default class MainPage {
         if (!objIsSet) {
             cart.push(obj)
         }
+        this.showCartLength(cart)
         // сохраняем в память
         localStorage.setItem('cart', JSON.stringify(cart))
+    }
+
+    // 
+    showCartLength(cart) {
+        const iconCartElement = document.querySelector('[data-icon-cart-value]')
+        if (!cart) {
+            cart = JSON.parse(localStorage.getItem('cart')) || []
+        }
+        iconCartElement.innerHTML = cart.length
     }
 }
 
