@@ -165,13 +165,16 @@ export default class MainPage {
     }
 
     // показать количество предметов в корзине
-    // showCartLength(cart) {
     showCartLength() {
         const iconCartElement = document.querySelector('[data-icon-cart-value]')
-        // if (!cart) {
-        //     cart = JSON.parse(localStorage.getItem('cart')) || []
-        // }
-        iconCartElement.innerHTML = this.cart.length
+        const value = this.cart.length || 0
+        // если к ворзине ничего нет, то скрываем блок с цифрой
+        if (!value) {
+            iconCartElement.classList.add('icon-cart__value--display-none')
+        } else {
+            iconCartElement.classList.remove('icon-cart__value--display-none')
+        }
+        iconCartElement.innerHTML = value
     }
 
     // заполнить карточку корзины в шапке
@@ -192,7 +195,7 @@ export default class MainPage {
                     `<div class="cart-thumb">
                         <div class="cart-thumb__main"><img class="cart-thumb__img" src="./assets/img/goods/${this.goodsArr[j].src}" data-cart-thumb-card-img="">
                         <div class="cart-thumb__desc"><a class="cart-thumb__title" href="product.html">${this.goodsArr[j].name}</a>
-                            <div class="cart-thumb__close"><i class="zmdi zmdi-close" data-thumb-close="${this.goodsArr[j].id}"></i></div>
+                            <div class="cart-thumb__close"><i class="zmdi zmdi-close" data-thumb-remove="${this.goodsArr[j].id}"></i></div>
                             <div class="card-thumb__price">${this.goodsArr[j].price} $</div>
                             <div class="card-thumb__info">${this.goodsArr[j].value}, Skin type: ${this.goodsArr[j].skin}</div>
                         </div>
@@ -206,6 +209,31 @@ export default class MainPage {
             }
         }
         cartThumbsElement.innerHTML = innerElement
+        this.listehCartThumbRemove()
+    }
+
+    listehCartThumbRemove() {
+        const removeCartItemList = document.querySelectorAll('[data-thumb-remove]')
+        for ( let i = 0; i < removeCartItemList.length; i++ ) {
+            removeCartItemList[i].addEventListener('click', () => {
+                const idRemove = removeCartItemList[i].getAttribute('data-thumb-remove')
+                console.log(idRemove)
+                this.removeFromCart(idRemove)
+                this.fillCartCard()
+                this.showCartLength()
+            })
+        }
+
+
+    }
+    removeFromCart(id) {
+        for ( let i = 0; i < this.cart.length; i++ ) {
+            if (this.cart[i].id == id) {
+                this.cart.splice(i, 1)
+                // сохраняем в память
+                localStorage.setItem('cart', JSON.stringify(this.cart))
+            }
+        }
     }
 }
 
