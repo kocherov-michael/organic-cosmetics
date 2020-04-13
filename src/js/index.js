@@ -22,6 +22,7 @@ import './../blocks/footer-subscribe/footer-subscribe.js'
 import './../blocks/footer-contacts/footer-contacts.js'
 import './../blocks/footer-socials/footer-socials.js'
 import MainPage from './MainPage.js'
+import CartPage from './CartPage.js'
 
 // console.log(location.pathname)
 if (location.pathname === '/index.html' || location.pathname === '/') {
