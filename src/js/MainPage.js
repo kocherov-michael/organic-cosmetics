@@ -4,7 +4,7 @@ export default class MainPage {
     constructor(args = {}) {
         this.goodsArr = goodsArr[0]
         this.fillMainPage()
-        this.addToCart()
+        this.listenAddCartButton()
     }
     
     // заполняем карточками с товарами главную страницу
@@ -124,17 +124,32 @@ export default class MainPage {
     }
 
     // прослушка кнопки добавления в корзину
-    addToCart() {
+    listenAddCartButton() {
         const addToCartButtonElement = document.querySelector('[data-big-card-to-cart]')
         const inputElement = document.querySelector('[data-big-card-count]')
 
         addToCartButtonElement.addEventListener('click', () => {
-            const id = addToCartButtonElement.getAttribute('data-big-card-to-cart')
-            const quantity = inputElement.value
+            const id = +addToCartButtonElement.getAttribute('data-big-card-to-cart')
+            const quantity = +inputElement.value
             const obj = { id, quantity }
             console.log(obj)
+            this.addToCart(obj)
         })
 
+    }
+    // добавление в корзину
+    addToCart(obj) {
+        const cart = JSON.parse(localStorage.getItem('cart')) || []
+        console.log(cart)
+        for ( let i = 0; i < cart.length; i++ ) {
+            if (cart[i].id === obj.id) {
+                cart[i].quantity += +obj.quantity
+            } else {
+                cart.push(obj)
+            }
+            break
+        }
+        localStorage.setItem(JSON.stringify(cart))
     }
 }
 
