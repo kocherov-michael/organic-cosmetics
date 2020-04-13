@@ -140,16 +140,22 @@ export default class MainPage {
     // добавление в корзину
     addToCart(obj) {
         const cart = JSON.parse(localStorage.getItem('cart')) || []
-        console.log(cart)
+        // устанавливаем, записан ли уже объект в список
+        let objIsSet = false
+        
         for ( let i = 0; i < cart.length; i++ ) {
             if (cart[i].id === obj.id) {
+                // если этот предмет уже есть в корзине, то плюсуем количество
                 cart[i].quantity += +obj.quantity
-            } else {
-                cart.push(obj)
-            }
-            break
+                objIsSet = true
+                break
+            } 
         }
-        localStorage.setItem(JSON.stringify(cart))
+        if (!objIsSet) {
+            cart.push(obj)
+        }
+        // сохраняем в память
+        localStorage.setItem('cart', JSON.stringify(cart))
     }
 }
 
