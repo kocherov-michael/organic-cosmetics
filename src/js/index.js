@@ -27,3 +27,6 @@ import MainPage from './MainPage.js'
 if (location.pathname === '/index.html' || location.pathname === '/') {
     const page = new MainPage()
 }
+else if (location.pathname === '/cart.html') {
+    const page = new CartPage()
+}

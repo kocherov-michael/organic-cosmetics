@@ -3,7 +3,9 @@ import {goodsArr} from './goods.js'
 export default class MainPage {
     constructor(args = {}) {
         this.goodsArr = goodsArr[0]
+        this.cart = JSON.parse(localStorage.getItem('cart')) || []
         this.showCartLength()
+        this.fillCartCard()
         this.fillMainPage()
         this.listenAddCartButton()
     }
@@ -140,33 +142,70 @@ export default class MainPage {
     }
     // добавление в корзину
     addToCart(obj) {
-        const cart = JSON.parse(localStorage.getItem('cart')) || []
+        // const cart = JSON.parse(localStorage.getItem('cart')) || []
         // устанавливаем, записан ли уже объект в список
         let objIsSet = false
         
-        for ( let i = 0; i < cart.length; i++ ) {
-            if (cart[i].id === obj.id) {
+        for ( let i = 0; i < this.cart.length; i++ ) {
+            if (this.cart[i].id === obj.id) {
                 // если этот предмет уже есть в корзине, то плюсуем количество
-                cart[i].quantity += +obj.quantity
+                this.cart[i].quantity += +obj.quantity
                 objIsSet = true
                 break
             } 
         }
         if (!objIsSet) {
-            cart.push(obj)
+            this.cart.push(obj)
         }
-        this.showCartLength(cart)
+        // this.cart = cart
+        this.showCartLength()
+        this.fillCartCard()
         // сохраняем в память
-        localStorage.setItem('cart', JSON.stringify(cart))
+        localStorage.setItem('cart', JSON.stringify(this.cart))
     }
 
-    // 
-    showCartLength(cart) {
+    // показать количество предметов в корзине
+    // showCartLength(cart) {
+    showCartLength() {
         const iconCartElement = document.querySelector('[data-icon-cart-value]')
-        if (!cart) {
-            cart = JSON.parse(localStorage.getItem('cart')) || []
+        // if (!cart) {
+        //     cart = JSON.parse(localStorage.getItem('cart')) || []
+        // }
+        iconCartElement.innerHTML = this.cart.length
+    }
+
+    // заполнить карточку корзины в шапке
+    fillCartCard() {
+        const iconCartElement = document.querySelector('[data-cart-card]')
+        const cartThumbsElement = iconCartElement.querySelector('[data-cart-thumbs]')
+        cartThumbsElement.innerHTML = ''
+        let innerElement = ''
+        
+        for ( let i = 0; i < this.cart.length; i++ ) {
+            
+            for ( let j = 0; j < this.goodsArr.length; j++ ) {
+                if (this.cart[i].id == this.goodsArr[j].id) {
+                    // console.log(this.cart[i].id)
+                    // console.log(this.goodsArr[j].id)
+
+                    innerElement +=
+                    `<div class="cart-thumb">
+                        <div class="cart-thumb__main"><img class="cart-thumb__img" src="./assets/img/goods/${this.goodsArr[j].src}" data-cart-thumb-card-img="">
+                        <div class="cart-thumb__desc"><a class="cart-thumb__title" href="product.html">${this.goodsArr[j].name}</a>
+                            <div class="cart-thumb__close"><i class="zmdi zmdi-close" data-thumb-close="${this.goodsArr[j].id}"></i></div>
+                            <div class="card-thumb__price">${this.goodsArr[j].price} $</div>
+                            <div class="card-thumb__info">${this.goodsArr[j].value}, Skin type: ${this.goodsArr[j].skin}</div>
+                        </div>
+                        </div>
+                        <div class="cart-thumb__bottom">
+                        <div class="cart-thumb__count">${this.cart[i].quantity}</div>
+                        </div>
+                    </div>`
+                    // console.log(innerElement)
+                }
+            }
         }
-        iconCartElement.innerHTML = cart.length
+        cartThumbsElement.innerHTML = innerElement
     }
 }
 

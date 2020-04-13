@@ -1,0 +1,1 @@
+import {goodsArr} from './goods.js'
