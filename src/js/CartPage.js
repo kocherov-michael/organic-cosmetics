@@ -29,7 +29,7 @@ export default class CartPage extends DefaultPage {
 
                     innerElement +=
                     `<div class="cart-goods__item">
-                        <div class="cart-item container">
+                        <div class="cart-item container" data-cart-item>
                             <div class="row">
                                 <div class="cart-item__close col-1">
                                     <div class="cart-item__close-icon" data-cart-item-remove="${this.cart[i].id}"><i class="zmdi zmdi-close"></i></div>
@@ -39,7 +39,7 @@ export default class CartPage extends DefaultPage {
                                 <div class="cart-item__title col-6 col-md-3"><a class="cart-item__link" href="product.html">${this.goodsArr[j].name}</a>
                                 <div class="cart-item__info">${this.goodsArr[j].value}, Skin type: ${this.goodsArr[j].skin}</div>
                                 </div>
-                                <div class="cart-item__price col-3 col-sm-6 col-md-2">$25.60</div>
+                                <div class="cart-item__price col-3 col-sm-6 col-md-2" data-price="${this.goodsArr[j].price}">$${this.goodsArr[j].price}</div>
                                 <div class="cart-item__input col-6 col-sm-3 col-md-2">
                                 <div class="quantity-input quantity-input--blue" data-quantity-input="">
                                     <input class="quantity-input__field" value="${this.cart[i].quantity}" data-input-value="${this.cart[i].id}">
@@ -47,7 +47,7 @@ export default class CartPage extends DefaultPage {
                                     <div class="quantity-input__minus" data-input-minus="">-</div>
                                 </div>
                                 </div>
-                                <div class="cart-item__total col-3 col-md-2">$25.60</div>
+                                <div class="cart-item__total col-3 col-md-2">$<span data-item-summ>25.60</span></div>
                             </div>
                         </div>
                     </div>`
@@ -59,6 +59,7 @@ export default class CartPage extends DefaultPage {
         this.listenCartPageRemove()
         super.quantityInput(this.saveInputValues.bind(this))
         this.quantityInputListener()
+        this.showItemSumm()
     }
 
     // слушаем нажатия на крестик удаления товара со страницы корзины
@@ -102,7 +103,20 @@ export default class CartPage extends DefaultPage {
                 this.cart[i].quantity = value
                 // сохраняем в память
                 localStorage.setItem('cart', JSON.stringify(this.cart))
+                this.showItemSumm()
             }
+        }
+    }
+
+    // считаем сумму одного товара в зависимости от количества
+    showItemSumm() {
+        const itemElement = document.querySelectorAll('[data-cart-item]')
+        // console.log(itemElement)
+        for (let i = 0; i < itemElement.length; i++) {
+            const price = itemElement[i].querySelector('[data-price]').getAttribute('data-price')
+            const count = itemElement[i].querySelector('[data-input-value]').value
+            // console.log(price, count)
+            itemElement[i].querySelector('[data-item-summ]').textContent = Math.round(price * count * 100) / 100
         }
     }
 
