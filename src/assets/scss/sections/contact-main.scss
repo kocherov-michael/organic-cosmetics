@@ -1,0 +1,50 @@
+.contact-main {
+    box-shadow: $box-shadow;
+    padding: 30px 0;
+}
+
+.contact-us__title {
+    padding: 15px;
+}
+
+.contact-form__item {
+    // display: flex;
+    // color: $primary-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-form__item-label {
+    // flex: 0 1 50px;
+    padding-top: 10px;
+}
+
+.contact-form__button {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-info__title {
+    padding: 15px;
+}
+
+.contact-info__address,
+.contact-info__call-us,
+.contact-info__email-us {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    & span {
+        padding-left: 15px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+.contact-info__address-text {
+    font-size: 14px;
+}
+
+.contact-info__call-us-number {
+    font-size: 24px;
+}

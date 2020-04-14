@@ -1,0 +1,11 @@
+extends ../layout/page.pug
+
+block variables
+	- var title = 'Contact us';
+
+block content
+	include ../includes/header.pug
+	.container
+		+path({main: 'Home', subdir: 'Contact us'})
+	include ../includes/contact-main.pug
+	include ../includes/footer.pug

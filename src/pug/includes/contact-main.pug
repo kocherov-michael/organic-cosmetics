@@ -1,0 +1,36 @@
+.contact-main.container
+    .row
+        .contact-main__contact-us.col-lg-5
+            .contact-us
+                h2.contact-us__title Contact us
+                .contact-us__form
+                    form.contact-form.container(action="mail.php" method='post')
+                        .contact-form__item.row
+                            .contact-form__item-label.col-4 Email address
+                            .contact-form__item-input.col-8
+                                +input('Email', 'email')
+                        .contact-form__item.row
+                            .contact-form__item-label.col-4 Message
+                            .contact-form__item-textarea.col-8
+                                +input('How can we help?', 'email')
+                        .contact-form__button
+                            +button({submit: true, color: "primary", text: "send"})
+
+        .contact-main__info.col-lg-7.container
+            .contact-info.row
+                h2.contact-info__title.col-12 Store information
+                .contact-info__address.col-sm-6
+                    h4.contact-info__address-title
+                        .zmdi.zmdi-pin
+                        span Address
+                    .contact-info__address-text 28 Jackson Blvd Ste 1020 Chicago IL 60604-2340
+                .contact-info__call-us.col-sm-6
+                    h4.contact-info__call-us-title
+                        .zmdi.zmdi-phone
+                        span Call us:
+                    .contact-info__call-us-number 800-2345-6789
+                .contact-info__email-us.col-12
+                    h4.contact-info__email-us-title
+                        .zmdi.zmdi-email
+                        span Email us:
+                    .contact-info__email-us-email demo@demo.com

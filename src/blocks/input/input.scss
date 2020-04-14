@@ -5,6 +5,7 @@
     background-color: $card-background-color;
     border: none;
     transition: all .4s ease;
+    width: 100%;
 
     &:focus {
         outline: none;
