@@ -2,7 +2,7 @@ import {goodsArr} from './goods.js'
 
 export default class DefaultPage {
     constructor(args = {}) {
-        
+        // this.cart = JSON.parse(localStorage.getItem('cart')) || []
     }
 
     // прослушка кнопок показа большой карточки
@@ -188,7 +188,8 @@ export default class DefaultPage {
         }
     }
 
-    quantityInput() {
+    // изменяем значение в инпуте при нажатии + или -
+    quantityInput(callback) {
         const inputList = document.querySelectorAll('[data-quantity-input]')
         
         for (let i = 0; i < inputList.length; i++) {
@@ -199,12 +200,20 @@ export default class DefaultPage {
             plusElement.addEventListener('click', () => {
                 valueElement.value = +valueElement.value + 1
                 valueElement.focus()
+                // передаём колбэк для записи в local storage
+                if (callback) {
+                    callback(valueElement)
+                }
             })
             minusElement.addEventListener('click', () => {
                 if (valueElement.value > 1) {
                     valueElement.value = +valueElement.value - 1
                 }
                 valueElement.focus()
+                // передаём колбэк для записи в local storage
+                if (callback) {
+                    callback(valueElement)
+                }
             })
             valueElement.addEventListener('focus', () => {
                 inputList[i].classList.add('quantity-input--shadow')

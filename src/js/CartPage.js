@@ -42,7 +42,7 @@ export default class CartPage extends DefaultPage {
                                 <div class="cart-item__price col-3 col-sm-6 col-md-2">$25.60</div>
                                 <div class="cart-item__input col-6 col-sm-3 col-md-2">
                                 <div class="quantity-input quantity-input--blue" data-quantity-input="">
-                                    <input class="quantity-input__field" value="${this.cart[i].quantity}" data-input-value="">
+                                    <input class="quantity-input__field" value="${this.cart[i].quantity}" data-input-value="${this.cart[i].id}">
                                     <div class="quantity-input__plus" data-input-plus="">+</div>
                                     <div class="quantity-input__minus" data-input-minus="">-</div>
                                 </div>
@@ -57,7 +57,7 @@ export default class CartPage extends DefaultPage {
         }
         goodsContainerElement.innerHTML = innerElement
         this.listenCartPageRemove()
-        super.quantityInput()
+        super.quantityInput(this.saveInputValues.bind(this))
         this.quantityInputListener()
     }
 
@@ -78,12 +78,31 @@ export default class CartPage extends DefaultPage {
 
     // 
     quantityInputListener() {
+        // console.log(this.cart)
         const inputList = document.querySelectorAll('[data-input-value]')
         for (let i = 0; i < inputList.length; i++) {
-            console.log(inputList[i].value)
+            // console.log(inputList[i].value)
             inputList[i].addEventListener('input', () => {
-                console.log(inputList[i].value)
+                // console.log(inputList[i])
+                
+                this.saveInputValues(inputList[i])
             })
+        }
+        
+    }
+
+    // изменяем количество товара в зависимости от изменения инпута
+    saveInputValues(inputElement) {
+        
+        const id = inputElement.getAttribute('data-input-value')
+        const value = inputElement.value
+        
+        for (let i = 0; i < this.cart.length; i++) {
+            if (this.cart[i].id == id) {
+                this.cart[i].quantity = value
+                // сохраняем в память
+                localStorage.setItem('cart', JSON.stringify(this.cart))
+            }
         }
     }
 
