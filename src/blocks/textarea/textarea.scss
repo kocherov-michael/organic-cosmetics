@@ -1,0 +1,15 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.textarea {
+    padding: 10px;
+    background-color: $card-background-color;
+    border: none;
+    transition: box-shadow .4s ease;
+    width: 100%;
+    min-height: 90px;
+
+    &:focus {
+        outline: none;
+        box-shadow: $box-shadow;
+    }
+}

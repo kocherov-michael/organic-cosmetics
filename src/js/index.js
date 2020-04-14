@@ -13,6 +13,7 @@ import './../blocks/cart-item/cart-item.js'
 import './../blocks/quantity-input/quantity-input.js'
 import './../blocks/filter/filter.js'
 import './../blocks/input/input.js'
+import './../blocks/textarea/textarea.js'
 import './../blocks/select/select.js'
 import './../blocks/checkbox/checkbox.js'
 import './../blocks/category-main/category-main.js'
@@ -33,4 +34,20 @@ if (location.pathname.includes('index.html')) {
 else if (location.pathname.includes('cart.html')) {
     console.log('/cart.html')
     const page = new CartPage()
+}
+else if (location.pathname.includes('contacts.html')) {
+    console.log('/contacts.html')
+    // const page = new ContactsPage()
+}
+else if (location.pathname.includes('product.html')) {
+    console.log('/product.html')
+    const page = new ProductPage()
+}
+else if (location.pathname.includes('category.html')) {
+    console.log('/category.html')
+    const page = new CategoryPage()
+}
+else if (location.pathname.includes('order.html')) {
+    console.log('/order.html')
+    const page = new OrderPage()
 }
