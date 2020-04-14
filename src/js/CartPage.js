@@ -8,7 +8,7 @@ export default class CartPage extends DefaultPage {
         this.goodsArr = goodsArr[0]
         this.cart = JSON.parse(localStorage.getItem('cart')) || []
         super.showCartLength()
-        super.fillCartCard()
+        // super.fillCartCard()
         this.fillCartPage()
         
         
@@ -47,7 +47,7 @@ export default class CartPage extends DefaultPage {
                                     <div class="quantity-input__minus" data-input-minus="">-</div>
                                 </div>
                                 </div>
-                                <div class="cart-item__total col-3 col-md-2">$<span data-item-summ>25.60</span></div>
+                                <div class="cart-item__total col-3 col-md-2">$<span data-item-summ>0</span></div>
                             </div>
                         </div>
                     </div>`
@@ -60,6 +60,8 @@ export default class CartPage extends DefaultPage {
         super.quantityInput(this.saveInputValues.bind(this))
         this.quantityInputListener()
         this.showItemSumm()
+        // super.showTotalSumm()
+        super.fillCartCard()
     }
 
     // слушаем нажатия на крестик удаления товара со страницы корзины
@@ -104,6 +106,8 @@ export default class CartPage extends DefaultPage {
                 // сохраняем в память
                 localStorage.setItem('cart', JSON.stringify(this.cart))
                 this.showItemSumm()
+                // this.showTotalSumm()
+                super.fillCartCard()
             }
         }
     }
@@ -119,5 +123,27 @@ export default class CartPage extends DefaultPage {
             itemElement[i].querySelector('[data-item-summ]').textContent = Math.round(price * count * 100) / 100
         }
     }
+
+    // // считаем общую сумму
+    // showTotalSumm() {
+    //     let summ = 0
+    //     for (let i = 0; i < this.cart.length; i++) {
+    //         summ += Math.round(this.cart[i].price * this.cart[i].quantity * 100) / 100
+    //     }
+    //     console.log( Math.round(summ * 100) / 100 )
+    //     summ = Math.round(summ * 100) / 100
+    //     // выводим сумму в общий счёт
+    //     document.querySelectorAll('[data-amount-summ]').forEach((elem) => {
+    //         elem.textContent = summ
+    //     })
+    //     // считаем значение налога 5%
+    //     document.querySelectorAll('[data-amount-tax]').forEach((elem) => {
+    //         elem.textContent = Math.round(summ * 5) / 100 
+    //     })
+    //     // сумма + налог = всего
+    //     document.querySelectorAll('[data-amount-total]').forEach((elem) => {
+    //         elem.textContent = Math.round(summ * 105) / 100
+    //     })
+    // }
 
 }

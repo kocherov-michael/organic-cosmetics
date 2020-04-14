@@ -10,16 +10,22 @@
         .cart-card-result
             .cart-card-result__item
                 .cart-card-result__item-text Subtotal
-                .cart-card-result__item-value 60.50 $
+                .cart-card-result__item-value 
+                    span $
+                    span(data-amount-summ) 55.80
             .cart-card-result__item
                 .cart-card-result__item-text Shipping
                 .cart-card-result__item-value free
             .cart-card-result__item
                 .cart-card-result__item-text Taxes
-                .cart-card-result__item-value 0.0 $
+                .cart-card-result__item-value
+                    span $
+                    span(data-amount-tax) 0.0
             .cart-card-result__item.cart-card-result__item--total
                 .cart-card-result__item-text Total
-                .cart-card-result__item-value 60.50 $
+                .cart-card-result__item-value 
+                    span $
+                    span(data-amount-total) 55.80
     .cart-card__button
         +button({text: "Proceed to checkout", href: "cart.html", color: "secondary"})
     .cart-card__continue(data-cart-card-close) Continue shopping

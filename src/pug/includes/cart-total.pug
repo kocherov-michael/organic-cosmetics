@@ -2,16 +2,22 @@
     .cart-total__result
         .cart-total__string
             .cart-total__string-text 3 ITEMS
-            .cart-total__string-value $55.80
+            .cart-total__string-value
+                span $
+                span(data-amount-summ) 55.80
         .cart-total__string
             .cart-total__string-text SHIPPING
             .cart-total__string-value FREE
         .cart-total__string
             .cart-total__string-text TAXES
-            .cart-total__string-value $2.23
+            .cart-total__string-value
+                span $
+                span(data-amount-tax) 2.40
         .cart-total__string.cart-total__string--total
             .cart-total__string-text TOTAL (TAX EXCL.)
-            .cart-total__string-value $55.80
+            .cart-total__string-value 
+                span $
+                span(data-amount-total) 55.80
         
     .cart-total__buttons
         .cart-total__button

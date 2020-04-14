@@ -86,7 +86,7 @@ export default class DefaultPage {
             const id = +addToCartButtonElement.getAttribute('data-big-card-to-cart')
             const quantity = +inputElement.value
             const obj = { id, quantity }
-            console.log(obj)
+            // console.log(obj)
             this.addToCart(obj)
         })
 
@@ -107,11 +107,18 @@ export default class DefaultPage {
             } 
         }
         if (!objIsSet) {
-            this.cart.push(obj)
+            for ( let j = 0; j < this.goodsArr.length; j++ ) {
+                if (obj.id == this.goodsArr[j].id) {
+                    obj.price = this.goodsArr[j].price
+                    this.cart.push(obj)
+                    // console.log(obj)
+                }
+            }
         }
         // this.cart = cart
         this.showCartLength()
         this.fillCartCard()
+        
         // сохраняем в память
         localStorage.setItem('cart', JSON.stringify(this.cart))
     }
@@ -162,6 +169,7 @@ export default class DefaultPage {
         }
         cartThumbsElement.innerHTML = innerElement
         this.listehCartThumbRemove()
+        this.showTotalSumm()
     }
 
     listehCartThumbRemove() {
@@ -224,5 +232,27 @@ export default class DefaultPage {
     
     
         }
+    }
+
+    // считаем общую сумму
+    showTotalSumm() {
+        let summ = 0
+        for (let i = 0; i < this.cart.length; i++) {
+            summ += Math.round(this.cart[i].price * this.cart[i].quantity * 100) / 100
+        }
+        console.log( Math.round(summ * 100) / 100 )
+        summ = Math.round(summ * 100) / 100
+        // выводим сумму в общий счёт
+        document.querySelectorAll('[data-amount-summ]').forEach((elem) => {
+            elem.textContent = summ
+        })
+        // считаем значение налога 5%
+        document.querySelectorAll('[data-amount-tax]').forEach((elem) => {
+            elem.textContent = Math.round(summ * 5) / 100 
+        })
+        // сумма + налог = всего
+        document.querySelectorAll('[data-amount-total]').forEach((elem) => {
+            elem.textContent = Math.round(summ * 105) / 100
+        })
     }
 }
