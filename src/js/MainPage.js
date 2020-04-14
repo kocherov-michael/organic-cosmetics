@@ -10,6 +10,7 @@ export default class MainPage extends DefaultPage {
         super.fillCartCard()
         this.fillMainPage()
         super.listenAddCartButton()
+        super.quantityInput()
         console.log(this)
     }
     

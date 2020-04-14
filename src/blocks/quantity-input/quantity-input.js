@@ -1,8 +1,8 @@
 import './quantity-input.scss'
 
-quantityInput()
+// quantityInput()
 
-function quantityInput() {
+export default function quantityInput() {
     const inputList = document.querySelectorAll('[data-quantity-input]')
     for (let i = 0; i < inputList.length; i++) {
         const valueElement = inputList[i].querySelector('[data-input-value]')
