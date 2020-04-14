@@ -24,10 +24,13 @@ import './../blocks/footer-socials/footer-socials.js'
 import MainPage from './MainPage.js'
 import CartPage from './CartPage.js'
 
-// console.log(location.pathname)
-if (location.pathname === '/index.html' || location.pathname === '/') {
+console.log(location)
+console.log(location.pathname)
+if (location.pathname.includes('index.html')) {
+    console.log('/index.html')
     const page = new MainPage()
 }
-else if (location.pathname === '/cart.html') {
+else if (location.pathname.includes('cart.html')) {
+    console.log('/cart.html')
     const page = new CartPage()
 }
