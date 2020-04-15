@@ -21,6 +21,7 @@ export default class CategoryPage extends DefaultPage {
         
         // console.log(this.categoriesArr)
         super.listenAddCartButton()
+        this.useFilterForGoods()
     }
     // получаем id категории из get Запроса
     getCategoryId() {
@@ -164,5 +165,13 @@ export default class CategoryPage extends DefaultPage {
           </label>`
       }
       filterSubcategoriesElement.innerHTML = innerElement
+    }
+
+    useFilterForGoods() {
+      const formElement = document.querySelector('[data-filter-form]')
+      formElement.addEventListener('submit', (event) => {
+        event.preventDefault()
+        console.log('submit')
+      })
     }
 }

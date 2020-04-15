@@ -13,9 +13,13 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
-
+    
     &:hover {
         text-decoration: none;
+    }
+    &:active, &:focus {
+        outline: none;
+        
     }
 
     &--primary {
