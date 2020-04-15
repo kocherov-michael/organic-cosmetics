@@ -1,5 +1,9 @@
 @import "../../assets/scss/utils/vars.scss";
 
+.filter {
+    padding-bottom: 30px;
+}
+
 .filter__title {
     font-weight: 600;
     font-family: $secondaryFont;
@@ -13,4 +17,7 @@
 
 .filter__checkboxes {
     margin-bottom: 20px;
+}
+.filter__button {
+    margin-top: 30px;
 }

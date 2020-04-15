@@ -1,9 +1,14 @@
 .filter
     .filter__title Filter by
-    .filter__subtitle Brand
-    .filter__checkboxes
-        +checkbox("Babyganics", "2", "Babyganics")
-        +checkbox("Babyganics", "2", "Babyganics")
-        +checkbox("Babyganics", "2", "Babyganics")
-        +checkbox("Babyganics", "2", "Babyganics")
-        +checkbox("Babyganics", "2", "Babyganics")
+    form.filter__form(data-filter-form)
+        .filter__subtitle Brand
+        .filter__checkboxes(data-filter-brand)
+            +checkbox("Babyganics", "2", "Babyganics")
+            +checkbox("Babyganics", "2", "Babyganics")
+        .filter__subtitle Categories
+        .filter__checkboxes(data-filter-subcategories)
+            +checkbox("Babyganics", "2", "Babyganics")
+            +checkbox("Babyganics", "2", "Babyganics")
+            
+        .filter__button
+            +button({submit: true, color: "primary", text: "Filter"})

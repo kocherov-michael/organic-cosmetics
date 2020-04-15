@@ -240,7 +240,7 @@ export default class DefaultPage {
         for (let i = 0; i < this.cart.length; i++) {
             summ += Math.round(this.cart[i].price * this.cart[i].quantity * 100) / 100
         }
-        console.log( Math.round(summ * 100) / 100 )
+        // console.log( Math.round(summ * 100) / 100 )
         summ = Math.round(summ * 100) / 100
         // выводим сумму в общий счёт
         document.querySelectorAll('[data-amount-summ]').forEach((elem) => {

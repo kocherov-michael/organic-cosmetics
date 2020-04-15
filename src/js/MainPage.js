@@ -20,10 +20,10 @@ export default class MainPage extends DefaultPage {
         goodsGrinWrapperElement.innerHTML = ''
         let innerElement = ''
 
-        // console.log(goodsArr[0])
         const arr = this.goodsArr
-        for ( let i = 0; i < arr.length; i++ ) {
-            // console.log(arr[i])
+        // ограничиваю вывод на главную страницу только 12 элементами
+        for ( let i = 0; i < 12; i++ ) {
+            
             innerElement += 
             `<div class="goods__card col-6 col-md-4 col-lg-3">
             <div class="good-card" data-goods-card="">
