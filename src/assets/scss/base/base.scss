@@ -22,3 +22,11 @@ html, body {
 //         max-width: 100%;
 //     }
 // }
+a {
+    color: $neutral-secondary-color;
+    transition: color .4s ease;
+    &:hover {
+        text-decoration: none;
+        color: $neutral-primary-color;
+    }
+}
