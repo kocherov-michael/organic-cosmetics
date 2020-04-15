@@ -23,7 +23,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'face',
             subcategory: 'face cleaners',
-            id: '10101001'
+            id: '115018001',
+            category_id: 11,
+            subcategory_id: 501
         },
         {
             brand: 'Bio Vegane',
@@ -59,7 +61,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'face',
             subcategory: 'face cleaners',
-            id: '10101002'
+            id: '115018002',
+            category_id: 11,
+            subcategory_id: 501
         },
         {
             brand: 'Bio Pure Elements',
@@ -93,7 +97,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'face',
             subcategory: 'face cleaners',
-            id: '10101003'
+            id: '115018003',
+            category_id: 11,
+            subcategory_id: 501
         },
         {
             brand: 'Bio Vegane',
@@ -117,7 +123,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'face',
             subcategory: 'anti-aiging',
-            id: '10102004'
+            id: '115028004',
+            category_id: 11,
+            subcategory_id: 502
         },
         {
             brand: 'Cosnature',
@@ -145,7 +153,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'face',
             subcategory: 'anti-aiging',
-            id: '10102005'
+            id: '115028005',
+            category_id: 11,
+            subcategory_id: 502
         },
         {
             brand: 'Cosnature Naturkosmetik',
@@ -168,7 +178,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'face',
             subcategory: 'anti-aiging',
-            id: '10102006'
+            id: '115028006',
+            category_id: 11,
+            subcategory_id: 502
         },
         {
             brand: 'Sante',
@@ -194,7 +206,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'face',
             subcategory: 'Night Creams',
-            id: '10103007'
+            id: '115038007',
+            category_id: 11,
+            subcategory_id: 503
         },
         {
             brand: 'Pure Elements',
@@ -219,7 +233,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'body',
             subcategory: 'shower gels',
-            id: '10204008'
+            id: '125048008',
+            category_id: 12,
+            subcategory_id: 504
         },
         {
             brand: 'Avalon Organics',
@@ -238,7 +254,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'body',
             subcategory: 'shower gels',
-            id: '10204009'
+            id: '125048009',
+            category_id: 12,
+            subcategory_id: 504
         },
         {
             brand: 'Faith In Nature',
@@ -258,7 +276,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'body',
             subcategory: 'shower gels',
-            id: '10204010'
+            id: '125048010',
+            category_id: 12,
+            subcategory_id: 504
         },
         {
             brand: 'Dr. Scheller',
@@ -283,7 +303,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'body',
             subcategory: 'hand care',
-            id: '10205011'
+            id: '125058011',
+            category_id: 12,
+            subcategory_id: 505
         },
         {
             brand: 'Dr. Scheller',
@@ -314,7 +336,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'body',
             subcategory: 'hand care',
-            id: '10205012'
+            id: '125058012',
+            category_id: 12,
+            subcategory_id: 505
         },
         {
             brand: 'Avalon Organics',
@@ -335,7 +359,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'body',
             subcategory: 'hand care',
-            id: '10205013'
+            id: '125058013',
+            category_id: 12,
+            subcategory_id: 505
         },
         {
             brand: 'Sante',
@@ -361,7 +387,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'body',
             subcategory: 'hand care',
-            id: '10205014'
+            id: '125058014',
+            category_id: 12,
+            subcategory_id: 505
         },
         {
             brand: 'Cosnature Naturkosmetik',
@@ -378,7 +406,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'hair',
             subcategory: 'shampoo',
-            id: '10306015'
+            id: '135068015',
+            category_id: 13,
+            subcategory_id: 506
         },
         {
             brand: 'Cosnature Naturkosmetik',
@@ -395,7 +425,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'hair',
             subcategory: 'shampoo',
-            id: '10306016'
+            id: '135068016',
+            category_id: 13,
+            subcategory_id: 506
         },
         {
             brand: 'Lavera',
@@ -419,7 +451,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'hair',
             subcategory: 'shampoo',
-            id: '10306017'
+            id: '135068017',
+            category_id: 13,
+            subcategory_id: 506
         },
         {
             brand: 'Lavera',
@@ -442,7 +476,9 @@ export const goodsArr = [
             oldprice: '',
             category: 'hair',
             subcategory: 'shampoo',
-            id: '10306018'
+            id: '135068018',
+            category_id: 13,
+            subcategory_id: 506
         },
         {
             brand: 'Cosnature Naturkosmetik',
@@ -459,7 +495,241 @@ export const goodsArr = [
             oldprice: '',
             category: 'hair',
             subcategory: 'hair oils',
-            id: '10307019'
+            id: '135078019',
+            category_id: 13,
+            subcategory_id: 507
+        },
+        {
+            brand: 'Laboratoire Altho',
+            name: 'Organic Tea Tree Essential oil',
+            subtitle: 'This is the essential oil for all bacterial and viral infections!',
+            details: `This is the essential oil for all bacterial and viral infections; tea tree essential oil will treat all parasites and fungi, no matter their location.
+
+            Here are just a few of the problems that it is traditionally recommended for: Wounds, acne, abscesses, sores, mycoses, urinary tract infections, ulcers, fungal infections, sinusitis, bronchitis, pharyngitis, otitis, mosquito bites.`,
+            usage: `Oral administration: Take 2 drops of organic essential oil 3 times a day, with some honey or syrup, or on a lozenge, to help treat all infections. However, do not use for over 7 days at a time.
+            On the skin: Mix 3 drops of organic tea tree essential oil with 2 drops of organic musk rose oil, and apply to skin mycoses.
+            By diffusion: Diffusing tea tree essential oil will purify and disinfect the surrounding air. It will stimulate and invigorate one’s psyche during periods of mental dips.`,
+            ingredients: `Tea Tree,
+            Melaleuca alternifolia * 
+            
+            *Produced from organic farming.`,
+            skin: '',
+            value: '10ml',
+            src: 'teatree.png',
+            price: '25.56',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Essential Oils',
+            id: '145088020',
+            category_id: 14,
+            subcategory_id: 508
+        },
+        {
+            brand: 'Laboratoire Altho',
+            name: 'Cinnamon Essential oil',
+            subtitle: '100% Pure & Natural',
+            details: `Cinnamon bark Organic essential oil is a powerful antibacterial acting against streptococci and staphylococci, antiviral and antifungal. It is also warming and analgesic.
+
+            Cinnamon bark Organic essential oil is refreshing, stimulating and invigorating. Cinnamon bark Organic essential oil is effective against all bacteria, germs and fungi in infectious diseases: sore throat, bronchitis as well as for colds and chills.
+            
+            Used locally, for fungal infections like Athlete's foot as well as for pain from osteoarthritis, rheumatism.
+            
+            Cinnamon bark essential oil is effective against the menopause and premenstrual syndromes in women.`,
+            usage: `Consult a doctor before taking any treatment or therapy orally.
+
+ 
+
+            Cinnamon bark essential oil contains cinnamaldehyde in quantity. This aromatic aldehyde is a skin irritant and should be used sparingly and with prudence.
+            
+             
+            
+            Oral administration is reserved for knowledgeable users, to treat respiratory, intestinal or urinary infections: the dose of 1 drop 3 times a day should not be exceeded, and it should be associated with an equal part of an essential oil that protects the liver, like Lemon Organic essential oil for example, diluted in a teaspoon of honey. To be taken at mealtimes and followed by a glass of warm water.
+            
+             
+            
+            On the skin, it is best not to exceed 50% Cinnamon bark Organic essential oil in an oily solution.
+            
+            Only certain indications like the treatment of warts require it to be used pure, with protection of the healthy skin to avoid irritation or burns.
+            
+            Sexual stimulant for men: 1 drop of Cinnamon bark Organic essential oil + 1 drop of vegetable oil for a gentle massage of the lower vertebral column.`,
+            ingredients: `Cinnamon,
+            Cinnamomum zeylanicum`,
+            skin: '',
+            value: '10ml',
+            src: 'canelle-ecorce.png',
+            price: '8.50',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Essential Oils',
+            id: '145088021',
+            category_id: 14,
+            subcategory_id: 508
+        },
+        {
+            brand: 'Laboratoire Altho',
+            name: 'Roll on No 9 Relaxing',
+            subtitle: '100% natural, 100% organic, made with organic essential oils',
+            details: `100% natural, 100% organic, made with organic essential oils
+
+            Apply this care product directly to the skin to regain calm and serenity after being subjected to excessive stress levels, or heightened emotions.`,
+            usage: `Roll the ball directly on the skin, applying a few strokes to the celiac plexus and the interior of the wrists`,
+            ingredients: `Helianthus annuus seed oil*, Citrus sinensis peel oil expressed*, Lavandula hybrid grosso herb oil*, Citrus aurantium amara leaf/twig oil*, Citrus bergamia oil*. * From organic culture.`,
+            skin: '',
+            value: '10ml',
+            src: 'roll-on-9.png',
+            price: '9.90',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Essential Oils',
+            id: '145088022',
+            category_id: 14,
+            subcategory_id: 508
+        },
+        {
+            brand: 'Laboratoire Altho',
+            name: 'Roll on No 10 Sleep Well',
+            subtitle: '100% natural, 100% organic, made with organic essential oils Apply this care product directly to the skin to help calm down and obtain a restorative sleep.',
+            details: `100% natural, 100% organic, made with organic essential oils Apply this care product directly to the skin to help calm down and obtain a restorative sleep.
+            Specialist in aromatherapy and phytotherapy, Laboratoire ALTHO use the best of plants to purpose you a complete range of naturals products for your weel-being!`,
+            usage: `Roll the ball directly on the skin, applying a few strokes to the celiac plexus and the interior of the wrists.`,
+            ingredients: `Helianthus annuus seed oil*, Citrus sinensis peel oil expressed *, Lavandula hybrid grosso herb oil *, Origanum majorana oil*, Citrus aurantium amara leaf/twig oil*, Cymbopogon flexuosus herb oil*. * From organic culture.`,
+            skin: '',
+            value: '10ml',
+            src: 'roll-on-10.png',
+            price: '9.90',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Essential Oils',
+            id: '145088023',
+            category_id: 14,
+            subcategory_id: 508
+        },
+        {
+            brand: 'Florascent Parfumers',
+            name: 'Quarzazate',
+            subtitle: 'Eau de Toilette',
+            details: `TOP: Frankincense, cypress.
+            HEART: allspice, mint, saffron.
+            BASE: resinous notes, vetiver, black tea
+            
+            
+            * Hypoallergenic ~ ideal for sensitive skins.
+            * Florascent use natural essential oils rather than synthetics.
+            * Florascent perfumes are phthalate free.
+            * Florascent perfumes  do NOT contain animal Musk / Nitromusk compounds.
+            * Florascent perfumes do NOT test on animals.
+            * Florascent perfumes do NOT use preservatives or artificial colours.
+            * Florascent perfumes contain exclusively herbal components.
+            * Suitable for Vegans.`,
+            usage: `Ideally, spray in the air and walk through the cloud of your perfume mist..
+            The amount of perfume that will fall into your hair and clothes is ideal for a soft and discrit result.
+             
+            Spray your perfume onto your "pulse points." These points are places where blood vessels are close to the skin such as collarbones, knees, necklines. There is extra heat at these points, and fragrances need time and the warmth of your body to reveal.
+             
+            Never rub your fragrance because you will destroy its top notes and alter its identity aroma.
+            Spray on the prefered points of your body, dab 2-3 times and let your skin to absorb it.`,
+            ingredients: `ALCOHOL, AQUA (WATER), PARFUM (FRAGRANCE), Limonene, Linalool, Citronellol, Geraniol, Coumarin, Citral, Eugenol, Benzyl benzoate, Cinnamyl alcohol, Benzyl alcohol, Anise alcohol, Benzyl salicylate, Isoeugenol, Benzyl cinnamate, Farnesol, Cinnamal, Evernia prunastri extract.
+
+            * Hypoallergenic ~ ideal for sensitive skins.
+            * Florascent use natural essential oils rather than synthetics.
+            * Florascent perfumes are phthalate free.
+            * Florascent perfumes  do NOT contain animal Musk / Nitromusk compounds.
+            * Florascent perfumes do NOT test on animals.
+            * Florascent perfumes do NOT use preservatives or artificial colours.
+            * Florascent perfumes contain exclusively herbal components.
+            * Suitable for Vegans.`,
+            skin: '',
+            value: '30ml',
+            src: 'quarzazate.png',
+            price: '49.00',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Perfumes',
+            id: '145098024',
+            category_id: 14,
+            subcategory_id: 509
+        },
+        {
+            brand: 'Laboratoire Altho',
+            name: 'Organic Respiratory Massage Oil',
+            subtitle: 'Indispensable for Winter!',
+            details: `100% natural and organic, made with organic essential oils.
+
+            This organic massage oil is bursting with the richness of nature, it holds the properties of the plants that we have carefully selected for their fine quality and influences on the body.
+            
+            Our ORGANIC RESPIRATORY massage oil is indispensable for winter.
+            
+            Its formula is rich in eucalyptus, mint, pine, and thyme essential oils to help decongest clogged airways and will also help to stop a cough.`,
+            usage: `Pour a few drops into the palm of one’s hand and apply to the thorax and back until the oil has been completely absorbed by the skin.`,
+            ingredients: `Eucalyptus, Sunflower , Thyme, Peppermint - Mentha spicata, Pine - Pinus,
+            Organic virgin plant/vegetable oils derived from sunflower and sesame. Eucalyptus globulus, wild mint, thyme, and maritime pine essential oils.`,
+            skin: '',
+            value: '200ml',
+            src: 'hm-respire.png',
+            price: '9.90',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Massage Oils',
+            id: '145108025',
+            category_id: 14,
+            subcategory_id: 510
+        },
+        {
+            brand: 'Laboratoire Altho',
+            name: 'Organic Virgin Sesame Oil',
+            subtitle: '100% Virgin and Pure, First Cold Press',
+            details: `100% pure and virgin, first cold press
+
+            Rejuvenating, revitalising, antioxidant and anti-ageing, this is an excellent oil for dry and irritated skin, as well as for caring for dry and damaged hair. 
+            
+            Its ability to deeply penetrate the skin makes it a great base for a massage oil. It is commonly used to dilute essential oils, acting as a vector for aromatic energies to soak into the skin. 
+            This oil can also be used as a natural makeup remover. 
+            
+            Sesame Seed Oil has been used as a healing oil for thousands of years in India and is a very popular oil in the practise of Ayurveda, the ancient Indian health system.
+            Sesame seed oil is high in Vitamin E, B complex vitamins, and the minerals calcium, magnesium and phosphorous.
+            It is naturally antibacterial and often used for common skin conditions such as common skin fungi and athlete's foot fungus. It is naturally antiviral and a natural anti inflammatory agent.
+            Sesame oil is a powerful antioxidant, high in polyunsaturated fats and an excellent source of vitamin E and minerals. It is widely used in Asian cooking, for taste and flavour.`,
+            usage: `Apply morning and evening to the skin.
+            In the kitchen, prefer a use in cold or in soft cooking to preserve its delicate spiciness`,
+            ingredients: `Sesame seed oil,
+            Sesamum indicum *
+            
+            * From organic culture.`,
+            skin: '',
+            value: '100ml',
+            src: 'hv-sesame.png',
+            price: '5.90',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Massage Oils',
+            id: '145108026',
+            category_id: 14,
+            subcategory_id: 510
+        },
+        {
+            brand: 'Laboratoire Altho',
+            name: 'MUSCULAIRE BIO',
+            subtitle: 'A Formula Rich in Essential Oils that have Proved Themselves Essential for Any Athlete!',
+            details: `100% natural and organic, made with organic essential oils.
+
+            This organic massage oil is bursting with the richness of nature, it holds the properties of the plants that we have carefully selected for their fine quality and influences on the body.
+            
+            Our ORGANIC MUSCLE massage oil is a formula rich in essential oils that have proved themselves essential for any athlete.
+            
+            It is ideal for preparing the muscles before exercise, to detox the muscle after exercise (thus avoiding contractures) and to ease pain related to impact and inflammations (tendinitis, joint pain, muscle tears).`,
+            usage: `Pour a few drops into the palm of one’s hand and apply to the entirety of the muscle or joint until the oil has been completely absorbed by the skin.`,
+            ingredients: `Juniper, Sunflower , Peppermint - Mentha spicata, Pine - Pinus,
+            Organic virgin plant/vegetable oils derived from sunflower and sesame. Juniper, wild mint, wintergreen, and maritime pine essential oils.`,
+            skin: '',
+            value: '200ml',
+            src: 'hm-musculaire.png',
+            price: '9.90',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Massage Oils',
+            id: '145108027',
+            category_id: 14,
+            subcategory_id: 510
         },
 
 
@@ -467,7 +737,88 @@ export const goodsArr = [
 
 
     ],
-
+    [
+        {
+            category: 'face',
+            category_id: 11,
+            src: 'face.jpg',
+            desc: `Certified Organic Beauty products for Face!
+            Choose among excellent organic day creams, moisturizing eye creams, organic facial serums, organic regenerating oils, organic facial cleansers, moisturizing mists and tonic lotions!
+            You may also find organic moisturizing and cleansing masks, organic facial peelings, anti-aging day creams, anti-aging night creams, anti-aging eye creams & regenerating facial seroums.
+            Moisturizing, Anti-aging, Tightening, Regenerating, Nourishing and Shining Natural Cosmetic products from companies with certified organic beauty products with valuable ingredients and herbs!
+            
+            Take care of any skin type with bio organic cosmetics!
+            Fight against expression lines, wrinkles under the eyes, dark circles around the eye area, blemishes, acne, dehydration of the skin, dryness, oily skin…`,
+            subcategories: [
+                {
+                    subcategory: 'face cleaners',
+                    subcategory_id: 501
+                },
+                {
+                    subcategory: 'anti-aiging',
+                    subcategory_id: 502
+                },
+                {
+                    subcategory: 'Night Creams',
+                    subcategory_id: 503
+                },
+            ]
+        },
+        {
+            category: 'body',
+            category_id: 12,
+            src:'body.jpg',
+            desc: `Maintain optimum skin health and radiance with our huge range of confidence inducing body care products from beauty essentials to pure pampering.`,
+            subcategories: [
+                {
+                    subcategory: 'shower gels',
+                    subcategory_id: 504
+                },
+                {
+                    subcategory: 'hand care',
+                    subcategory_id: 505
+                },
+            ]
+        },
+        {
+            category: 'hair',
+            category_id: 13,
+            src:'hair.jpg',
+            desc: `All hair care products are a blend of 100% natural and organic ingredients, enriched with organic essential oils and active natural ingredients to address the needs of specific hair types.`,
+            subcategories: [
+                {
+                    subcategory: 'shampoo',
+                    subcategory_id: 506
+                },
+                {
+                    subcategory: 'hair oils',
+                    subcategory_id: 507
+                },
+            ]
+        },
+        {
+            category: 'aromatherapy',
+            category_id: 14,
+            src:'aromatherapy.jpg',
+            desc: `Essential Oils are the heart and soul of everything we do.
+            Organicbrands supply only the finest, 100% pure aromatherapy grade essential oils, organic essential oils and absolutes.
+            We also stock a huge variety of therapeutic carrier oils, base oils, natural infusions and dilutions and aromatherapy kits for both professional aromatherapists and home enthusiasts.`,
+            subcategories: [
+                {
+                    subcategory: 'Essential Oils',
+                    subcategory_id: 508
+                },
+                {
+                    subcategory: 'Perfumes',
+                    subcategory_id: 509
+                },
+                {
+                    subcategory: 'Massage Oils',
+                    subcategory_id: 510
+                },
+            ]
+        },
+    ],
 
 
 

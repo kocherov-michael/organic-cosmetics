@@ -51,3 +51,7 @@ else if (location.pathname.includes('order.html')) {
     console.log('/order.html')
     const page = new OrderPage()
 }
+else {
+    console.log('else')
+    const page = new MainPage()
+}
