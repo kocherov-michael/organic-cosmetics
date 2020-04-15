@@ -1,11 +1,13 @@
 .category-main.container
     .category-main__header
         .category-header.row
-            .category-header__title(data-category-title).col-12 Body care
+            .category-header__title(data-category-title).col-12 
+                //- | Body care
             .category-header__picture.col-lg-5
                 //- img.category-header__img(src="./assets/img/goods/make-up-1.png" data-category-bg)
                 img.category-header__img(src="" data-category-bg)
-            .category-header__desc(data-category-desc).col-lg-6 Our company advocates the postulate that the health is the biggest value in our lives. The point is that science and nature are easily combined in products that we are glad to offer you today. Our goal is to help you stay healthy as well as gorgeous at the same time. Soon you’ll discover how it is possible to use organic cosmetics for your body.
+            .category-header__desc(data-category-desc).col-lg-6 
+                //- p Our company advocates the postulate that the health is the biggest value in our lives. The point is that science and nature are easily combined in products that we are glad to offer you today. Our goal is to help you stay healthy as well as gorgeous at the same time. Soon you’ll discover how it is possible to use organic cosmetics for your body.
     .category-main__options
         .category-options.row
             .col-4
@@ -15,76 +17,23 @@
 
             .category-options__grid.col-4
     .category-main__grid
-        .category-grid.row
-            .category-grid__card.col-6.col-md-4.col-lg-3
-                +goodCard({
-                    src: "./assets/img/goods/make-up-1.png",
-                    new: true, 
-                    sale: true, 
-                    group: "Make-up",
-                    title: "Container is Perfect for Essential Oils",
-                    price: "8.00 $",
-                    })
-            .category-grid__card.col-6.col-md-4.col-lg-3
-                +goodCard({
-                    src: "./assets/img/goods/make-up-1.png",
-                    new: true, 
-                    sale: true, 
-                    group: "Make-up",
-                    title: "Container is Perfect for Essential Oils",
-                    price: "8.00 $",
-                    })
-            .category-grid__card.col-6.col-md-4.col-lg-3
-                +goodCard({
-                    src: "./assets/img/goods/make-up-1.png",
-                    new: true, 
-                    sale: true, 
-                    group: "Make-up",
-                    title: "Container is Perfect for Essential Oils",
-                    price: "8.00 $",
-                    })
-            .category-grid__card.col-6.col-md-4.col-lg-3
-                +goodCard({
-                    src: "./assets/img/goods/make-up-1.png",
-                    new: true, 
-                    sale: true, 
-                    group: "Make-up",
-                    title: "Container is Perfect for Essential Oils",
-                    price: "8.00 $",
-                    })
-            .category-grid__card.col-6.col-md-4.col-lg-3
-                +goodCard({
-                    src: "./assets/img/goods/make-up-1.png",
-                    new: true, 
-                    sale: true, 
-                    group: "Make-up",
-                    title: "Container is Perfect for Essential Oils",
-                    price: "8.00 $",
-                    })
-            .category-grid__card.col-6.col-md-4.col-lg-3
-                +goodCard({
-                    src: "./assets/img/goods/make-up-1.png",
-                    new: true, 
-                    sale: true, 
-                    group: "Make-up",
-                    title: "Container is Perfect for Essential Oils",
-                    price: "8.00 $",
-                    })
-            .category-grid__card.col-6.col-md-4.col-lg-3
-                +goodCard({
-                    src: "./assets/img/goods/make-up-1.png",
-                    new: true, 
-                    sale: true, 
-                    group: "Make-up",
-                    title: "Container is Perfect for Essential Oils",
-                    price: "8.00 $",
-                    })
-            .category-grid__card.col-6.col-md-4.col-lg-3
-                +goodCard({
-                    src: "./assets/img/goods/make-up-1.png",
-                    new: true, 
-                    sale: true, 
-                    group: "Make-up",
-                    title: "Container is Perfect for Essential Oils",
-                    price: "8.00 $",
-                    })
+        .category-grid.row(data-category-grid)
+            //- .category-grid__card.col-6.col-md-4.col-lg-3
+            //-     +goodCard({
+            //-         src: "./assets/img/goods/make-up-1.png",
+            //-         new: true, 
+            //-         sale: true, 
+            //-         group: "Make-up",
+            //-         title: "Container is Perfect for Essential Oils",
+            //-         price: "8.00 $",
+            //-         })
+            //- .category-grid__card.col-6.col-md-4.col-lg-3
+            //-     +goodCard({
+            //-         src: "./assets/img/goods/make-up-1.png",
+            //-         new: true, 
+            //-         sale: true, 
+            //-         group: "Make-up",
+            //-         title: "Container is Perfect for Essential Oils",
+            //-         price: "8.00 $",
+            //-         })
+            
