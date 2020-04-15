@@ -745,10 +745,11 @@ export const goodsArr = [
 
 
 
-    
+
     [
         {
             category: 'face',
+            title: 'Face care',
             category_id: 11,
             src: 'face.jpg',
             desc: `Certified Organic Beauty products for Face!
@@ -775,6 +776,7 @@ export const goodsArr = [
         },
         {
             category: 'body',
+            title: 'Body care',
             category_id: 12,
             src:'body.jpg',
             desc: `Maintain optimum skin health and radiance with our huge range of confidence inducing body care products from beauty essentials to pure pampering.`,
@@ -791,6 +793,7 @@ export const goodsArr = [
         },
         {
             category: 'hair',
+            title: 'Hair care',
             category_id: 13,
             src:'hair.jpg',
             desc: `All hair care products are a blend of 100% natural and organic ingredients, enriched with organic essential oils and active natural ingredients to address the needs of specific hair types.`,
@@ -807,6 +810,7 @@ export const goodsArr = [
         },
         {
             category: 'aromatherapy',
+            title: 'Aromatherapy',
             category_id: 14,
             src:'aromatherapy.jpg',
             desc: `Essential Oils are the heart and soul of everything we do.

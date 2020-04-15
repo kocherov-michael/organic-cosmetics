@@ -24,9 +24,10 @@ import './../blocks/footer-contacts/footer-contacts.js'
 import './../blocks/footer-socials/footer-socials.js'
 import MainPage from './MainPage.js'
 import CartPage from './CartPage.js'
+import CategoryPage from './CategoryPage.js'
 
-console.log(location)
-console.log(location.pathname)
+// console.log(location)
+// console.log(location.pathname)
 if (location.pathname.includes('index.html')) {
     console.log('/index.html')
     const page = new MainPage()
@@ -43,7 +44,7 @@ else if (location.pathname.includes('product.html')) {
     console.log('/product.html')
     const page = new ProductPage()
 }
-else if (location.pathname.includes('category.html')) {
+else if (location.pathname.includes('category')) {
     console.log('/category.html')
     const page = new CategoryPage()
 }
