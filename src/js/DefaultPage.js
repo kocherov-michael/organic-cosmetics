@@ -151,7 +151,7 @@ export default class DefaultPage {
         // const subTitleElement = cardElement.querySelector('[data-success-card-subtitle]')
         const priceElement = cardElement.querySelector('[data-success-card-price]')
         const quantityElement = cardElement.querySelector('[data-success-card-quantity]')
-        // const addToCartButtonElement = cardElement.querySelector('[data-success-card-to-cart]')
+        const cartLengthElement = cardElement.querySelector('[data-sussec-card-cart-length]')
         const sizeElement = cardElement.querySelector('[data-success-card-size]')
         const skinElement = cardElement.querySelector('[data-success-card-skin]')
 
@@ -163,6 +163,7 @@ export default class DefaultPage {
         titleElement.innerText = productObj.name
         quantityElement.innerText = goodsObj.quantity
         priceElement.innerText = productObj.price
+        cartLengthElement.innerText = this.cart.length
         // oldpriceElement.innerText = goodsObj.oldprice !== 'undefined' ? goodsObj.oldprice  : ''
         // addToCartButtonElement.setAttribute('data-big-card-to-cart', goodsObj.id)
         sizeElement.innerText = productObj.value
