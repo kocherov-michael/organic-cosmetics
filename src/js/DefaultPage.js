@@ -34,27 +34,35 @@ export default class DefaultPage {
         
                     // показываем попап карточку
                     wrapperElement.classList.add('big-card-wrapper--translate')
+                    wrapperElement.classList.add('big-card-wrapper--show-card')
+                    wrapperElement.classList.add('big-card-wrapper--opacity-1')
                     setTimeout(() => {
                         wrapperElement.classList.add('big-card-wrapper--transition-none')
                         wrapperElement.style = `top: ${pageYOffset}px;`
                         document.body.style = 'overflow: hidden; padding-right: 18px;'
                         wrapperElement.classList.add('big-card-wrapper--show')
+                        setTimeout(() => {
+                            wrapperElement.classList.remove('big-card-wrapper--transition-none')
+            
+                        },40)
                     },400)
                 })
             }
         
             // прослушка крестика закрытия попап карточки
             closeElement.addEventListener('click', () => {
-                document.body.style = ''
-                wrapperElement.style = ''
-                wrapperElement.classList.remove('big-card-wrapper--show')
+                wrapperElement.classList.remove('big-card-wrapper--show-card')
+                wrapperElement.classList.remove('big-card-wrapper--opacity-1')
+                
                 setTimeout(() => {
-                    wrapperElement.classList.remove('big-card-wrapper--transition-none')
+
+                    document.body.style = ''
+                    wrapperElement.style = ''
+                    wrapperElement.classList.remove('big-card-wrapper--show')
                     setTimeout(() => {
                         wrapperElement.classList.remove('big-card-wrapper--translate')
-        
                     },40)
-                },40)
+                }, 400)
             })
         }
     }
@@ -87,6 +95,7 @@ export default class DefaultPage {
     // прослушка кнопки добавления в корзину
     listenAddCartButton() {
         const addToCartButtonElement = document.querySelectorAll('[data-big-card-to-cart]')
+        const wrapperElement = document.querySelector('[data-big-card-wrapper]')
 
         addToCartButtonElement.forEach((button) => {
             const cardElement = button.closest('[data-big-card]')
@@ -99,7 +108,21 @@ export default class DefaultPage {
                 const obj = { id, quantity }
                 console.log(obj)
                 this.addToCart(obj)
-        })
+                // убираем окошко
+                
+                wrapperElement.classList.remove('big-card-wrapper--show-card')
+                wrapperElement.classList.remove('big-card-wrapper--opacity-1')
+                
+                setTimeout(() => {
+
+                    document.body.style = ''
+                    wrapperElement.style = ''
+                    wrapperElement.classList.remove('big-card-wrapper--show')
+                    setTimeout(() => {
+                        wrapperElement.classList.remove('big-card-wrapper--translate')
+                    },40)
+                }, 400)
+            })
         // console.log(addToCartButtonElement)
         })
 
@@ -166,7 +189,7 @@ export default class DefaultPage {
                     innerElement +=
                     `<div class="cart-thumb">
                         <div class="cart-thumb__main"><img class="cart-thumb__img" src="./assets/img/goods/${this.goodsArr[j].src}" data-cart-thumb-card-img="">
-                        <div class="cart-thumb__desc"><a class="cart-thumb__title" href="product.html">${this.goodsArr[j].name}</a>
+                        <div class="cart-thumb__desc"><a class="cart-thumb__title" href="product.html?id=${this.goodsArr[j].id}">${this.goodsArr[j].name}</a>
                             <div class="cart-thumb__close"><i class="zmdi zmdi-close" data-thumb-remove="${this.goodsArr[j].id}"></i></div>
                             <div class="card-thumb__price">${this.goodsArr[j].price} $</div>
                             <div class="card-thumb__info">${this.goodsArr[j].value}, Skin type: ${this.goodsArr[j].skin}</div>

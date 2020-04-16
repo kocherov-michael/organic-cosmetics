@@ -14,17 +14,35 @@
     z-index: 100;
     padding: 30px 10px;
     transform: translateY(-100%);
-    transition: all .4s ease;
+    // transition: all .4s ease;
+    transition: opacity .4s ease;
     // добавить, когда показывается карточка
     overflow-y: hidden;
+
+    .big-card {
+        transition: all .4s ease;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
     &--show {
         position: absolute;
         overflow-y: scroll;
         min-height: 100vh;
         // top: 0;
     }
-    &--translate {
+    &--show-card {
+
+        .big-card {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    &--opacity-1 {
+
         opacity: 1;
+    }
+    &--translate {
         transform: translateY(0);
     }
     &--transition-none {
