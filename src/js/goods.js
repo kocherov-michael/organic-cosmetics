@@ -731,6 +731,168 @@ export const goodsArr = [
             category_id: 14,
             subcategory_id: 510
         },
+        {
+            brand: 'Lavera',
+            name: 'Mineral Compact Powder',
+            subtitle: 'No.1 - Ivory. This powder provides the perfect finish for use at home and on the go.',
+            details: `The lavera Mineral Compact Powder gives the perfect matte finish for every occasion.
+
+            Subtle colour pigments fix your concealer and foundation;
+            
+            its texture with light-reflecting minerals freshens up the complexion, eliminating blemishes and shine.
+            
+            This powder provides the perfect finish for use at home and on the go.`,
+            usage: `Take some powder on a large brush, tap the brush lightly against your hand to get rid of any excess powder and then apply to the face.
+            For combination skin, apply the powder to the whole face.
+            For dry skin, only use on the T-zone (forehead, nose, chin).`,
+            ingredients: `Simmondsia Chinensis (Jojoba) Seed Oil*, Magnesium Stearate, Silica, Tricaprylin, Argania Spinosa Kernel Oil*, Vegetable Oil (Olus Oil), Butyrospermum Parkii (Shea Butter)*, Theobroma Cacao (Cocoa) Seed Butter*, Cocos Nucifera (Coconut) Oil*, Hippophae Rhamnoides Fruit Extract*, Olea Europaea (Olive) Fruit Oil*, Glycyrrhiza Glabra (Licorice) Root Extract*, Rosa Centifolia Flower Extract*, Malva Sylvestris (Mallow) Flower Extract*, Tilia Cordata Flower Extract*, Hydrogenated Lecithin, Camelina Sativa Seed Oil, Tocopherol, Helianthus Annuus (Sunflower) Seed Oil, Ascorbyl Palmitate, Alcohol*, Water (Aqua), Fragrance (Parfum)**, Limonene**, Geraniol**, Linalool**, Citronellol**, Citral**, Benzyl Benzoate**, [+/- Mica (CI 77019), Titanium Dioxide (CI 77891), Iron Oxide (CI 77491), Iron Oxide (CI 77492), Iron Oxide (CI 77499)]`,
+            skin: '',
+            value: '7gr',
+            src: 'charming-rose.png',
+            price: '8.91',
+            oldprice: '',
+            category: 'makeup',
+            subcategory: 'Face Powder',
+            id: '155118028',
+            category_id: 15,
+            subcategory_id: 511
+        },
+        {
+            brand: 'Baims Organic MakeUp',
+            name: 'Mineral Pressed Powder 20 Medium',
+            subtitle: 'Its ultra-light formulation provides a satin finish with long duration.',
+            details: `Mineral Make-Up
+            100% natural
+            Certified organic
+            Not tested on animals
+            Vegan
+           
+        
+            Reduces excessive shine of the skin without leaving a heavy or matte appearance.
+            The vegetable actives like Buriti and Pongamia-Oil nourish the skin and prevent the skin from drying out.
+            Here is where design meets sustainability: unique bamboo packaging with refill function, all mineral powders are available as refill.`,
+            usage: `Apply a fine layer with the appropriate brush on the face or the oilier part like the T-zone (forehead, nose and chin)
+ 
+            Hints: Great mineral foundation for oily skin. For fixing the make-up you can use it before or after applying our Fluid Foundation Excellent Skin.`,
+            ingredients: `MICA, ZEA MAYS (CORN) STARCH*, ZINC STEARATE, SQUALANE, TOCOPHEROL (VITAMINE E NATURAL), GLYCERYL CAPRYLATE, LAUROYL LYSINE, CAPRYLIC/CAPRIC TRIGLYCERIDE**, LAURYL OLIVATE, ORBIGNYA OLEIFERA (BABASSU) SEED OIL*, EUTERPE OLERACEA FRUIT OIL*, PENTACLETHRA MACROLOBA SEED OIL*, MAURITIA FLEXUOSA FRUIT OIL*, MACADAMIA TERNIFOLIA SEED OIL*, BUTYROSPERMUM PARKII (SHEA) BUTTER*, PRUNUS ARMENIACA (APRICOT) KERNEL OIL*, PERSEA GRATISSIMA (AVOCADO) OIL*, PONGAMIA GLABRA SEED OIL, SILICA,  HELIANTHUS ANNUUS SEED FLOUR`,
+            skin: '',
+            value: '9gr',
+            src: 'mineral-powder.png',
+            price: '24.00',
+            oldprice: '',
+            category: 'makeup',
+            subcategory: 'Face Powder',
+            id: '155118029',
+            category_id: 15,
+            subcategory_id: 511
+        },
+        {
+            brand: 'Avril Certified Organic',
+            name: 'Compact Powder - Clair',
+            subtitle: 'Skin Finish for Light Skin Shades!',
+            details: `To all women looking for a unified, natural and radiant complexion:
+            Avril’s compact powder is made for you!
+            
+            It unifies your complexion and leaves your face illuminated, smooth and soft.
+            It seduces you with its wonderful cashmere touch!
+            
+            For a transparent and bright finish, adopt Avril’s certified organic compact powder.
+            
+            Skin finish 
+            Soft and silky powder
+            For every skin type
+            Paraben free
+            Phenoxyethanol free
+            Potassium sorbate free`,
+            usage: `Apply a fine layer with the appropriate brush on the face or the oilier part like the T-zone (forehead, nose and chin)
+ 
+            Hints: Great mineral foundation for oily skin. For fixing the make-up you can use it before or after applying our Fluid Foundation Excellent Skin.`,
+            ingredients: `Talc, Triticum vulgare starch and triticum vulgare wheat starch, Mica, Lauroyl Lysine, Caprylic/Capric Triglyceride, Zinc Stearate, Squalane,  Dicaprylyl Carbonate, Glyceryl Caprylate, Magnesium Silicate, Silica, CI 77891, Dehydroacetic Acid, CI 77492, CI 77491, CI 77492.
+            * Ingredients from organic farming.
+            
+            99,63% of all plant-based ingredients in the formula
+            12,25% of all ingredients come from organic farming.`,
+            skin: '',
+            value: '7gr',
+            src: 'compact-powder.png',
+            price: '8.90',
+            oldprice: '',
+            category: 'makeup',
+            subcategory: 'Face Powder',
+            id: '155118030',
+            category_id: 15,
+            subcategory_id: 511
+        },
+        {
+            brand: 'Lavera',
+            name: 'Beautiful Lips Colour Intense',
+            subtitle: 'No.32 - Pink Orchid',
+            details: `The Colour Intense Lipstick gives your lips breathtaking colour, thanks to high-quality pigments - the classic lipstick for every occasion.
+
+            Organic rose, mallow and lime blossom provide gentle, calming protection for your lips, and the light, creamy formula is comfortable to wear and gives a silky smooth finish.`,
+            usage: `To draw your mouth perfectly, start in the centre and move towards the outside. 
+            Use a lip brush for more precision, draw the outline first and end with the heart of the lips.`,
+            ingredients: `Ricinus Communis (Castor) Seed Oil*, Copernicia Cerifera (Carnauba) Wax*, Rhus Verniciflua Peel Wax, Euphorbia Cerifera (Candelilla) Wax, Simmondsia Chinensis (Jojoba) Seed Oil*, Butyrospermum Parkii (Shea Butter)*, Cocos Nucifera (Coconut) Oil*, Theobroma Cacao(Cocoa) Seed Butter*, Prunus Amygdalus Dulcis (Sweet Almond) Oil*, Olea Europaea (Olive) Fruit Oil*, Argania Spinosa Kernel Oil*, Dipotassium Glycyrrhizate, Hippophae Rhamnoides Fruit Extract*, Malva Sylvestris (Mallow) Flower Extract*, Tilia Cordata Flower Extract*, Rosa Centifolia Flower Extract*, Tocopherol, Helianthus Annuus (Sunflower) Seed Oil, Ascorbyl Palmitate, Alcohol*, Water (Aqua), Flavor (Aroma)(), Limonene**, [+/-Titanium Dioxide (CI77891), Carmine (CI 75470), Mica (CI 77019), Iron Oxide (CI 77491), Iron Oxide (CI 77492), Iron Oxide (CI 77499), Bismuth Oxychloride (CI 77163), Silica, Tin Oxide (CI 77861), Ultramarines (CI 77007)]
+
+            `,
+            skin: '',
+            value: '4.5gr',
+            src: 'lipstick-lavera.png',
+            price: '8.50',
+            oldprice: '',
+            category: 'makeup',
+            subcategory: 'Lip Stick',
+            id: '155128031',
+            category_id: 15,
+            subcategory_id: 512
+        },
+        {
+            brand: 'Baims Organic MakeUp',
+            name: 'Lipstick 20 Guava',
+            subtitle: 'Creamy, hydrating and nourishing formulation, 100% natural',
+            details: `Creamy, hydrating and nourishing formulation, 100% natural
+            Contains vegetable oils of açaí, babaçu and buriti which leave your lips much softer and deeply hydrated. 
+            The extract of the apricot kernel with its hydrating and firming effects contribute to the long durability of the lipstick`,
+            usage: `Using the Lip Brush, apply the Lipstick within the line drawn with the lip pencil.`,
+            ingredients: `RICINUS COMMUNIS SEED OIL*, PRUNUS ARMENIACA KERNEL EXTRACT, LAURYL OLIVATE, OLEIC/LINOLEIC/LINOLENIC POLYGLYCERIDES, CAPRYLIC/CAPRIC TRIGLYCERIDE**, HYDROGENATED OLIVE OIL STEARYL ESTERS**, CRAMBE ABYSSINICA SEED OIL PHYTOSTEROL ESTERS, PARFUM, HELIANTHUS ANNUUS SEED OIL, ORBIGNYA OLEIFERA SEED OIL*, PENTACLETHRA MACROLOBA SEED OIL*, MAURITIA FLEXUOSA FRUIT OIL*, EUTERPE OLERACEA FRUIT OIL*, ROSMARINUS OFFICINALIS LEAF EXTRACT, TOCOPHEROL, HELIANTHUS ANNUUS SEED FLOUR
+
+            May contain: CI 77891 (TITANIUM DIOXIDE), CI 77491 (IRON OXIDES), CI 77492 (IRON OXIDES), CI 77499 (IRON OXIDES), CI 77510 (FERRIC FERROCYANIDE), CI 77007 (ULTRAMARINES), CI 77742 (MANGANESE VIOLET), CI 77019 (MICA)`,
+            skin: '',
+            value: '4gr',
+            src: 'lipstick-guava.png',
+            price: '20.00',
+            oldprice: '',
+            category: 'makeup',
+            subcategory: 'Lip Stick',
+            id: '155128032',
+            category_id: 15,
+            subcategory_id: 512
+        },
+        {
+            brand: 'Soul Tree',
+            name: 'Lipstick Iced Plum 520',
+            subtitle: 'For lips that will make heads turn!',
+            details: `This beautiful lipstick not only ensure beautiful-looking lips, but also supplies the skin moisture and regenerating care. It is available in a variety of shades. The lipsticks contain no parabens, artificial fragrances or dyes.
+
+
+            Organic ghee for its healing, moisturising and lightening effects, wild honey for softening and sweet almond for revitalising and nourishment, make this lipstick a perfect way to give your lips a vibrant dash of colour. It has no synthetic colours, fragrances or preservatives.`,
+            usage: `Apply a thin layer to the lips and add layers depending on the colour intensity that you would like to achieve.
+
+            Note:
+            Although all Soul Tree products are made in a natural way, we recommend reading the label to ensure that you are not allergic to any of the individual components listed.`,
+            ingredients: `Sweet almond oil, Honey - mel, Ghee,
+            Butyrum (clarified butter) [1]Ricinus Communis (Castor) Oil [1]Isoamyl LaurateSorbitan OlivatePrunus Dulcis Oil [1]Euphorbia Cerifera Cera (Candelilla Wax) ExtractCopernica Cerifera (Carnauba) WaxCera Alba (White Beeswax) ExtractTheobroma Cacao (Cocoa) ButterCoco Caprylate/ CaprateTocopherolRosa Damascena OilCetyl PalmitatePerfume (Fragrance) [2]Limonene [2]LinaloolGeraniol [2]Citronellol [2]May Contain (+/-): Ci 77491 (Iron Oxide)Ci 77492 (Iron Oxides)Ci 77499 (Iron Oxide)Ci 77742 (Manganese Violet)Ci 77019 (Mica)Ci 77891 (Titanium Dioxide)Ci 77007 (Ultramarines)`,
+            skin: '',
+            value: '4.5gr',
+            src: 'lipstick-iced-plum.png',
+            price: '14.90',
+            oldprice: '',
+            category: 'makeup',
+            subcategory: 'Lip Stick',
+            id: '155128033',
+            category_id: 15,
+            subcategory_id: 512
+        },
 
 
 
@@ -828,6 +990,23 @@ export const goodsArr = [
                 {
                     subcategory: 'Massage Oils',
                     subcategory_id: 510
+                },
+            ]
+        },
+        {
+            category: 'makeup',
+            title: 'Organic make up',
+            category_id: 15,
+            src:'makeup.jpg',
+            desc: `Express your individuality with a look that is unique to you with flawless looking make-up.`,
+            subcategories: [
+                {
+                    subcategory: 'Face Powder',
+                    subcategory_id: 511
+                },
+                {
+                    subcategory: 'Lip Stick',
+                    subcategory_id: 512
                 },
             ]
         },
