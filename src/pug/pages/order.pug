@@ -1,23 +1,14 @@
 extends ../layout/page.pug
 
 block variables
-    - var title = 'Cart';
+    - var title = 'Order';
 
 block content
-    include ../../blocks/big-card-wrapper/big-card-wrapper.pug
     include ../includes/header.pug
-        //- +path({main: 'Home', subdir: 'Make-Up'})
     .order-content.container
         .row
             .col-12.col-md-7.col-lg-8
                 include ../../blocks/order-main/order-main.pug
             .col-12.col-md-5.col-lg-4
                 include ../../blocks/order-aside/order-aside.pug
-    //- include ../includes/product-page-card.pug
-    //- include ../includes/cart-goods.pug
-    //- include ../includes/cart-total.pug
-    //- include ../../blocks/catr-/banner.pug
-    //- .middle.container
-        img(src="./assets/img/bg/bg-middle.jpg", alt="").medium__img
-    //- include ../includes/skin-care.pug
     include ../includes/footer.pug

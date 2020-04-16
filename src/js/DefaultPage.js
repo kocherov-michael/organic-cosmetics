@@ -13,10 +13,10 @@ export default class DefaultPage {
         const goodCardButtonsList = document.querySelectorAll('[data-card-look]')
         if (goodCardButtonsList.length > 0) {
 
-            const wrapperElement = document.querySelector('[data-big-card-wrapper]')
+            // элемениы закрывания попап карточек
             const closeElement = document.querySelector('[data-card-close]')
-            // console.log(wrapperElement)
-        
+            const closeSuccessElements = document.querySelectorAll('[data-success-card-close]')
+
             for(let i = 0; i < goodCardButtonsList.length; i++) {
         
                 goodCardButtonsList[i].addEventListener('click', () => {
@@ -39,6 +39,12 @@ export default class DefaultPage {
             // прослушка крестика закрытия попап карточки
             closeElement.addEventListener('click', () => {
                 this.hidePopUp('.big-card-wrapper')
+            })
+            // прослушка крестика и кнопки закрытия карточки успеха добавления в корзину
+            closeSuccessElements.forEach((closeElement)=> {
+                closeElement.addEventListener('click', () => {
+                    this.hidePopUp('.success-card-wrapper')
+                })
             })
         }
     }
@@ -73,16 +79,16 @@ export default class DefaultPage {
         // удаляем точку у класса
         selector = selector.slice(1)
         console.log(selector + '--translate')
-        wrapperElement.classList.remove('big-card-wrapper--show-card')
-        wrapperElement.classList.remove('big-card-wrapper--opacity-1')
+        wrapperElement.classList.remove(selector +'--show-card')
+        wrapperElement.classList.remove(selector +'--opacity-1')
         
         setTimeout(() => {
 
             document.body.style = ''
             wrapperElement.style = ''
-            wrapperElement.classList.remove('big-card-wrapper--show')
+            wrapperElement.classList.remove(selector +'--show')
             setTimeout(() => {
-                wrapperElement.classList.remove('big-card-wrapper--translate')
+                wrapperElement.classList.remove(selector +'--translate')
             },40)
         }, 400)
     }
@@ -132,9 +138,35 @@ export default class DefaultPage {
                 this.hidePopUp('.big-card-wrapper')
                 // показываем окошко успеха добавления в корзину
                 this.showPopUp('.success-card-wrapper', 400)
-
+                this.fillSuccessCard(obj, '.success-card-wrapper')
             })
         })
+    }
+
+    // заполнить карточку об успешном добавлении в корзину
+    fillSuccessCard(goodsObj, cardSelector) {
+        const cardElement = document.querySelector(cardSelector)
+        const imgElement = cardElement.querySelector('[data-success-card-img]')
+        const titleElement = cardElement.querySelector('[data-success-card-title]')
+        // const subTitleElement = cardElement.querySelector('[data-success-card-subtitle]')
+        const priceElement = cardElement.querySelector('[data-success-card-price]')
+        const quantityElement = cardElement.querySelector('[data-success-card-quantity]')
+        // const addToCartButtonElement = cardElement.querySelector('[data-success-card-to-cart]')
+        const sizeElement = cardElement.querySelector('[data-success-card-size]')
+        const skinElement = cardElement.querySelector('[data-success-card-skin]')
+
+        // получаем все данные о товаре
+        const productObj = this.getProductObj(goodsObj.id)
+        // console.log(productObj)
+
+        imgElement.src = './assets/img/goods/' + productObj.src
+        titleElement.innerText = productObj.name
+        quantityElement.innerText = goodsObj.quantity
+        priceElement.innerText = productObj.price
+        // oldpriceElement.innerText = goodsObj.oldprice !== 'undefined' ? goodsObj.oldprice  : ''
+        // addToCartButtonElement.setAttribute('data-big-card-to-cart', goodsObj.id)
+        sizeElement.innerText = productObj.value
+        skinElement.innerText = productObj.skin
     }
 
     // добавление в корзину
@@ -299,6 +331,16 @@ export default class DefaultPage {
         document.querySelectorAll('[data-amount-total]').forEach((elem) => {
             elem.textContent = Math.round(summ * 105) / 100
         })
+    }
+
+    // получить объект продукта по id
+    getProductObj(id) {
+        // console.log(this.goodsArr)
+        for ( let i = 0; i < this.goodsArr.length; i++ ) {
+            if (this.goodsArr[i].id == id) {
+                return this.goodsArr[i]
+            }
+        }
     }
 
     // получаем Значение key из get-запроса

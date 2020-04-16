@@ -8,7 +8,7 @@
                     .success-header__text Product successfully added to your shopping cart
 
                     .success-header__img-wrapper
-                        img.success-header__img(src="./assets/img/goods/make-up-1.png" data-success-card-img)
+                        img.success-header__img(src="./assets/img/placeholder/noimage.png" data-success-card-img)
                     .success-header__title(data-success-card-title) Organics Thickening Shampoo
                     .success-header__info
                         .success-header__info-elem(data-success-card-size) Size: 125ml
@@ -17,7 +17,7 @@
                         .success-result
                             .success-result__string
                                 .success-result__string-text Quantity 
-                                .success-result__string-value(data-success-card-price) 1
+                                .success-result__string-value(data-success-card-quantity) 1
                             .success-result__string
                                 .success-result__string-text Total:
                                 .success-result__string-value(data-success-card-price) $7,68
@@ -33,16 +33,22 @@
                     .success-main__result.success-result
                         .success-result__string
                             .success-result__string-text 3 ITEMS
-                            .success-result__string-value $55.80
+                            .success-result__string-value 
+                                span $
+                                span(data-amount-summ) 55.80
                         .success-result__string
                             .success-result__string-text SHIPPING
                             .success-result__string-value FREE
                         .success-result__string
                             .success-result__string-text TAXES
-                            .success-result__string-value $2.23
+                            .success-result__string-value 
+                                span $
+                                span(data-amount-tax) 2.23
                         .success-result__string
                             .success-result__string-text TOTAL (TAX EXCL.)
-                            .success-result__string-value $55.80
+                            .success-result__string-value 
+                                span $
+                                span(data-amount-total) 55.80
                     
                     .success-main__buttons
                         .success-main__button-item
@@ -50,9 +56,10 @@
                                 text: "Continue shopping",
                                 icon: false,
                                 color: "tertiary"
-                                })(data-success-card-exit)
+                                })(data-success-card-close)
                         .success-main__button-item
                             +button({
+                                href:'cart.html',
                                 text: "Proceed to checkout",
                                 icon: false,
                                 color: "secondary"
