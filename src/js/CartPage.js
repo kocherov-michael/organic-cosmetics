@@ -79,7 +79,7 @@ export default class CartPage extends DefaultPage {
         }
     }
 
-    // 
+    // прослушка изменения инпута
     quantityInputListener() {
         // console.log(this.cart)
         const inputList = document.querySelectorAll('[data-input-value]')

@@ -8,10 +8,11 @@
 
 .cart-thumb__img {
     width: 75px;
-    height: 75px;
+    // height: 75px;
     padding: 5px;
     background-color: $card-background-color;
     flex: 0 0 75px;
+    object-fit: contain;
 }
 
 .cart-thumb__desc {

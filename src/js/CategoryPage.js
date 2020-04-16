@@ -10,7 +10,8 @@ export default class CategoryPage extends DefaultPage {
         // super.showCartLength()
         // super.fillCartCard()
         // this.fillCartPage()
-        this.categoryId = this.getCategoryId()
+        // this.categoryId = this.getCategoryId()
+        this.categoryId = DefaultPage.getGetKey('category_id')
         this.categoryObj = this.getCategoryObj()
         // массив с товарами выбранной категории
         this.categoryGoodsArr = this.getCategoryGoods()

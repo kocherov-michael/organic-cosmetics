@@ -22,9 +22,15 @@ export default class DefaultPage {
                 goodCardButtonsList[i].addEventListener('click', () => {
                     // получаем id товара
                     const goodsId = goodCardButtonsList[i].getAttribute('data-card-look')
+                    for ( let i = 0; i < this.goodsArr.length; i++ ) {
+                        if (this.goodsArr[i].id == goodsId) {
+                            
+                            // заполняем попап карточку
+                            this.fillCard(this.goodsArr[i], '[data-big-card-wrapper]')
+                            break
+                        }
+                    }
 
-                    // заполняем попап карточку
-                    this.fillCard(goodsId)
         
                     // показываем попап карточку
                     wrapperElement.classList.add('big-card-wrapper--translate')
@@ -54,43 +60,47 @@ export default class DefaultPage {
     }
 
     // заполняем карточку информацией о товаре
-    fillCard(goodsId) {
+    fillCard(goodsObj, cardSelector) {
         // console.log(this.goodsArr)
-        const cardElement = document.querySelector('[data-big-card]')
+        const cardElement = document.querySelector(cardSelector)
         const imgElement = cardElement.querySelector('[data-big-card-img]')
         const titleElement = cardElement.querySelector('[data-big-card-title]')
         const subTitleElement = cardElement.querySelector('[data-big-card-subtitle]')
         const priceElement = cardElement.querySelector('[data-big-card-price]')
         const oldpriceElement = cardElement.querySelector('[data-big-card-oldprice]')
         const addToCartButtonElement = cardElement.querySelector('[data-big-card-to-cart]')
+        const sizeElement = cardElement.querySelector('[data-big-card-size]')
+        const skinElement = cardElement.querySelector('[data-big-card-skin]')
 
-        for ( let i = 0; i < this.goodsArr.length; i++ ) {
-            if (this.goodsArr[i].id == goodsId) {
                 
-                imgElement.src = './assets/img/goods/' + this.goodsArr[i].src
-                titleElement.innerText = this.goodsArr[i].name
-                subTitleElement.innerText = this.goodsArr[i].subtitle
-                priceElement.innerText = this.goodsArr[i].price
-                oldpriceElement.innerText = this.goodsArr[i].oldprice !== 'undefined' ? this.goodsArr[i].oldprice  : ''
-                addToCartButtonElement.setAttribute('data-big-card-to-cart', goodsId)
-                // this.addToCart()
-                break
-            }
-        }
+        imgElement.src = './assets/img/goods/' + goodsObj.src
+        titleElement.innerText = goodsObj.name
+        subTitleElement.innerText = goodsObj.subtitle
+        priceElement.innerText = goodsObj.price
+        oldpriceElement.innerText = goodsObj.oldprice !== 'undefined' ? goodsObj.oldprice  : ''
+        addToCartButtonElement.setAttribute('data-big-card-to-cart', goodsObj.id)
+        sizeElement.innerText = goodsObj.value
+        skinElement.innerText = goodsObj.skin
 
     }
 
     // прослушка кнопки добавления в корзину
     listenAddCartButton() {
-        const addToCartButtonElement = document.querySelector('[data-big-card-to-cart]')
-        const inputElement = document.querySelector('[data-big-card-count]')
+        const addToCartButtonElement = document.querySelectorAll('[data-big-card-to-cart]')
 
-        addToCartButtonElement.addEventListener('click', () => {
-            const id = +addToCartButtonElement.getAttribute('data-big-card-to-cart')
-            const quantity = +inputElement.value
-            const obj = { id, quantity }
-            // console.log(obj)
-            this.addToCart(obj)
+        addToCartButtonElement.forEach((button) => {
+            const cardElement = button.closest('[data-big-card]')
+            // cardElement.querySelector('[data-big-card-count]')
+            const inputElement = cardElement.querySelector('[data-big-card-count]')
+
+            button.addEventListener('click', () => {
+                const id = +button.getAttribute('data-big-card-to-cart')
+                const quantity = +inputElement.value
+                const obj = { id, quantity }
+                console.log(obj)
+                this.addToCart(obj)
+        })
+        // console.log(addToCartButtonElement)
         })
 
     }
@@ -257,5 +267,15 @@ export default class DefaultPage {
         document.querySelectorAll('[data-amount-total]').forEach((elem) => {
             elem.textContent = Math.round(summ * 105) / 100
         })
+    }
+
+    // получаем Значение key из get-запроса
+    static getGetKey(key) {
+        // const key = 'category_id'
+        // console.log(location.search)
+        const p = window.location.search;
+        const id = p.match(new RegExp(key + '=([^&=]+)'));
+        // console.log(id[1])
+        return id ? id[1] : false;
     }
 }

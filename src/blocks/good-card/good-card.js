@@ -45,14 +45,15 @@ if (location.pathname == "/product.html") {
 }
 // заполняем карточку информацией о товаре
 export function fillCard(obj) {
-    const cardElement = document.querySelector('[data-big-card]')
-    const imgElement = cardElement.querySelector('[data-big-card-img]')
-    const titleElement = cardElement.querySelector('[data-big-card-title]')
-    const priceElement = cardElement.querySelector('[data-big-card-price]')
-    const oldpriceElement = cardElement.querySelector('[data-big-card-oldprice]')
-
-    imgElement.src = obj.src
-    titleElement.innerText = obj.title
-    priceElement.innerText = obj.price
-    oldpriceElement.innerText = obj.oldprice !== 'undefined' ? obj.oldprice  : ''
+    // const cardElement = document.querySelector('[data-big-card-wrapper]')
+    // const imgElement = cardElement.querySelector('[data-big-card-img]')
+    // const titleElement = cardElement.querySelector('[data-big-card-title]')
+    // const priceElement = cardElement.querySelector('[data-big-card-price]')
+    // const oldpriceElement = cardElement.querySelector('[data-big-card-oldprice]')
+    // console.log(cardElement)
+    // console.log(imgElement)
+    // imgElement.src = obj.src
+    // titleElement.innerText = obj.title
+    // priceElement.innerText = obj.price
+    // oldpriceElement.innerText = obj.oldprice !== 'undefined' ? obj.oldprice  : ''
 }
