@@ -51,7 +51,7 @@
 }
 body {
     // добавить, когда показывается карточка
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 
@@ -143,8 +143,11 @@ body {
 
 .success-main__buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    @media (min-width: 576px) and (max-width: 767px) {
+        flex-direction: row;
+    }
     @media (min-width: 768px) {
         flex-direction: column;
         

@@ -31,40 +31,60 @@ export default class DefaultPage {
                         }
                     }
 
-        
                     // показываем попап карточку
-                    wrapperElement.classList.add('big-card-wrapper--translate')
-                    wrapperElement.classList.add('big-card-wrapper--show-card')
-                    wrapperElement.classList.add('big-card-wrapper--opacity-1')
-                    setTimeout(() => {
-                        wrapperElement.classList.add('big-card-wrapper--transition-none')
-                        wrapperElement.style = `top: ${pageYOffset}px;`
-                        document.body.style = 'overflow: hidden; padding-right: 18px;'
-                        wrapperElement.classList.add('big-card-wrapper--show')
-                        setTimeout(() => {
-                            wrapperElement.classList.remove('big-card-wrapper--transition-none')
-            
-                        },40)
-                    },400)
+                    this.showPopUp('.big-card-wrapper')
                 })
             }
         
             // прослушка крестика закрытия попап карточки
             closeElement.addEventListener('click', () => {
-                wrapperElement.classList.remove('big-card-wrapper--show-card')
-                wrapperElement.classList.remove('big-card-wrapper--opacity-1')
-                
-                setTimeout(() => {
-
-                    document.body.style = ''
-                    wrapperElement.style = ''
-                    wrapperElement.classList.remove('big-card-wrapper--show')
-                    setTimeout(() => {
-                        wrapperElement.classList.remove('big-card-wrapper--translate')
-                    },40)
-                }, 400)
+                this.hidePopUp('.big-card-wrapper')
             })
         }
+    }
+
+    // показать всплывающее окно
+    showPopUp(selector, timeout = 0) {
+        const wrapperElement = document.querySelector(selector)
+        // удаляем точку у класса
+        selector = selector.slice(1)
+        // console.log(selector + '--translate')
+        setTimeout(() => {
+            wrapperElement.classList.add(selector +'--translate')
+            wrapperElement.classList.add(selector +'--show-card')
+            wrapperElement.classList.add(selector +'--opacity-1')
+            // console.log(wrapperElement)
+            setTimeout(() => {
+                wrapperElement.classList.add(selector +'--transition-none')
+                wrapperElement.style = `top: ${pageYOffset}px;`
+                document.body.style = 'overflow: hidden; padding-right: 18px;'
+                wrapperElement.classList.add(selector +'--show')
+                setTimeout(() => {
+                    wrapperElement.classList.remove(selector +'--transition-none')
+
+                },40)
+            },400)
+        },timeout)
+    }
+
+    // скрыто всплывающее окно
+    hidePopUp(selector) {
+        const wrapperElement = document.querySelector(selector)
+        // удаляем точку у класса
+        selector = selector.slice(1)
+        console.log(selector + '--translate')
+        wrapperElement.classList.remove('big-card-wrapper--show-card')
+        wrapperElement.classList.remove('big-card-wrapper--opacity-1')
+        
+        setTimeout(() => {
+
+            document.body.style = ''
+            wrapperElement.style = ''
+            wrapperElement.classList.remove('big-card-wrapper--show')
+            setTimeout(() => {
+                wrapperElement.classList.remove('big-card-wrapper--translate')
+            },40)
+        }, 400)
     }
 
     // заполняем карточку информацией о товаре
@@ -99,7 +119,7 @@ export default class DefaultPage {
 
         addToCartButtonElement.forEach((button) => {
             const cardElement = button.closest('[data-big-card]')
-            // cardElement.querySelector('[data-big-card-count]')
+            
             const inputElement = cardElement.querySelector('[data-big-card-count]')
 
             button.addEventListener('click', () => {
@@ -109,23 +129,12 @@ export default class DefaultPage {
                 console.log(obj)
                 this.addToCart(obj)
                 // убираем окошко
-                
-                wrapperElement.classList.remove('big-card-wrapper--show-card')
-                wrapperElement.classList.remove('big-card-wrapper--opacity-1')
-                
-                setTimeout(() => {
+                this.hidePopUp('.big-card-wrapper')
+                // показываем окошко успеха добавления в корзину
+                this.showPopUp('.success-card-wrapper', 400)
 
-                    document.body.style = ''
-                    wrapperElement.style = ''
-                    wrapperElement.classList.remove('big-card-wrapper--show')
-                    setTimeout(() => {
-                        wrapperElement.classList.remove('big-card-wrapper--translate')
-                    },40)
-                }, 400)
             })
-        // console.log(addToCartButtonElement)
         })
-
     }
 
     // добавление в корзину
