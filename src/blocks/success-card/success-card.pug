@@ -1,0 +1,61 @@
+.success-card-wrapper(data-success-card-wrapper).success-card-wrapper--show.success-card-wrapper--show-card.success-card-wrapper--opacity-1.success-card-wrapper--translate
+    .success-card.container(data-success-card)
+        .success-card__row.row
+            .success-card__header.col-md-6
+                .success-header
+                    .success-header__icon
+                        .zmdi.zmdi-check
+                    .success-header__text Product successfully added to your shopping cart
+
+                    .success-header__img-wrapper
+                        img.success-header__img(src="./assets/img/goods/make-up-1.png" data-success-card-img)
+                    .success-header__title(data-success-card-title) Organics Thickening Shampoo
+                    .success-header__info
+                        .success-header__info-elem(data-success-card-size) Size: 125ml
+                        .success-header__info-elem(data-success-card-skin) Skin type: oily
+                    .success-header__bottom
+                        .success-result
+                            .success-result__string
+                                .success-result__string-text Quantity 
+                                .success-result__string-value(data-success-card-price) 1
+                            .success-result__string
+                                .success-result__string-text Total:
+                                .success-result__string-value(data-success-card-price) $7,68
+
+            .success-card__main.col-md-6
+                .success-main
+                    .success-main__icon
+                        .zmdi.zmdi-shopping-cart
+                    .success-main__text
+                        span There is 
+                        span(data-sussec-card-cart-length) 1 
+                        span item in your cart.
+                    .success-main__result.success-result
+                        .success-result__string
+                            .success-result__string-text 3 ITEMS
+                            .success-result__string-value $55.80
+                        .success-result__string
+                            .success-result__string-text SHIPPING
+                            .success-result__string-value FREE
+                        .success-result__string
+                            .success-result__string-text TAXES
+                            .success-result__string-value $2.23
+                        .success-result__string
+                            .success-result__string-text TOTAL (TAX EXCL.)
+                            .success-result__string-value $55.80
+                    
+                    .success-main__buttons
+                        .success-main__button-item
+                            +button({
+                                text: "Continue shopping",
+                                icon: false,
+                                color: "tertiary"
+                                })(data-success-card-exit)
+                        .success-main__button-item
+                            +button({
+                                text: "Proceed to checkout",
+                                icon: false,
+                                color: "secondary"
+                                })(data-success-card-to-cart)
+        .success-card__close(data-success-card-close)
+            i.zmdi.zmdi-close

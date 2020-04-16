@@ -1,0 +1,214 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.success-card-wrapper {
+    position: fixed;
+    // position: absolute;
+    top: 0;
+    opacity: 0;
+    // top: 0;
+    left: 0;
+    right: 0;
+    // bottom: 0;
+    height: 100vh;// именно так для прокрутки
+    background-color: $backgrount-transparent;
+    z-index: 100;
+    padding: 30px 10px;
+    transform: translateY(-100%);
+    transition: opacity .4s ease;
+    // добавить, когда показывается карточка
+    overflow-y: hidden;
+
+    .success-card {
+        transition: all .4s ease;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    &--show {
+        position: absolute;
+        overflow-y: scroll;
+        min-height: 100vh;
+        // top: 0;
+    }
+    &--show-card {
+
+        .success-card {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    &--opacity-1 {
+
+        opacity: 1;
+    }
+    &--translate {
+        transform: translateY(0);
+    }
+    &--transition-none {
+        transition: none;
+
+    }
+}
+body {
+    // добавить, когда показывается карточка
+    overflow: hidden;
+}
+
+
+
+.success-card {
+    min-height: 500px;
+    padding: 30px;
+    background-color: $default-color;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.success-card__header {
+    height: 100%;
+    padding: 0 50px 50px;
+    @media (min-width: 768px) {
+        border-right: 1px solid $border-color;
+    }
+}
+.success-header__img-wrapper {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.success-header__img {
+    max-width: 100%;
+    object-fit: contain;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $card-background-color;
+}
+
+.success-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.success-header__icon {
+    color: $primary-color;
+    font-size: 70px;
+}
+.success-header__text {
+    text-align: center;
+}
+.success-header__title {
+    color: $neutral-secondary-color;
+    margin-bottom: 10px;
+
+}
+.success-header__info {
+    display: flex;
+    font-size: 12px;
+    color: $secondary-text-color;
+}
+.success-header__info-elem:not(:last-child) {
+    margin-right: 20px;
+}
+
+.success-header__bottom {
+    display: flex;
+}
+
+
+
+.success-card__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-main__icon {
+    color: $primary-color;
+    font-size: 50px;
+}
+
+.success-main__result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.success-main__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media (min-width: 768px) {
+        flex-direction: column;
+        
+    }
+}
+.success-main__button-item {
+    margin: 15px;
+}
+.success-header__bottom {
+    padding-top: 20px;
+    .success-result {
+        flex-direction: row;
+    }
+    .success-result__string:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+
+
+.success-card__close {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    
+    i {
+        transition: all .4s ease;
+    }
+    
+    &:hover {
+        i {
+            transform: scale(1.5,1.5);
+        }
+    }
+}
+.success-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-result__string {
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.success-result__string-text {
+    color: $neutral-secondary-color;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.success-result__string-value {
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    color: $primary-color;
+}
