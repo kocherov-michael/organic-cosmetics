@@ -25,6 +25,7 @@ import './../blocks/footer-socials/footer-socials.js'
 import MainPage from './MainPage.js'
 import CartPage from './CartPage.js'
 import CategoryPage from './CategoryPage.js'
+import ProductPage from './ProductPage.js'
 
 // console.log(location)
 // console.log(location.pathname)

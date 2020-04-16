@@ -4,10 +4,10 @@ import DefaultPage from './DefaultPage.js'
 export default class MainPage extends DefaultPage {
     constructor(args = {}) {
         super(args = {})
-        this.goodsArr = goodsArr[0]
-        this.cart = JSON.parse(localStorage.getItem('cart')) || []
-        super.showCartLength()
-        super.fillCartCard()
+        // this.goodsArr = goodsArr[0]
+        // this.cart = JSON.parse(localStorage.getItem('cart')) || []
+        // super.showCartLength()
+        // super.fillCartCard()
         this.fillMainPage()
         super.listenAddCartButton()
         super.quantityInput()

@@ -2,7 +2,10 @@ import {goodsArr} from './goods.js'
 
 export default class DefaultPage {
     constructor(args = {}) {
-        // this.cart = JSON.parse(localStorage.getItem('cart')) || []
+        this.cart = JSON.parse(localStorage.getItem('cart')) || []
+        this.goodsArr = goodsArr[0]
+        this.showCartLength()
+        this.fillCartCard()
     }
 
     // прослушка кнопок показа большой карточки

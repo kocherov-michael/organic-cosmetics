@@ -4,11 +4,11 @@ import DefaultPage from './DefaultPage.js'
 export default class CategoryPage extends DefaultPage {
     constructor(args = {}) {
         super(args = {})
-        this.goodsArr = goodsArr[0]
+        // this.goodsArr = goodsArr[0]
         this.categoriesArr = goodsArr[1]
-        this.cart = JSON.parse(localStorage.getItem('cart')) || []
-        super.showCartLength()
-        super.fillCartCard()
+        // this.cart = JSON.parse(localStorage.getItem('cart')) || []
+        // super.showCartLength()
+        // super.fillCartCard()
         // this.fillCartPage()
         this.categoryId = this.getCategoryId()
         this.categoryObj = this.getCategoryObj()
