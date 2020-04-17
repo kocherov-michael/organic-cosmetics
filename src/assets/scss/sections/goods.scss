@@ -20,8 +20,12 @@
     }
 }
 .goods__card {
-    margin-bottom: 15px;
-    margin-top: 15px;
     display: flex;
     flex-direction: column;
+    max-width: 300px;
+    margin: 15px auto;
+    @media (min-width: 576px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

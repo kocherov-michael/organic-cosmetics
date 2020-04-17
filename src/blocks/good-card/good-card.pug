@@ -21,11 +21,20 @@ mixin goodCard(options)
             .good-card__oferta-wrapper
                 if options.oferta
                     .good-card__oferta -20% 
-            a.good-card__group(href="category.html") #{options.group}
+            //- a.good-card__group(href="category.html") #{options.group}
+            .good-card__group #{options.group}
             //- в ссылке get запросом передать параметры товара,
             //- и на целевой странице скриптом создать нужные товары
             a.good-card__title(data-goods-link href="product.html?title="+options.title+"&price="+options.price+"&oldprice="+options.oldprice+"&src="+options.src) #{options.title}
-            .good-card__price #{options.price}
-            if options.oferta
-                .good-card__old-price #{options.oldprice}
+            .good-card__old-price-wrapper
+                if options.oferta
+                    .good-card__old-price #{options.oldprice}
         .good-card__footer
+            .good-card__footer-price
+                .good-card__price #{options.price}
+            .good-card__footer-icons
+                .good-card__footer-icon-item
+                    .zmdi.zmdi-eye
+                .good-card__footer-icon-item
+                    .zmdi.zmdi-shopping-cart
+            
