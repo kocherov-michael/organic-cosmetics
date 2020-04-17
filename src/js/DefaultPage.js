@@ -245,7 +245,13 @@ export default class DefaultPage {
     fillCartCard() {
         const iconCartElement = document.querySelector('[data-cart-card]')
         const cartThumbsElement = iconCartElement.querySelector('[data-cart-thumbs]')
-        cartThumbsElement.innerHTML = ''
+        cartThumbsElement.innerHTML = 
+        `<div class="cart-empty">
+        <div class="cart-empty__icon">
+          <div class="zmdi zmdi-alert-circle"></div>
+        </div>
+        <div class="cart-empty__notification">There are no more items in your cart</div>
+      </div>`
         let innerElement = ''
         
         for ( let i = 0; i < this.cart.length; i++ ) {
@@ -272,7 +278,17 @@ export default class DefaultPage {
                 }
             }
         }
-        cartThumbsElement.innerHTML = innerElement
+        if (innerElement) {
+
+            cartThumbsElement.innerHTML = innerElement
+            document.querySelectorAll('[data-cart-proceed]').forEach((buttonElem) => {
+                buttonElem.classList.remove('button--display-none')
+            })
+        } else {
+            document.querySelectorAll('[data-cart-proceed]').forEach((buttonElem) => {
+                buttonElem.classList.add('button--display-none')
+            })
+        }
         this.listehCartThumbRemove()
         this.showTotalSumm()
     }

@@ -3,9 +3,10 @@
         i.zmdi.zmdi-close
     .cart-card__title Cart
     .cart-card__main(data-cart-thumbs)
-        +cartThumb()
-        +cartThumb()
-        +cartThumb()
+        include ../cart-empty/cart-empty
+        //- +cartThumb()
+        //- +cartThumb()
+        //- +cartThumb()
     .cart-card__results
         .cart-card-result
             .cart-card-result__item
@@ -27,5 +28,5 @@
                     span $
                     span(data-amount-total) 55.80
     .cart-card__button
-        +button({text: "Proceed to checkout", href: "cart.html", color: "secondary"})
+        +button({text: "Proceed to checkout", href: "cart.html", color: "secondary"})(data-cart-proceed)
     .cart-card__continue(data-cart-card-close) Continue shopping

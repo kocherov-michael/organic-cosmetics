@@ -1,0 +1,18 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.cart-empty {
+    display: flex;
+    background-color: $blur-notification-color;
+    padding: 15px;
+    color: $notification-color;
+    align-items: center;
+}
+
+.cart-empty__icon {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.cart-empty__notification {
+    font-size: 12px;
+}

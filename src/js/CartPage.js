@@ -9,8 +9,9 @@ export default class CartPage extends DefaultPage {
         // this.cart = JSON.parse(localStorage.getItem('cart')) || []
         // super.showCartLength()
         // super.fillCartCard()
-        this.fillCartPage()
-        
+        // this.fillCartPage()
+        this.cartCardIsRefreshed = false
+        this.cartPageIsRefreshed = false
         
         // super.listenAddCartButton()
     }
@@ -18,7 +19,13 @@ export default class CartPage extends DefaultPage {
     // заполняем страницу корзины товарами
     fillCartPage() {
         const goodsContainerElement = document.querySelector('[data-cart-goods-container]')
-        goodsContainerElement.innerHTML = ''
+        goodsContainerElement.innerHTML =
+        `<div class="cart-empty">
+        <div class="cart-empty__icon">
+          <div class="zmdi zmdi-alert-circle"></div>
+        </div>
+        <div class="cart-empty__notification">There are no more items in your cart</div>
+      </div>`
         let innerElement = ''
 
         // console.log(this.cart)
@@ -55,13 +62,41 @@ export default class CartPage extends DefaultPage {
             }
 
         }
-        goodsContainerElement.innerHTML = innerElement
+        if (innerElement) {
+
+            goodsContainerElement.innerHTML = innerElement
+        }
         this.listenCartPageRemove()
         super.quantityInput(this.saveInputValues.bind(this))
         this.quantityInputListener()
         this.showItemSumm()
-        // super.showTotalSumm()
-        super.fillCartCard()
+        
+        // console.log('cart page')
+        this.cartPageIsRefreshed = true
+        this.fillCartCard()
+    }
+
+    // обновление карточки корзины и впридачу страницы, если она ещё не обновлена
+    fillCartCard() {
+        // если карточка и страница обновлены, то возврат
+        if (this.cartCardIsRefreshed && this.cartPageIsRefreshed) {
+            this.cartCardIsRefreshed = false
+            this.cartPageIsRefreshed = false
+            return
+        }
+        // если все карточка корзины не обновлена, то обновляем
+        if (!this.cartCardIsRefreshed) {
+            // говорим, что обновлены
+            // console.log('card')
+            this.cartCardIsRefreshed = true
+            super.fillCartCard()
+        }
+        if (!this.cartPageIsRefreshed) {
+            // console.log('cart')
+            this.cartPageIsRefreshed = true
+            this.fillCartPage()
+        }
+
     }
 
     // слушаем нажатия на крестик удаления товара со страницы корзины
@@ -107,7 +142,7 @@ export default class CartPage extends DefaultPage {
                 localStorage.setItem('cart', JSON.stringify(this.cart))
                 this.showItemSumm()
                 // this.showTotalSumm()
-                super.fillCartCard()
+                this.fillCartCard()
             }
         }
     }
