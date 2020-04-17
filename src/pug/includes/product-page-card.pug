@@ -3,19 +3,19 @@
         include ../../blocks/big-card/big-card.pug
         .product-page-card__info
             .product-page-card__title
-                .product-page-card__title-item.product-page-card__title-item--active Details
-                .product-page-card__title-item Usage
-                .product-page-card__title-item Ingredients
+                .product-page-card__title-item.product-page-card__title-item--active(data-product-card-toggle="details") Details
+                .product-page-card__title-item(data-product-card-toggle="usage") Usage
+                .product-page-card__title-item(data-product-card-toggle="ingredients") Ingredients
             .product-page-card__text
-                .product-page-card__description.product-page-card__description--active.col-md-8
+                .product-page-card__description.product-page-card__description--active.col-md-8(data-product-card-desc="details")
                     p   Suitable for all skin types
                     p   Removes make-up & dirt
                     p   Deep cleanser
                     p   Alcohol-free
                     p   The natural, alcohol-free cleanser gently yet effectively cleanses the skin, getting rid of any make-up residues. A deep-cleansing gel that is free from any chemical substances that irritate the skin.
-                .product-page-card__description.col-md-8
+                .product-page-card__description.col-md-8(data-product-card-desc="usage")
                     p Apply to wet skin, massage to cleanse and rinse with water.
-                .product-page-card__description.col-md-8
+                .product-page-card__description.col-md-8(data-product-card-desc="ingredients")
                     p Aqua (Water)GlycerinSodium Cocoyl GlutamateCoco GlucosideCitrus Aurantium Dulcis (Orange) Fruit Extrakt [1]Dehydroxanthan GumPeach ExtractAloe Barbadensis Leaf Juice [1]Chondrus Crispus (Carrageenan)Perfume (Fragrance) [2]Benzyl AlcoholSodium ChlorideSodium BenzoatePotassium SorbateCitric Acid
                     p    from controlled organic agriculture
                     p   from natural essential oils

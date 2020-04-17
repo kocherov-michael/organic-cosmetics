@@ -6,6 +6,7 @@ export default class DefaultPage {
         this.goodsArr = goodsArr[0]
         this.showCartLength()
         this.fillCartCard()
+        this.listenClosePupUp()
     }
 
     // прослушка кнопок показа большой карточки
@@ -13,9 +14,7 @@ export default class DefaultPage {
         const goodCardButtonsList = document.querySelectorAll('[data-card-look]')
         if (goodCardButtonsList.length > 0) {
 
-            // элемениы закрывания попап карточек
-            const closeElement = document.querySelector('[data-card-close]')
-            const closeSuccessElements = document.querySelectorAll('[data-success-card-close]')
+           
 
             for(let i = 0; i < goodCardButtonsList.length; i++) {
         
@@ -36,17 +35,26 @@ export default class DefaultPage {
                 })
             }
         
-            // прослушка крестика закрытия попап карточки
-            closeElement.addEventListener('click', () => {
-                this.hidePopUp('.big-card-wrapper')
-            })
-            // прослушка крестика и кнопки закрытия карточки успеха добавления в корзину
-            closeSuccessElements.forEach((closeElement)=> {
-                closeElement.addEventListener('click', () => {
-                    this.hidePopUp('.success-card-wrapper')
-                })
-            })
+           
         }
+    }
+
+    // прослушка элементов закрытия попап карточек
+    listenClosePupUp() {
+         // элемениы закрывания попап карточек
+         const closeElement = document.querySelector('[data-card-close]')
+         const closeSuccessElements = document.querySelectorAll('[data-success-card-close]')
+
+         // прослушка крестика закрытия попап карточки
+         closeElement.addEventListener('click', () => {
+            this.hidePopUp('.big-card-wrapper')
+        })
+        // прослушка крестика и кнопки закрытия карточки успеха добавления в корзину
+        closeSuccessElements.forEach((closeElement)=> {
+            closeElement.addEventListener('click', () => {
+                this.hidePopUp('.success-card-wrapper')
+            })
+        })
     }
 
     // показать всплывающее окно

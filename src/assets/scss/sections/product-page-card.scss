@@ -21,7 +21,9 @@
     background-color: #fff;
     transform: translateY(1px);
     padding: 10px;
+    border: 1px solid transparent;
     border-bottom: 1px solid $border-color;
+    cursor: pointer;
     
     &--active {
         border: 1px solid $border-color;
