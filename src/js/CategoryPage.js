@@ -4,13 +4,7 @@ import DefaultPage from './DefaultPage.js'
 export default class CategoryPage extends DefaultPage {
     constructor(args = {}) {
         super(args = {})
-        // this.goodsArr = goodsArr[0]
         this.categoriesArr = goodsArr[1]
-        // this.cart = JSON.parse(localStorage.getItem('cart')) || []
-        // super.showCartLength()
-        // super.fillCartCard()
-        // this.fillCartPage()
-        // this.categoryId = this.getCategoryId()
         this.categoryId = DefaultPage.getGetKey('category_id')
         this.categoryObj = this.getCategoryObj()
         // массив с товарами выбранной категории
@@ -20,10 +14,11 @@ export default class CategoryPage extends DefaultPage {
         this.fillBrandFilter()
         this.fillSubcategoriesFilter()
         
-        // console.log(this.categoriesArr)
         super.listenAddCartButton()
         this.useFilterForGoods()
+        super.listenClosePupUp()
     }
+    
     // получаем id категории из get Запроса
     getCategoryId() {
         const key = 'category_id'

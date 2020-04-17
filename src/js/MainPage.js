@@ -8,6 +8,7 @@ export default class MainPage extends DefaultPage {
         this.fillMainPage()
         super.listenAddCartButton()
         super.quantityInput()
+        super.listenClosePupUp()
         console.log(this)
     }
     
@@ -35,7 +36,7 @@ export default class MainPage extends DefaultPage {
                     </div>
                   </div>
                   <div class="good-card__look">
-                    <div class="good-card__look-button" data-card-look="${arr[i].id}">быстрый просмотр</div>
+                    <div class="good-card__look-button" data-card-look="${arr[i].id}">Quick view</div>
                   </div>
                 </div>
                 <div class="good-card__main">
@@ -51,10 +52,10 @@ export default class MainPage extends DefaultPage {
                     <div class="good-card__price">${arr[i].price}</div>
                   </div>
                   <div class="good-card__footer-icons">
-                    <div class="good-card__footer-icon-item">
+                    <div class="good-card__footer-icon-item" data-card-look="${arr[i].id}" >
                       <div class="zmdi zmdi-eye"></div>
                     </div>
-                    <div class="good-card__footer-icon-item">
+                    <div class="good-card__footer-icon-item" data-goods-card-icon-to-cart="${arr[i].id}">
                       <div class="zmdi zmdi-shopping-cart"></div>
                     </div>
                   </div>
@@ -66,5 +67,6 @@ export default class MainPage extends DefaultPage {
         goodsGrinWrapperElement.innerHTML = innerElement
 
         super.listenLookButton()
+        super.listenIconAddToCart()
     }
 }

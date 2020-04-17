@@ -12,6 +12,7 @@ export default class ProductPage extends DefaultPage {
         super.listenClosePupUp()
         this.fillProductDesc()
         this.toggleProductDesc()
+        super.listenClosePupUp()
     }
 
     // заполнить описание продукта

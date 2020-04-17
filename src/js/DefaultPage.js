@@ -6,7 +6,7 @@ export default class DefaultPage {
         this.goodsArr = goodsArr[0]
         this.showCartLength()
         this.fillCartCard()
-        this.listenClosePupUp()
+        
     }
 
     // прослушка кнопок показа большой карточки
@@ -129,7 +129,7 @@ export default class DefaultPage {
     // прослушка кнопки добавления в корзину
     listenAddCartButton() {
         const addToCartButtonElement = document.querySelectorAll('[data-big-card-to-cart]')
-        const wrapperElement = document.querySelector('[data-big-card-wrapper]')
+        // const wrapperElement = document.querySelector('[data-big-card-wrapper]')
 
         addToCartButtonElement.forEach((button) => {
             const cardElement = button.closest('[data-big-card]')
@@ -146,6 +146,25 @@ export default class DefaultPage {
                 this.hidePopUp('.big-card-wrapper')
                 // показываем окошко успеха добавления в корзину
                 this.showPopUp('.success-card-wrapper', 400)
+                this.fillSuccessCard(obj, '.success-card-wrapper')
+            })
+        })
+    }
+
+    // прослушка иконки добавлния в корзину на карточке товара
+    listenIconAddToCart() {
+        const addToCartIconElement = document.querySelectorAll('[data-goods-card-icon-to-cart]')
+
+        addToCartIconElement.forEach((iconElement) => {
+            iconElement.addEventListener('click', () => {
+                // получаем id товара
+                const id = iconElement.getAttribute('data-goods-card-icon-to-cart')
+                const obj = { id, quantity: 1 }
+                // добавить в корзину
+                this.addToCart( obj )
+                // показзать окно успешного добавления в корзину
+                this.showPopUp('.success-card-wrapper')
+                // заполнить это окно нашим товаром
                 this.fillSuccessCard(obj, '.success-card-wrapper')
             })
         })
