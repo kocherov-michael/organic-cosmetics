@@ -242,7 +242,15 @@ export default class DefaultPage {
     }
 
     // заполнить карточку корзины в шапке
-    fillCartCard() {
+    fillCartCard(cartGoods) {
+        // let cart
+        // if (cartGoods) {
+            // если корзину передали через параметр, то используем её
+            // cart = cartGoods
+        // } else {
+            // если не передали, то используем корзину по умолчанию
+            // cart = this.cart
+        // }
         const iconCartElement = document.querySelector('[data-cart-card]')
         const cartThumbsElement = iconCartElement.querySelector('[data-cart-thumbs]')
         cartThumbsElement.innerHTML = 
@@ -289,8 +297,11 @@ export default class DefaultPage {
                 buttonElem.classList.add('button--display-none')
             })
         }
-        this.listehCartThumbRemove()
-        this.showTotalSumm()
+        // если корзину передали через параметр, то это страница подтверждения заказа
+        // if (!cartGoods) {
+            this.listehCartThumbRemove()
+            this.showTotalSumm()
+        // }
     }
 
     listehCartThumbRemove() {
@@ -357,7 +368,9 @@ export default class DefaultPage {
 
     // считаем общую сумму
     showTotalSumm() {
+        // console.log(cart)
         let summ = 0
+        // const
         for (let i = 0; i < this.cart.length; i++) {
             summ += Math.round(this.cart[i].price * this.cart[i].quantity * 100) / 100
         }

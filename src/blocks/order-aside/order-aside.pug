@@ -1,24 +1,32 @@
 .order-aside
-    .order-aside__item
+    .order-aside__items(data-order-aside)
         +cartThumb()
-    .order-aside__item
+        //- .order-aside__item
         +cartThumb()
-    .order-aside__item
+        //- .order-aside__item
         +cartThumb()
-    .order-aside__item
+        //- .order-aside__item
         +cartThumb()
 
     .order-aside__total
         .order-aside__string
-            .order-aside__string-text 3 ITEMS
-            .order-aside__string-value $55.80
+            .order-aside__string-text 
+                span(data-order-cart-length) 3 
+                span  ITEMS
+            .order-aside__string-value 
+                span $
+                span(data-amount-summ) 55.80
         .order-aside__string
             .order-aside__string-text SHIPPING
             .order-aside__string-value FREE
         .order-aside__string
             .order-aside__string-text TAXES
-            .order-aside__string-value $2.23
+            .order-aside__string-value 
+                span $
+                span(data-amount-tax) 2.23
         .order-aside__string.order-aside__string--total
             .order-aside__string-text TOTAL (TAX EXCL.)
-            .order-aside__string-value $55.80
+            .order-aside__string-value 
+                span $
+                span(data-amount-total) 55.80
     

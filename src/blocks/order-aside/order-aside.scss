@@ -6,10 +6,11 @@
     margin-right: -15px;
     padding-top: 30px;
     padding-bottom: 30px;
-}
 
-.order-aside__item {
-    padding-bottom: 10px;
+    .cart__thumb {
+        padding-bottom: 10px;
+
+    } 
     .cart-thumb__count {
         background-color: $default-color;
     }
@@ -17,6 +18,9 @@
         display: none;
     }
 }
+
+// .order-aside__item {
+// }
 
 .order-aside__total {
     border-top: 1px solid $border-color;

@@ -28,6 +28,7 @@ import MainPage from './MainPage.js'
 import CartPage from './CartPage.js'
 import CategoryPage from './CategoryPage.js'
 import ProductPage from './ProductPage.js'
+import OrderPage from './OrderPage.js'
 
 // console.log(location)
 // console.log(location.pathname)

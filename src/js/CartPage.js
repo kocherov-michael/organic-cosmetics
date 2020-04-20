@@ -1,4 +1,4 @@
-import {goodsArr} from './goods.js'
+// import {goodsArr} from './goods.js'
 // import {quantityInput} from '../blocks/quantity-input/quantity-input.js'
 import DefaultPage from './DefaultPage.js'
 
@@ -12,8 +12,32 @@ export default class CartPage extends DefaultPage {
         // this.fillCartPage()
         this.cartCardIsRefreshed = false
         this.cartPageIsRefreshed = false
-        
+        this.saveCartToStorage()
         // super.listenAddCartButton()
+    }
+
+    // обновление карточки корзины и впридачу страницы, если она ещё не обновлена
+    // страница формируется с этого метода, вызываемом в DefaultPage
+    fillCartCard() {
+        // если карточка и страница обновлены, то возврат
+        if (this.cartCardIsRefreshed && this.cartPageIsRefreshed) {
+            this.cartCardIsRefreshed = false
+            this.cartPageIsRefreshed = false
+            return
+        }
+        // если все карточка корзины не обновлена, то обновляем
+        if (!this.cartCardIsRefreshed) {
+            // говорим, что обновлены
+            // console.log('card')
+            this.cartCardIsRefreshed = true
+            super.fillCartCard()
+        }
+        if (!this.cartPageIsRefreshed) {
+            // console.log('cart')
+            this.cartPageIsRefreshed = true
+            this.fillCartPage()
+        }
+
     }
 
     // заполняем страницу корзины товарами
@@ -76,28 +100,7 @@ export default class CartPage extends DefaultPage {
         this.fillCartCard()
     }
 
-    // обновление карточки корзины и впридачу страницы, если она ещё не обновлена
-    fillCartCard() {
-        // если карточка и страница обновлены, то возврат
-        if (this.cartCardIsRefreshed && this.cartPageIsRefreshed) {
-            this.cartCardIsRefreshed = false
-            this.cartPageIsRefreshed = false
-            return
-        }
-        // если все карточка корзины не обновлена, то обновляем
-        if (!this.cartCardIsRefreshed) {
-            // говорим, что обновлены
-            // console.log('card')
-            this.cartCardIsRefreshed = true
-            super.fillCartCard()
-        }
-        if (!this.cartPageIsRefreshed) {
-            // console.log('cart')
-            this.cartPageIsRefreshed = true
-            this.fillCartPage()
-        }
-
-    }
+    
 
     // слушаем нажатия на крестик удаления товара со страницы корзины
     listenCartPageRemove() {
@@ -157,6 +160,16 @@ export default class CartPage extends DefaultPage {
             // console.log(price, count)
             itemElement[i].querySelector('[data-item-summ]').textContent = Math.round(price * count * 100) / 100
         }
+    }
+
+    saveCartToStorage() {
+        const proceedButtonElement = document.querySelector('[data-order-link]')
+        console.log(proceedButtonElement)
+        proceedButtonElement.addEventListener('click', (event) => {
+            // event.preventDefault()
+            // console.log(event)
+            localStorage.setItem('order', JSON.stringify(this.cart))
+        })
     }
 
     // // считаем общую сумму
