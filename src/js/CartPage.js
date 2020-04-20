@@ -43,6 +43,7 @@ export default class CartPage extends DefaultPage {
     // заполняем страницу корзины товарами
     fillCartPage() {
         const goodsContainerElement = document.querySelector('[data-cart-goods-container]')
+        // если товаров нет, то показываем надпись по умолчанию
         goodsContainerElement.innerHTML =
         `<div class="cart-empty">
         <div class="cart-empty__icon">
@@ -158,10 +159,11 @@ export default class CartPage extends DefaultPage {
             const price = itemElement[i].querySelector('[data-price]').getAttribute('data-price')
             const count = itemElement[i].querySelector('[data-input-value]').value
             // console.log(price, count)
-            itemElement[i].querySelector('[data-item-summ]').textContent = Math.round(price * count * 100) / 100
+            itemElement[i].querySelector('[data-item-summ]').textContent = (Math.round(price * count * 100) / 100).toFixed(2)
         }
     }
 
+    // сохраняем заказы в память при переходе к оформлению
     saveCartToStorage() {
         const proceedButtonElement = document.querySelector('[data-order-link]')
         console.log(proceedButtonElement)

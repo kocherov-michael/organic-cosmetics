@@ -375,18 +375,18 @@ export default class DefaultPage {
             summ += Math.round(this.cart[i].price * this.cart[i].quantity * 100) / 100
         }
         // console.log( Math.round(summ * 100) / 100 )
-        summ = Math.round(summ * 100) / 100
+        summ = (Math.round(summ * 100) / 100).toFixed(2)
         // выводим сумму в общий счёт
         document.querySelectorAll('[data-amount-summ]').forEach((elem) => {
             elem.textContent = summ
         })
         // считаем значение налога 5%
         document.querySelectorAll('[data-amount-tax]').forEach((elem) => {
-            elem.textContent = Math.round(summ * 5) / 100 
+            elem.textContent = (Math.round(summ * 5) / 100).toFixed(2)
         })
         // сумма + налог = всего
         document.querySelectorAll('[data-amount-total]').forEach((elem) => {
-            elem.textContent = Math.round(summ * 105) / 100
+            elem.textContent = (Math.round(summ * 105) / 100).toFixed(2)
         })
     }
 
