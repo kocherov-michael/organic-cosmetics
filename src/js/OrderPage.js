@@ -9,6 +9,7 @@ export default class OrderPage extends DefaultPage {
         this.fillOrderAside()
         // this.hideCartIcon()
         this.fillCartCard()
+        this.showTotalSumm()
     }
 
     // заполнить aside на странице order
