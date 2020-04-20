@@ -37,9 +37,15 @@
         border-left-color: $info-color;
     }
 }
-.billet--pack {
+.billet--popular {
     background-color: $warning-color;
     &:after {
         border-left-color: $warning-color;
+    }
+}
+.billet--limited {
+    background-color: $danger-color;
+    &:after {
+        border-left-color: $danger-color;
     }
 }

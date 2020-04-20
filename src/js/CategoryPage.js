@@ -69,36 +69,13 @@ export default class CategoryPage extends DefaultPage {
         let innerElement = ''
 
         for ( let i = 0; i < this.categoryGoodsArr.length; i++ ) {
-                innerElement += 
-                `<div class="category-grid__card col-6 col-lg-4 col-xl-3">
-                <div class="good-card" data-goods-card="">
-              <div class="good-card__header">
-                <div class="good-card__picture"><img class="good-card__img" src="./assets/img/goods/${this.categoryGoodsArr[i].src}" alt="Foaming Hand Sanitizer"></div>
-                <div class="good-card__billets">
-                  <div class="good-card__billet-wrapper">
-                    <div class="billet billet--sale">on sale</div>
-                  </div>
-                  <div class="good-card__billet-wrapper">
-                    <div class="billet billet--new">new</div>
-                  </div>
-                </div>
-                <div class="good-card__look">
-                  <div class="good-card__look-button" data-card-look="${this.categoryGoodsArr[i].id}">быстрый просмотр</div>
-                </div>
-              </div>
-              <div class="good-card__main">
-                <div class="good-card__oferta-wrapper">
-                  <div class="good-card__oferta">-20% </div>
-                </div><a class="good-card__group" href="category.html">${this.categoryGoodsArr[i].subcategory}</a><a class="good-card__title" data-goods-link="" href="product.html?id=${this.categoryGoodsArr[i].id}">${this.categoryGoodsArr[i].name}</a>
-                <div class="good-card__price">${this.categoryGoodsArr[i].price} $</div>
-                <div class="good-card__old-price">16.00 $</div>
-              </div>
-              <div class="good-card__footer"></div>
-            </div>
-              </div>`
+          innerElement += this.getGoodsTemplate(this.categoryGoodsArr[i])
         }
         categoryGridElement.innerHTML = innerElement
+        // показать большую карточку товара
         super.listenLookButton()
+        // добавить товар в корзину
+        super.listenIconAddToCart()
     }
 
     // создаём условия фильтра

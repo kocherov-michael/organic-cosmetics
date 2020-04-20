@@ -400,6 +400,71 @@ export default class DefaultPage {
         }
     }
 
+    // шаюлон карточки товара для заполнения страницы
+    getGoodsTemplate(goodsObj) {
+        // плашки статусов товара
+        let billets = 
+        `<div class="good-card__billet-wrapper">
+            <div class="billet billet--sale">on sale</div>
+        </div>`
+        if (goodsObj.new) {
+            billets += 
+            `<div class="good-card__billet-wrapper">
+            <div class="billet billet--new">new</div>
+            </div>`
+        }
+        if (goodsObj.popular) {
+            billets += 
+            `<div class="good-card__billet-wrapper">
+            <div class="billet billet--popular">popular</div>
+            </div>`
+        }
+        if (goodsObj.limited) {
+            billets += 
+            `<div class="good-card__billet-wrapper">
+            <div class="billet billet--limited">limited</div>
+            </div>`
+        }
+        
+        const innerElement = 
+        `<div class="goods__card col-sm-6 col-md-4 col-lg-3">
+            <div class="good-card" data-goods-card="">
+            <div class="good-card__header">
+                <div class="good-card__picture"><img class="good-card__img" src="./assets/img/goods/${goodsObj.src}" alt="Container is Perfect for Essential Oils"></div>
+                <div class="good-card__billets">
+                ${billets}
+                </div>
+                <div class="good-card__look">
+                <div class="good-card__look-button" data-card-look="${goodsObj.id}">Quick view</div>
+                </div>
+            </div>
+            <div class="good-card__main">
+                <div class="good-card__oferta-wrapper">
+                </div>
+                <div class="good-card__group">${goodsObj.subcategory}</div>
+                <a class="good-card__title" data-goods-link="" href="product.html?id=${goodsObj.id}">${goodsObj.name}</a>
+                <div class="good-card__old-price-wrapper">
+                </div>
+            </div>
+            <div class="good-card__footer">
+                <div class="good-card__footer-price">
+                <div class="good-card__price">${goodsObj.price}</div>
+                </div>
+                <div class="good-card__footer-icons">
+                <div class="good-card__footer-icon-item" data-card-look="${goodsObj.id}" >
+                    <div class="zmdi zmdi-eye"></div>
+                </div>
+                <div class="good-card__footer-icon-item" data-goods-card-icon-to-cart="${goodsObj.id}">
+                    <div class="zmdi zmdi-shopping-cart"></div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>`
+
+        return innerElement
+    }
+
     // получаем Значение key из get-запроса
     static getGetKey(key) {
         // const key = 'category_id'

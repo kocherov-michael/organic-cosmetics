@@ -25,7 +25,11 @@ export const goodsArr = [
             subcategory: 'face cleaners',
             id: '115018001',
             category_id: 11,
-            subcategory_id: 501
+            subcategory_id: 501,
+            popular: true,
+            new: true,
+            limited: true,
+            bestseller: true
         },
         {
             brand: 'Bio Vegane',
@@ -63,7 +67,11 @@ export const goodsArr = [
             subcategory: 'face cleaners',
             id: '115018002',
             category_id: 11,
-            subcategory_id: 501
+            subcategory_id: 501,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Bio Pure Elements',
@@ -99,7 +107,11 @@ export const goodsArr = [
             subcategory: 'face cleaners',
             id: '115018003',
             category_id: 11,
-            subcategory_id: 501
+            subcategory_id: 501,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Bio Vegane',
@@ -125,7 +137,11 @@ export const goodsArr = [
             subcategory: 'anti-aiging',
             id: '115028004',
             category_id: 11,
-            subcategory_id: 502
+            subcategory_id: 502,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Cosnature',
@@ -155,7 +171,11 @@ export const goodsArr = [
             subcategory: 'anti-aiging',
             id: '115028005',
             category_id: 11,
-            subcategory_id: 502
+            subcategory_id: 502,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Cosnature Naturkosmetik',
@@ -180,7 +200,11 @@ export const goodsArr = [
             subcategory: 'anti-aiging',
             id: '115028006',
             category_id: 11,
-            subcategory_id: 502
+            subcategory_id: 502,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Sante',
@@ -208,7 +232,11 @@ export const goodsArr = [
             subcategory: 'Night Creams',
             id: '115038007',
             category_id: 11,
-            subcategory_id: 503
+            subcategory_id: 503,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Pure Elements',
@@ -235,7 +263,11 @@ export const goodsArr = [
             subcategory: 'shower gels',
             id: '125048008',
             category_id: 12,
-            subcategory_id: 504
+            subcategory_id: 504,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Avalon Organics',
@@ -256,7 +288,11 @@ export const goodsArr = [
             subcategory: 'shower gels',
             id: '125048009',
             category_id: 12,
-            subcategory_id: 504
+            subcategory_id: 504,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Faith In Nature',
@@ -278,7 +314,11 @@ export const goodsArr = [
             subcategory: 'shower gels',
             id: '125048010',
             category_id: 12,
-            subcategory_id: 504
+            subcategory_id: 504,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Dr. Scheller',
@@ -305,7 +345,11 @@ export const goodsArr = [
             subcategory: 'hand care',
             id: '125058011',
             category_id: 12,
-            subcategory_id: 505
+            subcategory_id: 505,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: false
         },
         {
             brand: 'Dr. Scheller',
@@ -338,7 +382,11 @@ export const goodsArr = [
             subcategory: 'hand care',
             id: '125058012',
             category_id: 12,
-            subcategory_id: 505
+            subcategory_id: 505,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: false
         },
         {
             brand: 'Avalon Organics',
@@ -361,7 +409,11 @@ export const goodsArr = [
             subcategory: 'hand care',
             id: '125058013',
             category_id: 12,
-            subcategory_id: 505
+            subcategory_id: 505,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Sante',
@@ -389,7 +441,11 @@ export const goodsArr = [
             subcategory: 'hand care',
             id: '125058014',
             category_id: 12,
-            subcategory_id: 505
+            subcategory_id: 505,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Cosnature Naturkosmetik',
@@ -408,7 +464,11 @@ export const goodsArr = [
             subcategory: 'shampoo',
             id: '135068015',
             category_id: 13,
-            subcategory_id: 506
+            subcategory_id: 506,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Cosnature Naturkosmetik',
@@ -427,7 +487,11 @@ export const goodsArr = [
             subcategory: 'shampoo',
             id: '135068016',
             category_id: 13,
-            subcategory_id: 506
+            subcategory_id: 506,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Lavera',
@@ -453,7 +517,11 @@ export const goodsArr = [
             subcategory: 'shampoo',
             id: '135068017',
             category_id: 13,
-            subcategory_id: 506
+            subcategory_id: 506,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Lavera',
@@ -478,7 +546,11 @@ export const goodsArr = [
             subcategory: 'shampoo',
             id: '135068018',
             category_id: 13,
-            subcategory_id: 506
+            subcategory_id: 506,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Cosnature Naturkosmetik',
@@ -497,7 +569,11 @@ export const goodsArr = [
             subcategory: 'hair oils',
             id: '135078019',
             category_id: 13,
-            subcategory_id: 507
+            subcategory_id: 507,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Laboratoire Altho',
@@ -522,7 +598,11 @@ export const goodsArr = [
             subcategory: 'Essential Oils',
             id: '145088020',
             category_id: 14,
-            subcategory_id: 508
+            subcategory_id: 508,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Laboratoire Altho',
@@ -563,7 +643,11 @@ export const goodsArr = [
             subcategory: 'Essential Oils',
             id: '145088021',
             category_id: 14,
-            subcategory_id: 508
+            subcategory_id: 508,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Laboratoire Altho',
@@ -583,7 +667,11 @@ export const goodsArr = [
             subcategory: 'Essential Oils',
             id: '145088022',
             category_id: 14,
-            subcategory_id: 508
+            subcategory_id: 508,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Laboratoire Altho',
@@ -602,7 +690,11 @@ export const goodsArr = [
             subcategory: 'Essential Oils',
             id: '145088023',
             category_id: 14,
-            subcategory_id: 508
+            subcategory_id: 508,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Florascent Parfumers',
@@ -647,7 +739,11 @@ export const goodsArr = [
             subcategory: 'Perfumes',
             id: '145098024',
             category_id: 14,
-            subcategory_id: 509
+            subcategory_id: 509,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Laboratoire Altho',
@@ -672,7 +768,11 @@ export const goodsArr = [
             subcategory: 'Massage Oils',
             id: '145108025',
             category_id: 14,
-            subcategory_id: 510
+            subcategory_id: 510,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Laboratoire Altho',
@@ -704,7 +804,11 @@ export const goodsArr = [
             subcategory: 'Massage Oils',
             id: '145108026',
             category_id: 14,
-            subcategory_id: 510
+            subcategory_id: 510,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Laboratoire Altho',
@@ -729,7 +833,11 @@ export const goodsArr = [
             subcategory: 'Massage Oils',
             id: '145108027',
             category_id: 14,
-            subcategory_id: 510
+            subcategory_id: 510,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Lavera',
@@ -755,7 +863,11 @@ export const goodsArr = [
             subcategory: 'Face Powder',
             id: '155118028',
             category_id: 15,
-            subcategory_id: 511
+            subcategory_id: 511,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Baims Organic MakeUp',
@@ -784,7 +896,11 @@ export const goodsArr = [
             subcategory: 'Face Powder',
             id: '155118029',
             category_id: 15,
-            subcategory_id: 511
+            subcategory_id: 511,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Avril Certified Organic',
@@ -821,7 +937,11 @@ export const goodsArr = [
             subcategory: 'Face Powder',
             id: '155118030',
             category_id: 15,
-            subcategory_id: 511
+            subcategory_id: 511,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Lavera',
@@ -844,7 +964,11 @@ export const goodsArr = [
             subcategory: 'Lip Stick',
             id: '155128031',
             category_id: 15,
-            subcategory_id: 512
+            subcategory_id: 512,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Baims Organic MakeUp',
@@ -866,7 +990,11 @@ export const goodsArr = [
             subcategory: 'Lip Stick',
             id: '155128032',
             category_id: 15,
-            subcategory_id: 512
+            subcategory_id: 512,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
         {
             brand: 'Soul Tree',
@@ -891,7 +1019,11 @@ export const goodsArr = [
             subcategory: 'Lip Stick',
             id: '155128033',
             category_id: 15,
-            subcategory_id: 512
+            subcategory_id: 512,
+            popular: true,
+            new: true,
+            limited: false,
+            bestseller: true
         },
 
 
