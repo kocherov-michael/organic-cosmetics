@@ -69,7 +69,7 @@ export default class CategoryPage extends DefaultPage {
         let innerElement = ''
 
         for ( let i = 0; i < this.categoryGoodsArr.length; i++ ) {
-          innerElement += this.getGoodsTemplate(this.categoryGoodsArr[i])
+          innerElement += this.getGoodsTemplate(this.categoryGoodsArr[i], true)
         }
         categoryGridElement.innerHTML = innerElement
         // показать большую карточку товара

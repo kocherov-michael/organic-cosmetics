@@ -401,7 +401,7 @@ export default class DefaultPage {
     }
 
     // шаюлон карточки товара для заполнения страницы
-    getGoodsTemplate(goodsObj) {
+    getGoodsTemplate(goodsObj, wideCards = false) {
         // плашки статусов товара
         let billets = 
         `<div class="good-card__billet-wrapper">
@@ -425,9 +425,12 @@ export default class DefaultPage {
             <div class="billet billet--limited">limited</div>
             </div>`
         }
+
+        // если карточки должны быть широкими
+        let cardStyles = wideCards? 'col-lg-4 col-xl-3':'col-md-4 col-lg-3'
         
         const innerElement = 
-        `<div class="goods__card col-sm-6 col-md-4 col-lg-3">
+        `<div class="goods__card col-sm-6 ${cardStyles}">
             <div class="good-card" data-goods-card="">
             <div class="good-card__header">
                 <div class="good-card__picture"><img class="good-card__img" src="./assets/img/goods/${goodsObj.src}" alt="Container is Perfect for Essential Oils"></div>
