@@ -19,8 +19,9 @@
     }
 }
 
-// .order-aside__item {
-// }
+.order-aside__items {
+    padding: 0 15px 15px;
+}
 
 .order-aside__total {
     border-top: 1px solid $border-color;
@@ -31,7 +32,6 @@
 
 .order-aside__string {
     display: flex;
-    // margin-left: 20px;
     font-size: 12px;
     font-weight: 600;
     align-items: flex-end;
