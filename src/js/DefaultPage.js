@@ -468,6 +468,11 @@ export default class DefaultPage {
         return innerElement
     }
 
+    setPath(pathName) {
+        const pathElement = document.querySelector('[data-path]')
+        pathElement.innerHTML = pathName
+    }
+
     // получаем Значение key из get-запроса
     static getGetKey(key) {
         // const key = 'category_id'

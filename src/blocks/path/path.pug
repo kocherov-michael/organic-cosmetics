@@ -3,4 +3,4 @@ mixin path(options)
         if options.main
             a.path__item(href="index.html") #{options.main}
         if options.subdir
-            a.path__item(href="#") #{options.subdir}
+            .path__item(data-path) #{options.subdir}

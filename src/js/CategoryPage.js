@@ -17,6 +17,7 @@ export default class CategoryPage extends DefaultPage {
         super.listenAddCartButton()
         this.useFilterForGoods()
         super.listenClosePupUp()
+        super.setPath(this.categoryObj.title)
     }
     
     // получаем id категории из get Запроса
