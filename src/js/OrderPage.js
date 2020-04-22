@@ -5,7 +5,7 @@ export default class OrderPage extends DefaultPage {
         super(args = {})
         // this.orderCartArr = this.cart
         this.orderCartArr = JSON.parse(localStorage.getItem('order'))
-        console.log(this.cart.length)
+        // console.log(this.cart.length)
         this.fillOrderAside()
         // this.hideCartIcon()
         this.fillCartCard()

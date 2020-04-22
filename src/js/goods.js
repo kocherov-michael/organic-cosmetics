@@ -1,8 +1,11 @@
 // const 
 
 
-export const goodsArr = [
-    [
+export const goodsObj = {
+    info: {
+        currency: '$'
+    },
+    goodsArr:[
         {
             brand: 'Dr. Scheller',
             name: 'Anti-Pollution Face Gel',
@@ -20,7 +23,7 @@ export const goodsArr = [
             value: '125ml',
             src: 'dr-scheller.png',
             price: '7.30',
-            oldprice: '',
+            oldprice: '9.90',
             category: 'face',
             subcategory: 'face cleaners',
             id: '115018001',
@@ -1040,7 +1043,7 @@ export const goodsArr = [
 
 
 
-    [
+    categories: [
         {
             category: 'face',
             title: 'Face care',
@@ -1149,7 +1152,7 @@ export const goodsArr = [
 
 
 
-    {
+    oldObj: {
         'face': [
             {
                 'face cleaners': [
@@ -1617,4 +1620,4 @@ export const goodsArr = [
             }
         ]
     }
-]
+}

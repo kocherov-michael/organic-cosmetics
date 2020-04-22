@@ -1,10 +1,10 @@
-import {goodsArr} from './goods.js'
+import {goodsObj} from './goods.js'
 import DefaultPage from './DefaultPage.js'
 
 export default class CategoryPage extends DefaultPage {
     constructor(args = {}) {
         super(args = {})
-        this.categoriesArr = goodsArr[1]
+        this.categoriesArr = goodsObj.categories
         this.categoryId = DefaultPage.getGetKey('category_id')
         this.categoryObj = this.getCategoryObj()
         // массив с товарами выбранной категории
@@ -18,6 +18,7 @@ export default class CategoryPage extends DefaultPage {
         this.useFilterForGoods()
         super.listenClosePupUp()
         super.setPath(this.categoryObj.title)
+        super.fillGoodsBottom()
     }
     
     // получаем id категории из get Запроса

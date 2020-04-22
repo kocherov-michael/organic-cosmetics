@@ -1,12 +1,13 @@
-import {goodsArr} from './goods.js'
+import {goodsObj} from './goods.js'
 
 export default class DefaultPage {
     constructor(args = {}) {
         this.cart = JSON.parse(localStorage.getItem('cart')) || []
-        this.goodsArr = goodsArr[0]
+        this.goodsArr = goodsObj.goodsArr
+        this.currency = goodsObj.info.currency
         this.showCartLength()
         this.fillCartCard()
-        this.fillGoodsBottom()
+        // this.fillGoodsBottom()
     }
 
     // прослушка кнопок показа большой карточки
@@ -402,6 +403,7 @@ export default class DefaultPage {
 
     // шаюлон карточки товара для заполнения страницы
     getGoodsTemplate(goodsObj, wideCards = false) {
+        console.log(this.currency)
         // плашки статусов товара
         let billets = 
         `<div class="good-card__billet-wrapper">
@@ -428,6 +430,19 @@ export default class DefaultPage {
 
         // если карточки должны быть широкими
         let cardStyles = wideCards? 'col-lg-4 col-xl-3':'col-md-4 col-lg-3'
+
+        // если старая цена есть
+        let oldPriceTemplate = ''
+        let ofertaTemplate = ''
+        if (goodsObj.oldprice) {
+            console.log(goodsObj.oldprice)
+            oldPriceTemplate = 
+            `<div class="good-card__old-price">${goodsObj.oldprice}&nbsp;${this.currency || '$'}</div>`
+
+            
+            ofertaTemplate = 
+            `<div class="good-card__oferta">${DefaultPage.calcOferta(goodsObj.oldprice, goodsObj.price)}%</div>`
+        }
         
         const innerElement = 
         `<div class="goods__card col-sm-6 ${cardStyles}">
@@ -443,15 +458,17 @@ export default class DefaultPage {
             </div>
             <div class="good-card__main">
                 <div class="good-card__oferta-wrapper">
+                    ${ofertaTemplate}
                 </div>
                 <div class="good-card__group">${goodsObj.subcategory}</div>
                 <a class="good-card__title" data-goods-link="" href="product.html?id=${goodsObj.id}">${goodsObj.name}</a>
                 <div class="good-card__old-price-wrapper">
+                    ${oldPriceTemplate}
                 </div>
             </div>
             <div class="good-card__footer">
                 <div class="good-card__footer-price">
-                <div class="good-card__price">${goodsObj.price}</div>
+                    <div class="good-card__price">${goodsObj.price}&nbsp;${this.currency || '$'}</div>
                 </div>
                 <div class="good-card__footer-icons">
                 <div class="good-card__footer-icon-item" data-card-look="${goodsObj.id}" >
@@ -514,5 +531,11 @@ export default class DefaultPage {
         const id = p.match(new RegExp(key + '=([^&=]+)'));
         // console.log(id[1])
         return id ? id[1] : false;
+    }
+
+    // вычисляем размер скидки
+    static calcOferta(oldprice, newprice) {
+        // console.log(Math.floor((oldprice - newprice) / oldprice * 100))
+        return Math.floor((oldprice - newprice) / oldprice * 100)
     }
 }

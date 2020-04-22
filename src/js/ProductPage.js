@@ -13,6 +13,7 @@ export default class ProductPage extends DefaultPage {
         this.fillProductDesc()
         this.toggleProductDesc()
         super.listenClosePupUp()
+        super.fillGoodsBottom()
     }
 
     // заполнить описание продукта

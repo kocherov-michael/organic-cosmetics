@@ -11,6 +11,7 @@ export default class MainPage extends DefaultPage {
         // console.log(this)
         this.listenSortButtons()
         this.listenLinkCards()
+        super.fillGoodsBottom()
     }
     
     // заполняем карточками с товарами главную страницу
