@@ -166,7 +166,7 @@ export default class CartPage extends DefaultPage {
     // сохраняем заказы в память при переходе к оформлению
     saveCartToStorage() {
         const proceedButtonElement = document.querySelector('[data-order-link]')
-        console.log(proceedButtonElement)
+        // console.log(proceedButtonElement)
         proceedButtonElement.addEventListener('click', (event) => {
             // event.preventDefault()
             // console.log(event)

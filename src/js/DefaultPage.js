@@ -470,7 +470,35 @@ export default class DefaultPage {
 
     // заполнить товарами нижнюю часть страницы
     fillGoodsBottom() {
+        // если такого элемента нет на странице, то отмена
+        if (!document.querySelector('[data-goods-bottom]')) return
 
+        const goodsBottomElement = document.querySelector('[data-goods-bottom]')
+        goodsBottomElement.innerHTML = ''
+        let innerElement = ''
+        const sort = 'new'
+
+        let i = 0
+        let setItem = 0
+        // устанавливаем, сколько товаров отображать на странице
+        while(setItem < 12) {
+            if (this.goodsArr[i] && this.goodsArr[i][sort]) {
+            // если товар удовлетворяет условиям сортировки 
+            innerElement += this.getGoodsTemplate(this.goodsArr[i])
+            setItem++
+            } 
+            else if (i >= this.goodsArr.length ) {
+            // если товаров больше нет, а цикл не закончился
+            break
+            }
+            i++
+        }
+
+        goodsBottomElement.innerHTML = innerElement
+        // показать большую карточку товара
+        this.listenLookButton()
+        // добавить товар в корзину
+        this.listenIconAddToCart()
     }
 
     setPath(pathName) {
