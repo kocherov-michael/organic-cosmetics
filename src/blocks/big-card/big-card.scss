@@ -62,6 +62,9 @@
 .card-desc__new-price {
     font-size: 36px;
     font-weight: 600;
+    span {
+        margin-right: 5px;
+    }
 }
 
 .card-desc__old-price {

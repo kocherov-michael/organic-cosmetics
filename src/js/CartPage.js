@@ -71,7 +71,7 @@ export default class CartPage extends DefaultPage {
                                 <div class="cart-item__title col-6 col-md-3"><a class="cart-item__link" href="product.html">${this.goodsArr[j].name}</a>
                                 <div class="cart-item__info">${this.goodsArr[j].value}, Skin type: ${this.goodsArr[j].skin}</div>
                                 </div>
-                                <div class="cart-item__price col-3 col-sm-6 col-md-2" data-price="${this.goodsArr[j].price}">$${this.goodsArr[j].price}</div>
+                                <div class="cart-item__price col-3 col-sm-6 col-md-2" data-price="${this.goodsArr[j].price}">${this.goodsArr[j].price} ${this.currency}</div>
                                 <div class="cart-item__input col-6 col-sm-3 col-md-2">
                                 <div class="quantity-input quantity-input--blue" data-quantity-input="">
                                     <input class="quantity-input__field" value="${this.cart[i].quantity}" data-input-value="${this.cart[i].id}">
@@ -79,7 +79,7 @@ export default class CartPage extends DefaultPage {
                                     <div class="quantity-input__minus" data-input-minus="">-</div>
                                 </div>
                                 </div>
-                                <div class="cart-item__total col-3 col-md-2">$<span data-item-summ>0</span></div>
+                                <div class="cart-item__total col-3 col-md-2"><span data-item-summ>0</span>&nbsp;${this.currency}</div>
                             </div>
                         </div>
                     </div>`

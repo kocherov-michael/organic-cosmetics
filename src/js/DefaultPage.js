@@ -110,7 +110,9 @@ export default class DefaultPage {
         const titleElement = cardElement.querySelector('[data-big-card-title]')
         const subTitleElement = cardElement.querySelector('[data-big-card-subtitle]')
         const priceElement = cardElement.querySelector('[data-big-card-price]')
+        const priceCurrencyElement = cardElement.querySelector('[data-big-card-price-currency]')
         const oldpriceElement = cardElement.querySelector('[data-big-card-oldprice]')
+        const oldpriceCurrencyElement = cardElement.querySelector('[data-big-card-oldprice-currency]')
         const addToCartButtonElement = cardElement.querySelector('[data-big-card-to-cart]')
         const sizeElement = cardElement.querySelector('[data-big-card-size]')
         const skinElement = cardElement.querySelector('[data-big-card-skin]')
@@ -124,7 +126,8 @@ export default class DefaultPage {
         addToCartButtonElement.setAttribute('data-big-card-to-cart', goodsObj.id)
         sizeElement.innerText = goodsObj.value
         skinElement.innerText = goodsObj.skin
-
+        priceCurrencyElement.innerHTML = this.currency
+        oldpriceCurrencyElement.innerHTML = goodsObj.oldprice? this.currency  : ''
     }
 
     // прослушка кнопки добавления в корзину
@@ -273,9 +276,12 @@ export default class DefaultPage {
                     innerElement +=
                     `<div class="cart-thumb">
                         <div class="cart-thumb__main"><img class="cart-thumb__img" src="./assets/img/goods/${this.goodsArr[j].src}" data-cart-thumb-card-img="">
-                        <div class="cart-thumb__desc"><a class="cart-thumb__title" href="product.html?id=${this.goodsArr[j].id}">${this.goodsArr[j].name}</a>
-                            <div class="cart-thumb__close"><i class="zmdi zmdi-close" data-thumb-remove="${this.goodsArr[j].id}"></i></div>
-                            <div class="card-thumb__price">${this.goodsArr[j].price} $</div>
+                        <div class="cart-thumb__desc">
+                            <a class="cart-thumb__title" href="product.html?id=${this.goodsArr[j].id}">${this.goodsArr[j].name}</a>
+                            <div class="cart-thumb__close">
+                                <i class="zmdi zmdi-close" data-thumb-remove="${this.goodsArr[j].id}"></i>
+                            </div>
+                            <div class="card-thumb__price">${this.goodsArr[j].price}&nbsp;${this.currency}</div>
                             <div class="card-thumb__info">${this.goodsArr[j].value}, Skin type: ${this.goodsArr[j].skin}</div>
                         </div>
                         </div>
@@ -388,6 +394,10 @@ export default class DefaultPage {
         // сумма + налог = всего
         document.querySelectorAll('[data-amount-total]').forEach((elem) => {
             elem.textContent = (Math.round(summ * 105) / 100).toFixed(2)
+        })
+        // валюта
+        document.querySelectorAll('[data-amount-currency]').forEach((elem) => {
+            elem.innerHTML = '&nbsp;' + this.currency
         })
     }
 
