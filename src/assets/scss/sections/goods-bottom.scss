@@ -1,13 +1,13 @@
-.skin-care {
+.goods-bottom {
     padding-bottom: 50px;
 }
 
-.skin-care__title {
+.goods-bottom__title {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
-.skin-care__link {
+.goods-bottom__link {
     text-transform: uppercase;
     color: $neutral-secondary-color;
     transition: all .4s ease;
@@ -17,7 +17,7 @@
         text-decoration: none;
     }
 }
-.skin-care__card {
+.goods-bottom__card {
     display: flex;
     margin-bottom: 15px;
     margin-top: 15px;

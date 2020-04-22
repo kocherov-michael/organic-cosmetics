@@ -10,6 +10,7 @@ export default class MainPage extends DefaultPage {
         super.listenClosePupUp()
         // console.log(this)
         this.listenSortButtons()
+        this.listenLinkCards()
     }
     
     // заполняем карточками с товарами главную страницу
@@ -17,6 +18,7 @@ export default class MainPage extends DefaultPage {
       const goodsGrinWrapperElement = document.querySelector('[data-main-goods-grid]')
       goodsGrinWrapperElement.innerHTML = ''
       let innerElement = ''
+      
 
       let i = 0
       let setItem = 0
@@ -27,7 +29,7 @@ export default class MainPage extends DefaultPage {
           innerElement += this.getGoodsTemplate(this.goodsArr[i])
           setItem++
         }
-        else if (this.goodsArr[i][sort]) {
+        else if (this.goodsArr[i] && this.goodsArr[i][sort]) {
           // если товар удовлетворяет условиям сортировки 
           innerElement += this.getGoodsTemplate(this.goodsArr[i])
           setItem++
@@ -56,5 +58,17 @@ export default class MainPage extends DefaultPage {
           this.fillMainPage(sort)
         })
       })
+    }
+
+    // прослушка карточек-картинок под главным слайдером
+    listenLinkCards() {
+      const limitedLinkElement = document.querySelector('[data-main-top-limited]')
+      limitedLinkElement.addEventListener('click', () => {
+        // console.log(this)
+        this.fillMainPage('limited')
+      })
+
+      
+      
     }
 }

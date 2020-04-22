@@ -6,7 +6,7 @@ export default class DefaultPage {
         this.goodsArr = goodsArr[0]
         this.showCartLength()
         this.fillCartCard()
-        
+        this.fillGoodsBottom()
     }
 
     // прослушка кнопок показа большой карточки
@@ -466,6 +466,11 @@ export default class DefaultPage {
         </div>`
 
         return innerElement
+    }
+
+    // заполнить товарами нижнюю часть страницы
+    fillGoodsBottom() {
+
     }
 
     setPath(pathName) {

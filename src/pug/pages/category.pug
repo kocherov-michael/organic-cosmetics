@@ -7,7 +7,6 @@ block content
     include ../../blocks/success-card/success-card.pug
     include ../../blocks/big-card-wrapper/big-card-wrapper.pug
     include ../includes/header.pug
-        //- +path({main: 'Home', subdir: 'Make-Up'})
     .container
         +path({main: 'Home', subdir: ' '})
     .category-content.container
@@ -16,11 +15,5 @@ block content
                 include ../../blocks/filter/filter.pug
             .col-12.col-md-9.col-lg-10
                 include ../../blocks/category-main/category-main.pug
-    //- include ../includes/product-page-card.pug
-    //- include ../includes/cart-goods.pug
-    //- include ../includes/cart-total.pug
-    //- include ../../blocks/catr-/banner.pug
-    //- .middle.container
-        img(src="./assets/img/bg/bg-middle.jpg", alt="").medium__img
-    //- include ../includes/skin-care.pug
+    include ../includes/goods-bottom.pug
     include ../includes/footer.pug
