@@ -1,7 +1,5 @@
 @import "../../assets/scss/utils/vars.scss";
 
-
-
 .big-card {
     min-height: 500px;
     background-color: #fff;
@@ -10,15 +8,9 @@
     position: relative;
     margin-bottom: 30px;
 }
-.big-card__row {
-    // min-height: 100%;
-}
 
 .big-card__header {
     height: 100%;
-    // background-color: green;
-    // position: relative;
-    // height: 260px;
     padding: 50px;
 }
 .big-card__header-img-wrapper {
@@ -28,9 +20,6 @@
     align-items: center;
 }
 .big-card__header-img {
-    // object-fit: cover;
-    // height: 100%;
-    // width: 100%;
     max-width: 100%;
     object-fit: contain;
     height: 100%;
@@ -38,7 +27,6 @@
 
 .big-card__main {
     height: 100%;
-    // background-color: rgb(136, 136, 175);
 }
 
 .card-desc {
