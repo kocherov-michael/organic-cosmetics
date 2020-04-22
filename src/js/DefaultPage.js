@@ -61,7 +61,9 @@ export default class DefaultPage {
 
     // показать всплывающее окно
     showPopUp(selector, timeout = 0) {
+        
         const wrapperElement = document.querySelector(selector)
+        
         // удаляем точку у класса
         selector = selector.slice(1)
         // console.log(selector + '--translate')
@@ -88,7 +90,7 @@ export default class DefaultPage {
         const wrapperElement = document.querySelector(selector)
         // удаляем точку у класса
         selector = selector.slice(1)
-        console.log(selector + '--translate')
+        
         wrapperElement.classList.remove(selector +'--show-card')
         wrapperElement.classList.remove(selector +'--opacity-1')
         
@@ -145,7 +147,7 @@ export default class DefaultPage {
                 const id = +button.getAttribute('data-big-card-to-cart')
                 const quantity = +inputElement.value
                 const obj = { id, quantity }
-                console.log(obj)
+                // console.log(obj)
                 this.addToCart(obj)
                 // убираем окошко
                 this.hidePopUp('.big-card-wrapper')
@@ -207,7 +209,7 @@ export default class DefaultPage {
         // const cart = JSON.parse(localStorage.getItem('cart')) || []
         // устанавливаем, записан ли уже объект в список
         let objIsSet = false
-        console.log(obj)
+        // console.log(obj)
         
         for ( let i = 0; i < this.cart.length; i++ ) {
             if (this.cart[i].id === obj.id) {

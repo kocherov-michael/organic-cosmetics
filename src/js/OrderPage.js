@@ -83,7 +83,9 @@ export default class OrderPage extends DefaultPage {
             })
             // return
             if (allCorrect) {
+                super.showPopUp('.info-card-wrapper', 500)
                 DefaultPage.postData('http://organics-myshop.org/order', data)
+                localStorage.setItem('cart', JSON.stringify([]))
             }
         })
     }

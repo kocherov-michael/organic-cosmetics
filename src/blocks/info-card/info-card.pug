@@ -1,0 +1,28 @@
+.info-card-wrapper(data-info-card-wrapper)
+    //- .info-card-wrapper--show.info-card-wrapper--show-card.info-card-wrapper--opacity-1.info-card-wrapper--translate
+    .info-card.container(data-info-card)
+        .info-card__title Thanks a lot!
+        .info-card__subtitle Your order has been accepted!
+        .info-card__main
+            .info-card__item
+                .info-card__icon
+                    i.zmdi.zmdi-phone-ring
+                .info-card__text Our specialist will contact you to confirm the order.
+            .info-card__item
+                .info-card__icon
+                    i.zmdi.zmdi-check-all
+                .info-card__text The operator clarifies all the details.
+            .info-card__item
+                .info-card__icon
+                    i.zmdi.zmdi-truck
+                .info-card__text Delivery is by courier home.
+            .info-card__item
+                .info-card__icon
+                    i.zmdi.zmdi-money-box
+                .info-card__text It is paid upon receipt.
+        .info-card__button
+            +button({
+                color: 'primary',
+                text: 'Continue',
+                href: 'index.html'
+                })(data-info-card-button)

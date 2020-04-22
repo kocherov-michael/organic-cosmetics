@@ -1,0 +1,98 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.info-card-wrapper {
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;// именно так для прокрутки
+    background-color: $backgrount-transparent;
+    z-index: 100;
+    padding: 30px 10px;
+    transform: translateY(-100%);
+    transition: opacity .4s ease;
+    // добавить, когда показывается карточка
+    overflow-y: hidden;
+    z-index: 200;
+
+    .info-card {
+        transition: all .4s ease;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    &--show {
+        position: absolute;
+        overflow-y: scroll;
+        min-height: 100vh;
+    }
+    &--show-card {
+
+        .info-card {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    &--opacity-1 {
+
+        opacity: 1;
+    }
+    &--translate {
+        transform: translateY(0);
+    }
+    &--transition-none {
+        transition: none;
+
+    }
+}
+body {
+    // добавить, когда показывается карточка
+    // overflow: hidden;
+}
+.info-card {
+    min-height: 500px;
+    padding: 50px 30px;
+    background-color: $default-color;
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-card__title {
+    font-size: 30px;
+    color: $primary-color;
+    font-weight: 600;
+    // margin: 10px;
+    font-family: $mainFont;
+}
+.info-card__subtitle {
+    font-size: 24px;
+    color: $dark-color;
+    font-family: $mainFont;
+    padding: 0 15px 15px;
+}
+.info-card__main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+}
+
+.info-card__item {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.info-card__icon {
+    margin-right: 20px;
+    color: $primary-color;
+    font-size: 40px;
+}
+.info-card__text {
+    display: flex;
+    align-items: center;
+    color: $neutral-secondary-color;
+    font-weight: 300;
+}
