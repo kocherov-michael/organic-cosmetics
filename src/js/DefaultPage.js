@@ -12,8 +12,8 @@ export default class DefaultPage {
     }
 
     // прослушка кнопок показа большой карточки
-    listenLookButton() {
-        const goodCardButtonsList = document.querySelectorAll('[data-card-look]')
+    listenLookButton(wrapperElement) {
+        const goodCardButtonsList = wrapperElement.querySelectorAll('[data-card-look]')
         if (goodCardButtonsList.length > 0) {
 
            
@@ -157,8 +157,8 @@ export default class DefaultPage {
     }
 
     // прослушка иконки добавлния в корзину на карточке товара
-    listenIconAddToCart() {
-        const addToCartIconElement = document.querySelectorAll('[data-goods-card-icon-to-cart]')
+    listenIconAddToCart(wrapperElement) {
+        const addToCartIconElement = wrapperElement.querySelectorAll('[data-goods-card-icon-to-cart]')
 
         addToCartIconElement.forEach((iconElement) => {
             iconElement.addEventListener('click', () => {
@@ -207,6 +207,7 @@ export default class DefaultPage {
         // const cart = JSON.parse(localStorage.getItem('cart')) || []
         // устанавливаем, записан ли уже объект в список
         let objIsSet = false
+        console.log(obj)
         
         for ( let i = 0; i < this.cart.length; i++ ) {
             if (this.cart[i].id === obj.id) {
@@ -317,7 +318,7 @@ export default class DefaultPage {
         for ( let i = 0; i < removeCartItemList.length; i++ ) {
             removeCartItemList[i].addEventListener('click', () => {
                 const idRemove = removeCartItemList[i].getAttribute('data-thumb-remove')
-                console.log(idRemove)
+                // console.log(idRemove)
                 this.removeFromCart(idRemove)
                 this.fillCartCard()
                 this.showCartLength()
@@ -326,6 +327,8 @@ export default class DefaultPage {
 
 
     }
+
+    // удалить из корзины
     removeFromCart(id) {
         for ( let i = 0; i < this.cart.length; i++ ) {
             if (this.cart[i].id == id) {
@@ -414,7 +417,7 @@ export default class DefaultPage {
 
     // шаюлон карточки товара для заполнения страницы
     getGoodsTemplate(goodsObj, wideCards = false) {
-        console.log(this.currency)
+        // console.log(this.currency)
         // плашки статусов товара
         let billets = 
         `<div class="good-card__billet-wrapper">
@@ -446,7 +449,7 @@ export default class DefaultPage {
         let oldPriceTemplate = ''
         let ofertaTemplate = ''
         if (goodsObj.oldprice) {
-            console.log(goodsObj.oldprice)
+            // console.log(goodsObj.oldprice)
             oldPriceTemplate = 
             `<div class="good-card__old-price">${goodsObj.oldprice}&nbsp;${this.currency || '$'}</div>`
 
@@ -524,9 +527,9 @@ export default class DefaultPage {
 
         goodsBottomElement.innerHTML = innerElement
         // показать большую карточку товара
-        this.listenLookButton()
+        this.listenLookButton(goodsBottomElement)
         // добавить товар в корзину
-        this.listenIconAddToCart()
+        this.listenIconAddToCart(goodsBottomElement)
     }
 
     setPath(pathName) {

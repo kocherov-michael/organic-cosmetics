@@ -44,9 +44,9 @@ export default class MainPage extends DefaultPage {
 
       goodsGrinWrapperElement.innerHTML = innerElement
       // показать большую карточку товара
-      super.listenLookButton()
+      super.listenLookButton(goodsGrinWrapperElement)
       // добавить товар в корзину
-      super.listenIconAddToCart()
+      super.listenIconAddToCart(goodsGrinWrapperElement)
     }
 
     // прослушка кнопок сортироваки
