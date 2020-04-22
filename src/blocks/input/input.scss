@@ -11,4 +11,7 @@
         outline: none;
         box-shadow: $box-shadow;
     }
+    &--danger {
+        background-color: $danger-color-light;
+    }
 }

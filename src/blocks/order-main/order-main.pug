@@ -14,16 +14,16 @@
                 .order-step__num 4
                 .order-step__text Pay the order upon receipt
     .order-main__form
-        form.order-form(action="#" method="post")
+        form.order-form(data-order)
             .order-form__title Name
             .order-form__input
-                +input('Name', 'name')
+                +input('Name', 'name', 'text')(data-order-input)
             .order-form__title Contact phone number
             .order-form__input
-                +input('Phone', 'phone')
+                +input('Phone', 'phone', 'number')(data-order-input)
             .order-form__title E-mail
             .order-form__input
-                +input('E-mail', 'email')
+                +input('E-mail', 'email', 'email')(data-order-input)
             .order-form__submit
                 +button({
                     submit: true, 

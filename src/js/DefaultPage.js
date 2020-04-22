@@ -554,7 +554,7 @@ export default class DefaultPage {
             // если уже подписались, то не отправляем второй раз
             if (!isSubscribed) {
                 isSubscribed = true
-                this.postData('http://organics-myshop.org/subscribe', data)
+                DefaultPage.postData('http://organics-myshop.org/subscribe', data)
                 // имитируем ожидание ответа от сервера
                 setTimeout(()=> {
                     formSuccessElement.classList.add('subscribe__success--active')
@@ -563,7 +563,7 @@ export default class DefaultPage {
         })
     }
     // отправка почты подписки
-    async postData(url = '', data = {}) {
+    static async postData(url = '', data = {}) {
         const response = await fetch(url, {
           method: 'POST',
           headers: {

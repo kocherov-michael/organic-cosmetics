@@ -10,6 +10,7 @@ export default class OrderPage extends DefaultPage {
         // this.hideCartIcon()
         this.fillCartCard()
         this.showTotalSumm()
+        this.orderSubmit()
     }
 
     // заполнить aside на странице order
@@ -52,5 +53,38 @@ export default class OrderPage extends DefaultPage {
     // на странице заказа корзину скрываем
     fillCartCard() {
         document.querySelector('[data-cart-icon]').style="display: none;"
+    }
+
+    // отправка заявки
+    orderSubmit() {
+        const formElement = document.querySelector('[data-order]')
+        const submitElement = formElement.querySelector('[data-order-submit]')
+        const inputList = formElement.querySelectorAll('[data-order-input]')
+
+        formElement.addEventListener('submit', (event) => {
+            event.preventDefault()
+            let allCorrect = true
+            // создаём объект, который отправим на заказ
+            const data = [{order: this.orderCartArr}]
+
+            // собираем данные из инпутов
+            inputList.forEach((input) => {
+                
+                if(input.value.trim()) {
+                    data.push({[input.name]: input.value.trim()})
+                } else {
+                    allCorrect = false
+                    input.classList.add('input--danger')
+                    setTimeout(() => {
+                        input.classList.remove('input--danger')
+                    }, 1000)
+                }
+
+            })
+            // return
+            if (allCorrect) {
+                DefaultPage.postData('http://organics-myshop.org/order', data)
+            }
+        })
     }
 }
