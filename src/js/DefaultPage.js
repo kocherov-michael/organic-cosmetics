@@ -8,6 +8,7 @@ export default class DefaultPage {
         this.showCartLength()
         this.fillCartCard()
         // this.fillGoodsBottom()
+        this.subscribeSubmit()
     }
 
     // прослушка кнопок показа большой карточки
@@ -532,6 +533,46 @@ export default class DefaultPage {
         const pathElement = document.querySelector('[data-path]')
         pathElement.innerHTML = pathName
     }
+
+    // подписка на обновления в футере
+    subscribeSubmit() {
+        const formElement = document.querySelector('[data-form-subscribe]')
+        const formSuccessElement = document.querySelector('[data-form-subscribe-success]')
+        const inputElement = formElement.querySelector('input')
+        let isSubscribed = false
+
+        formElement.addEventListener('submit', (event) => {
+            event.preventDefault()
+            if (!inputElement.value) {
+                inputElement.classList.add('subscribe__input--danger')
+                setTimeout(()=> {
+                    inputElement.classList.remove('subscribe__input--danger')
+                },1000)
+                return
+            }
+            const data = {[inputElement.name]: inputElement.value}
+            // если уже подписались, то не отправляем второй раз
+            if (!isSubscribed) {
+                isSubscribed = true
+                this.postData('http://organics-myshop.org/subscribe', data)
+                // имитируем ожидание ответа от сервера
+                setTimeout(()=> {
+                    formSuccessElement.classList.add('subscribe__success--active')
+                },1000)
+            }
+        })
+    }
+    // отправка почты подписки
+    async postData(url = '', data = {}) {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+        return await response.json();
+      }
 
     // получаем Значение key из get-запроса
     static getGetKey(key) {

@@ -1,3 +1,7 @@
-.subscribe
-    input.subscribe__input(type="email" placeholder="Email address")
-    button.subscribe__submit(type="submit") Subscribe
+form.subscribe(data-form-subscribe)
+    .subscribe__success(data-form-subscribe-success)
+        i.zmdi.zmdi-check-circle
+        | You have successfully subscribed to this newsletter.
+    .subscribe__form
+        input.subscribe__input(type="email" placeholder="Email address" name='subscribe-email')
+        button.subscribe__submit(type="submit") Subscribe
