@@ -1,0 +1,27 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.login {
+    box-shadow: $box-shadow;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.login__title {
+    font-size: 26px;
+    color: $neutral-secondary-color;
+    margin-bottom: 10px;
+}
+.login__form {
+
+}
+
+.login__field {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.login__label {
+    margin-bottom: 10px;
+    color: $neutral-secondary-color;
+}
+.login__button {
+    padding-top: 20px;
+}

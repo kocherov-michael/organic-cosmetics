@@ -1,0 +1,16 @@
+.login.container
+    .row
+        .login__title.col-12 Login to account
+        form.login__form.col-md-6
+            .login__field
+                .login__label Email
+                +input('Enter your email', 'email', 'email')
+            .login__field
+                .login__label Password
+                +input('Enter password', 'password', 'password')
+            .login__button
+                +button({
+                    color: 'primary',
+                    text: 'Log in',
+                    type: 'submit'
+                })

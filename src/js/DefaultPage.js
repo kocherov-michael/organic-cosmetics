@@ -559,7 +559,7 @@ export default class DefaultPage {
             // если уже подписались, то не отправляем второй раз
             if (!isSubscribed) {
                 isSubscribed = true
-                DefaultPage.postData('http://organics-myshop.org/subscribe', data)
+                DefaultPage.postData('request.php', data)
                 // имитируем ожидание ответа от сервера
                 setTimeout(()=> {
                     formSuccessElement.classList.add('subscribe__success--active')
@@ -570,7 +570,7 @@ export default class DefaultPage {
     // отправка заявки
     formSubmit() {
         const formElement = document.querySelector('[data-form]')
-        // const submitElement = formElement.querySelector('[data-order-submit]')
+        
         const inputList = formElement.querySelectorAll('[data-form-input]')
 
         formElement.addEventListener('submit', (event) => {
@@ -596,7 +596,7 @@ export default class DefaultPage {
             // return
             if (allCorrect) {
                 this.showPopUp('.info-card-wrapper', 500)
-                DefaultPage.postData('http://organics-myshop.org/order', data)
+                DefaultPage.postData('request.php', data)
             }
         })
     }
