@@ -7,6 +7,10 @@ export default class CategoryPage extends DefaultPage {
         this.categoriesArr = goodsObj.categories
         this.categoryId = DefaultPage.getGetKey('category_id')
         this.categoryObj = this.getCategoryObj()
+        // массив критериев для фильтрации
+        this.choosenFilter = []
+        // сортировка товаров по данному критерию
+        this.sort = 'noSort'
         // массив с товарами выбранной категории
         this.categoryGoodsArr = this.getCategoryGoods()
         this.fillCategoryMainHeader()
@@ -19,6 +23,7 @@ export default class CategoryPage extends DefaultPage {
         super.listenClosePupUp()
         super.setPath(this.categoryObj.title)
         super.fillGoodsBottom()
+        this.sortGoods()
     }
     
     // получаем id категории из get Запроса
@@ -65,34 +70,47 @@ export default class CategoryPage extends DefaultPage {
     }
 
     // заполнить товарами страницу категории
-    fillCategoryGrid(choosenFilter = []) {
+    fillCategoryGrid() {
         const categoryGridElement = document.querySelector('[data-category-grid]')
         categoryGridElement.innerHTML = ''
         let innerElement = ''
         // массив с уже добавленными товарами
         const alreadryAddedGoods = []
 
-        for ( let i = 0; i < this.categoryGoodsArr.length; i++ ) {
+        // клонируем массив чтобы при сортировке не изменился изначальный
+        this.sortedGoodsArr = Object.assign([],this.categoryGoodsArr)
+        
+        // отсортировываем массив товаров, если выбраны критерии сортировки
+        if (this.sort !== 'noSort') {
+          let sign = 1
+          if (this.sort === 'toLow') {
+            sign = -1
+          }
+          // сортируем массив товаров по убыванию или возрастанию цены
+          this.sortedGoodsArr.sort((a, b) => a.price*sign-b.price*sign)
+        } 
 
-          if ( choosenFilter.length === 0) {
+        for ( let i = 0; i < this.sortedGoodsArr.length; i++ ) {
+
+          if ( this.choosenFilter.length === 0) {
             // если массив фильтра пустой, то добавляем все товары категории
-            innerElement += this.getGoodsTemplate(this.categoryGoodsArr[i], true)
+            innerElement += this.getGoodsTemplate(this.sortedGoodsArr[i], true)
             continue
           } 
           // если не пустой, то обходим его и находим фильтры
-          for (let j = 0; j < choosenFilter.length; j++ ) {
+          for (let j = 0; j < this.choosenFilter.length; j++ ) {
             // если совпала подкатегория
-            const findBySubcategory = this.categoryGoodsArr[i].subcategory_id == choosenFilter[j]
+            const findBySubcategory = this.sortedGoodsArr[i].subcategory_id == this.choosenFilter[j]
             // если совпал бренд , убираем пробелы у названия, т.к. в атрибутах нет пробелов
-            const findByBrand = this.categoryGoodsArr[i].brand.replace(/\s+/g, '') == choosenFilter[j]
+            const findByBrand = this.sortedGoodsArr[i].brand.replace(/\s+/g, '') == this.choosenFilter[j]
             // проверяем был ло уже этот товар добавлен на страницу
-            const isAdded = alreadryAddedGoods.includes(this.categoryGoodsArr[i].id)
+            const isAdded = alreadryAddedGoods.includes(this.sortedGoodsArr[i].id)
 
             // если товар удовлетворяет всем условиям, то добавляем на страницу
             if ( (findBySubcategory || findByBrand) && !isAdded ) {
                
-              innerElement += this.getGoodsTemplate(this.categoryGoodsArr[i], true)
-              alreadryAddedGoods.push(this.categoryGoodsArr[i].id)
+              innerElement += this.getGoodsTemplate(this.sortedGoodsArr[i], true)
+              alreadryAddedGoods.push(this.sortedGoodsArr[i].id)
             }
           }
         }
@@ -106,17 +124,17 @@ export default class CategoryPage extends DefaultPage {
     // создаём условия фильтра
     fillBrandFilter() {
       const filterBrandElement = document.querySelector('[data-filter-brand]')
-      const filterSubcategoriesElement = document.querySelector('[data-filter-subcategories]')
+      // const filterSubcategoriesElement = document.querySelector('[data-filter-subcategories]')
       filterBrandElement.innerHTML = ''
       let innerElement = ''
       const brands = new Set()
 
       // записываем в СЕТ brands названия брендов (по 1 экземпляру)
       for ( let i = 0; i < this.categoryGoodsArr.length; i++ ) {
-        // console.log(this.goodsArr[i].brand)
+        
         brands.add(this.categoryGoodsArr[i].brand)
       }
-      // console.log(brands)
+      
       for (let brand of brands) {
         // убираем пробелы в названии чтобы записать в аттрибут
         const brandSpaceOff = brand.replace(/\s+/g, '')
@@ -184,21 +202,34 @@ export default class CategoryPage extends DefaultPage {
             // если не отмечен, то отмечаем
             input.setAttribute('data-input-checked', 'true')
           }
-          // console.log(input.value)
-
+          
+          // если отмеченных элементов не найдём, то ссылаемся на пустой массив
+          this.choosenFilter = []
           // перебираем список инпутов с целью найти отмеченные
           arr.forEach((item) => {
-            // console.log(item.hasAttribute('data-input-checked="true"'))
-            // если 
+            // если нашли отмеченные элементы, записываем в массив
             if(item.getAttribute('data-input-checked') === 'true') {
               choosenFilter.push(item.value)
-              // console.log(item.value)
+              // ссылаемся на новый массив
+              this.choosenFilter = choosenFilter
+              
             }
           })
           // выводим заново товары на тсраницу уже с использованием фильтра
-          this.fillCategoryGrid(choosenFilter)
+          this.fillCategoryGrid()
 
         })
+      })
+    }
+
+    // сортировака товаров
+    sortGoods() {
+      const selectElement = document.querySelector('[data-category-select]')
+      selectElement.addEventListener('change', () => {
+        console.log(selectElement.value)
+        // выводим заново товары на тсраницу уже с использованием фильтра
+        this.sort = selectElement.value
+        this.fillCategoryGrid()
       })
     }
 }
