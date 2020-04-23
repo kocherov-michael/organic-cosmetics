@@ -7,15 +7,17 @@
 			.header__logo
 				a.logo(href="index.html")
 					img.logo__img(src="./assets/img/logo/organic-cosmetics-logo.png", alt="")
-			.header__account
-				a.header__link(href='login.html') Login
-				a.header__link(href='registration.html') Registration
-			.header__icons
-				include ../../blocks/cart-card/cart-card.pug
-				.icon-cart(data-cart-icon)
-					.icon-cart__bg
-					i.icon-cart__icon.zmdi.zmdi-shopping-cart
-					.icon-cart__value.icon-cart__value--display-none(data-icon-cart-value)
+			.header__rigth-side
+				.header__account(data-header-account)
+					a.header__link(href='login.html' data-login-link) Login
+					a.header__link(href='registration.html' data-registration-link) Registration
+					span.header__link(data-logout) Mary Poppins
+				.header__icons
+					include ../../blocks/cart-card/cart-card.pug
+					.icon-cart(data-cart-icon)
+						.icon-cart__bg
+						i.icon-cart__icon.zmdi.zmdi-shopping-cart
+						.icon-cart__value.icon-cart__value--display-none(data-icon-cart-value)
 	.header__list
 		.header-list
 			a.header-list__item(href="category.html?category_id=15") MAKE UP
