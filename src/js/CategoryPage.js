@@ -65,13 +65,36 @@ export default class CategoryPage extends DefaultPage {
     }
 
     // заполнить товарами страницу категории
-    fillCategoryGrid() {
+    fillCategoryGrid(choosenFilter = []) {
         const categoryGridElement = document.querySelector('[data-category-grid]')
         categoryGridElement.innerHTML = ''
         let innerElement = ''
+        // массив с уже добавленными товарами
+        const alreadryAddedGoods = []
 
         for ( let i = 0; i < this.categoryGoodsArr.length; i++ ) {
-          innerElement += this.getGoodsTemplate(this.categoryGoodsArr[i], true)
+
+          if ( choosenFilter.length === 0) {
+            // если массив фильтра пустой, то добавляем все товары категории
+            innerElement += this.getGoodsTemplate(this.categoryGoodsArr[i], true)
+            continue
+          } 
+          // если не пустой, то обходим его и находим фильтры
+          for (let j = 0; j < choosenFilter.length; j++ ) {
+            // если совпала подкатегория
+            const findBySubcategory = this.categoryGoodsArr[i].subcategory_id == choosenFilter[j]
+            // если совпал бренд , убираем пробелы у названия, т.к. в атрибутах нет пробелов
+            const findByBrand = this.categoryGoodsArr[i].brand.replace(/\s+/g, '') == choosenFilter[j]
+            // проверяем был ло уже этот товар добавлен на страницу
+            const isAdded = alreadryAddedGoods.includes(this.categoryGoodsArr[i].id)
+
+            // если товар удовлетворяет всем условиям, то добавляем на страницу
+            if ( (findBySubcategory || findByBrand) && !isAdded ) {
+               
+              innerElement += this.getGoodsTemplate(this.categoryGoodsArr[i], true)
+              alreadryAddedGoods.push(this.categoryGoodsArr[i].id)
+            }
+          }
         }
         categoryGridElement.innerHTML = innerElement
         // показать большую карточку товара
@@ -95,8 +118,9 @@ export default class CategoryPage extends DefaultPage {
       }
       // console.log(brands)
       for (let brand of brands) {
+        // убираем пробелы в названии чтобы записать в аттрибут
         const brandSpaceOff = brand.replace(/\s+/g, '')
-        // console.log(brandSpaceOff)
+        
         innerElement += 
         `<label class="checkbox">
           <input class="checkbox__input" type="checkbox" name="checkbox" value="${brandSpaceOff}"><span class="checkbox__new-input"> 
@@ -134,7 +158,7 @@ export default class CategoryPage extends DefaultPage {
         
         innerElement += 
         `<label class="checkbox">
-          <input class="checkbox__input" type="checkbox" name="checkbox" value="${subcategoryId}"><span class="checkbox__new-input"> 
+          <input class="checkbox__input" type="checkbox" name="checkbox" value="${subcategoryId}" data-input-checked='false'><span class="checkbox__new-input"> 
             <div class="checkbox__check-item"></div></span>
           <div class="checkbox__text">${subcategoryName}</div>
           </label>`
@@ -142,11 +166,39 @@ export default class CategoryPage extends DefaultPage {
       filterSubcategoriesElement.innerHTML = innerElement
     }
 
+    // фильтруем товары по выбранным параметрам
     useFilterForGoods() {
       const formElement = document.querySelector('[data-filter-form]')
-      formElement.addEventListener('submit', (event) => {
-        event.preventDefault()
-        console.log('submit')
+      const inputList = formElement.querySelectorAll('input')
+      
+      inputList.forEach((input, i, arr) => {
+        input.addEventListener('change', () => {
+          const choosenFilter = []
+
+          // проверяем, отмечел ли уже инпут
+          if (input.getAttribute('data-input-checked') === 'true') {
+            // если инпут уже отмечен, то снимаем отметку
+            input.setAttribute('data-input-checked', 'false')
+            
+          } else {
+            // если не отмечен, то отмечаем
+            input.setAttribute('data-input-checked', 'true')
+          }
+          // console.log(input.value)
+
+          // перебираем список инпутов с целью найти отмеченные
+          arr.forEach((item) => {
+            // console.log(item.hasAttribute('data-input-checked="true"'))
+            // если 
+            if(item.getAttribute('data-input-checked') === 'true') {
+              choosenFilter.push(item.value)
+              // console.log(item.value)
+            }
+          })
+          // выводим заново товары на тсраницу уже с использованием фильтра
+          this.fillCategoryGrid(choosenFilter)
+
+        })
       })
     }
 }

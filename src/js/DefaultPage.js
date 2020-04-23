@@ -12,7 +12,7 @@ export default class DefaultPage {
     }
 
     // прослушка кнопок показа большой карточки
-    listenLookButton(wrapperElement) {
+    listenLookButton(wrapperElement = document) {
         const goodCardButtonsList = wrapperElement.querySelectorAll('[data-card-look]')
         if (goodCardButtonsList.length > 0) {
 
@@ -159,7 +159,7 @@ export default class DefaultPage {
     }
 
     // прослушка иконки добавлния в корзину на карточке товара
-    listenIconAddToCart(wrapperElement) {
+    listenIconAddToCart(wrapperElement = document) {
         const addToCartIconElement = wrapperElement.querySelectorAll('[data-goods-card-icon-to-cart]')
 
         addToCartIconElement.forEach((iconElement) => {

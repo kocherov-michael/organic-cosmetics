@@ -1,6 +1,6 @@
 mixin checkbox(text, count, value)
     label.checkbox&attributes(attributes)
-      input(type="checkbox" name="checkbox" value=value).checkbox__input
+      input(type="checkbox" name="checkbox" value=value data-input-checked='false').checkbox__input
       span.checkbox__new-input 
         .checkbox__check-item
       .checkbox__text #{text} (#{count})
