@@ -1,16 +1,16 @@
 .registration.container
     .row
         .registration__title.col-12 Create account
-        form.registration__form.col-md-6(registration-form)
+        form.registration__form.col-md-6(data-form)
             .registration__field
                 .registration__label Name
-                +input('Enter your name', 'name', 'text')
+                +input('Enter your name', 'name', 'text')(data-form-input)
             .registration__field
                 .registration__label Email
-                +input('Enter your email', 'email', 'email')
+                +input('Enter your email', 'email', 'email')(data-form-input)
             .registration__field
                 .registration__label Password
-                +input('Enter password', 'password', 'password')
+                +input('Enter password', 'password', 'password')(data-form-input)
             .registration__bottom
                 .registration__button
                     +button({
