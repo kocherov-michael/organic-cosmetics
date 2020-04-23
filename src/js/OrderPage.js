@@ -11,6 +11,20 @@ export default class OrderPage extends DefaultPage {
         this.fillCartCard()
         this.showTotalSumm()
         this.formSubmit()
+        this.fillInputsUsersData()
+    }
+    // заполнить поля формы данными пользователя
+    fillInputsUsersData() {
+        console.log(this.userData)
+        // если пользователь залогинен
+        if (this.userData.status === 'login') {
+            const formElement = document.querySelector('[data-form]')
+            const inputList = formElement.querySelectorAll('[data-form-input]')
+            // заполняем поля инпутов данными из профиля пользователя
+            inputList.forEach( input => {
+                input.value = this.userData[input.getAttribute('name')]
+            })
+        }
     }
 
     // заполнить aside на странице order

@@ -12,7 +12,7 @@ export default class DefaultPage {
         // уведомление о подписке в подвале
         this.subscribeSubmit()
         // показать имя залогинившегося пользователя в шапке
-        this.showAccountUserName()
+        this.userData = this.showAccountUserName()
     }
 
     // прослушка кнопок показа большой карточки
@@ -629,6 +629,7 @@ export default class DefaultPage {
             accountWrapperElement.classList.add('header__account--login')
             userNameElement.innerHTML = data.name
         }
+        return data
     }
 
 
