@@ -1,13 +1,13 @@
 .login.container
     .row
         .login__title.col-12 Login to account
-        form.login__form.col-md-6(login-form)
+        form.login__form.col-md-6(data-form)
             .login__field
                 .login__label Email
-                +input('Enter your email', 'email', 'email')
+                +input('Enter your email', 'email', 'email')(data-form-input)
             .login__field
                 .login__label Password
-                +input('Enter password', 'password', 'password')
+                +input('Enter password', 'password', 'password')(data-form-input)
             .login__button
                 .login__button-item
                     +button({

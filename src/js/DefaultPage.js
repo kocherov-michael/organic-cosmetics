@@ -570,35 +570,50 @@ export default class DefaultPage {
     // отправка заявки
     formSubmit() {
         const formElement = document.querySelector('[data-form]')
+
+        formElement.addEventListener('submit', this.submitHandler.bind(this) )
+    }
+
+    // обработчик submit form
+    submitHandler(event) {
+        // console.log(event)
+        const data = this.collectInputValues(event)
+        // const formElement = document.querySelector('[data-form]')
         
+        // return
+        // if (allCorrect) {
+            
+            DefaultPage.postData('request.php', data)
+        // }
+    }
+
+    collectInputValues(event) {
+        event.preventDefault()
+        const formElement = event.target
         const inputList = formElement.querySelectorAll('[data-form-input]')
+        let allCorrect = true
+        // создаём объект, который отправим на заказ
+        const data = {order: this.orderCartArr}
 
-        formElement.addEventListener('submit', (event) => {
-            event.preventDefault()
-            let allCorrect = true
-            // создаём объект, который отправим на заказ
-            const data = [{order: this.orderCartArr}]
-
-            // собираем данные из инпутов
-            inputList.forEach((input) => {
-                
-                if(input.value.trim()) {
-                    data.push({[input.name]: input.value.trim()})
-                } else {
-                    allCorrect = false
-                    input.classList.add('input--danger')
-                    setTimeout(() => {
-                        input.classList.remove('input--danger')
-                    }, 1000)
-                }
-
-            })
-            // return
-            if (allCorrect) {
-                this.showPopUp('.info-card-wrapper', 500)
-                DefaultPage.postData('request.php', data)
+        // собираем данные из инпутов
+        inputList.forEach((input) => {
+            
+            if(input.value.trim()) {
+                data[input.name] = input.value.trim()
+            } else {
+                allCorrect = false
+                input.classList.add('input--danger')
+                setTimeout(() => {
+                    input.classList.remove('input--danger')
+                }, 1000)
             }
+
         })
+        if (allCorrect) {
+            this.showPopUp('.info-card-wrapper', 500)
+            return data
+        }
+        
     }
 
 

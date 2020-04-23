@@ -63,6 +63,9 @@
     font-weight: 600;
     // margin: 10px;
     font-family: $mainFont;
+    &--fail {
+        color: $danger-color;
+    }
 }
 .info-card__subtitle {
     font-size: 24px;

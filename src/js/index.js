@@ -31,6 +31,7 @@ import CategoryPage from './CategoryPage.js'
 import ProductPage from './ProductPage.js'
 import OrderPage from './OrderPage.js'
 import ContactsPage from './ContactsPage.js'
+import LoginPage from './LoginPage.js'
 
 // console.log(location)
 // console.log(location.pathname)
@@ -57,6 +58,10 @@ else if (location.pathname.includes('category')) {
 else if (location.pathname.includes('order.html')) {
     console.log('/order.html')
     const page = new OrderPage()
+}
+else if (location.pathname.includes('login.html')) {
+    console.log('/login.html')
+    const page = new LoginPage()
 }
 else {
     console.log('else')
