@@ -4,6 +4,7 @@
     background-color: $neutral-secondary-color;
     padding-top: 50px;
     padding-bottom: 50px;
+    
 }
 
 .footer-contacts__desc {
@@ -11,20 +12,50 @@
     margin-bottom: 30px;
     font-size: 14px;
     text-align: center;
+    @media(min-width: 576px) {
+        text-align: left;
+    }
+    @media(min-width: 768px) {
+        text-align: center;
+    }
 }
 
 .footer-contacts__list {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
+    @media(max-width: 576px) {
+        align-items: center;
+    }
+    @media(min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.footer-list {
+    padding: 5px;
 }
 
 .footer-list__item {
     color: $default-color;
-    margin: 10px;
+    // margin: 10px;
     font-size: 14px;
     transition: all .4s ease;
     &:hover {
         color: $neutral-primary-color;
         text-decoration: none;
+    }
+}
+
+.footer-contacts__phone {
+    color: $default-color;
+    font-size: 26px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        padding-left: 15px;
     }
 }
