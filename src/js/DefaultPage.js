@@ -5,10 +5,14 @@ export default class DefaultPage {
         this.cart = JSON.parse(localStorage.getItem('cart')) || []
         this.goodsArr = goodsObj.goodsArr
         this.currency = goodsObj.info.currency
+        // показать в шапке количество позиций в корзине
         this.showCartLength()
+        // заполнить карточку корзины в шапке
         this.fillCartCard()
-        // this.fillGoodsBottom()
+        // уведомление о подписке в подвале
         this.subscribeSubmit()
+        // показать имя залогинившегося пользователя в шапке
+        this.showAccountUserName()
     }
 
     // прослушка кнопок показа большой карточки
@@ -576,17 +580,13 @@ export default class DefaultPage {
 
     // обработчик submit form
     submitHandler(event) {
-        // console.log(event)
+        // собираем данные инпутов
         const data = this.collectInputValues(event)
-        // const formElement = document.querySelector('[data-form]')
-        
-        // return
-        // if (allCorrect) {
-            
-            DefaultPage.postData('request.php', data)
-        // }
+        // отправляем данные в php файл    
+        DefaultPage.postData('request.php', data)
     }
 
+    // собираем данные инпутов
     collectInputValues(event) {
         event.preventDefault()
         const formElement = event.target
@@ -613,7 +613,22 @@ export default class DefaultPage {
             this.showPopUp('.info-card-wrapper', 500)
             return data
         }
-        
+    }
+
+    // показать залогинившегося пользователя
+    showAccountUserName() {
+        const accountWrapperElement = document.querySelector('[data-header-account]')
+        const userNameElement = accountWrapperElement.querySelector('[data-account-username]')
+
+        const data = JSON.parse(localStorage.getItem('account'))
+        // если данных нет, то возврат
+        if (!data) return
+        // если пользователь залогинен, показываем имя в шапке
+        if (data.status === 'login') {
+            // скрываем надписи логин, показываем имя пользователя
+            accountWrapperElement.classList.add('header__account--login')
+            userNameElement.innerHTML = data.name
+        }
     }
 
 

@@ -60,11 +60,11 @@
     span {
         display: none;
     }
-    &--is-login{
-        a {
+    &--login{
+        .header__link--islogout {
             display: none;
         }
-        span {
+        .header__link--islogin {
             display: inline-block;
         }
     }

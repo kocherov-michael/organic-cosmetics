@@ -27,6 +27,8 @@ export default class LoginPage extends DefaultPage {
                 infoMainElement.innerHTML= ''
                 titleElement.innerHTML= 'Sussess'
                 subtitleElement.innerHTML= 'Login to your profile was successful'
+                account.status = 'login'
+                localStorage.setItem('account', JSON.stringify(account))
             } else {
                 // если пароль не совпал, так и пишем в карточке
                 infoMainElement.innerHTML= ''

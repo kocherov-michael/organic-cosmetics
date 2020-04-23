@@ -9,9 +9,9 @@
 					img.logo__img(src="./assets/img/logo/organic-cosmetics-logo.png", alt="")
 			.header__rigth-side
 				.header__account(data-header-account)
-					a.header__link(href='login.html' data-login-link) Login
-					a.header__link(href='registration.html' data-registration-link) Registration
-					span.header__link(data-logout) Mary Poppins
+					a.header__link.header__link--islogout(href='login.html' data-login-link) Login
+					a.header__link.header__link--islogout(href='registration.html' data-registration-link) Registration
+					a.header__link.header__link--islogin(href='profile.html' data-account-username) Mary Poppins
 				.header__icons
 					include ../../blocks/cart-card/cart-card.pug
 					.icon-cart(data-cart-icon)

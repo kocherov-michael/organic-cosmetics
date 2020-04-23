@@ -22,6 +22,7 @@ export default class RegistrationPage extends DefaultPage {
             // если не получили данные, то дальше не выполняем
             if (!data) return
             DefaultPage.postData('request.php', data)
+            data.status = 'login'
             // сохраняем данные в память
             localStorage.setItem('account', JSON.stringify(data))
 
