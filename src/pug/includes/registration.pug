@@ -1,0 +1,26 @@
+.registration.container
+    .row
+        .registration__title.col-12 Create account
+        form.registration__form.col-md-6(registration-form)
+            .registration__field
+                .registration__label Name
+                +input('Enter your name', 'name', 'text')
+            .registration__field
+                .registration__label Email
+                +input('Enter your email', 'email', 'email')
+            .registration__field
+                .registration__label Password
+                +input('Enter password', 'password', 'password')
+            .registration__bottom
+                .registration__button
+                    +button({
+                        color: 'primary',
+                        text: 'Create',
+                        type: 'submit'
+                    })
+                .registration__button
+                    +button({
+                        color: 'tertiary',
+                        text: 'Login',
+                        href: 'login.html'
+                    })

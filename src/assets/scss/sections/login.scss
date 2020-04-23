@@ -10,9 +10,9 @@
     color: $neutral-secondary-color;
     margin-bottom: 10px;
 }
-.login__form {
+// .login__form {
 
-}
+// }
 
 .login__field {
     padding-top: 15px;
@@ -24,4 +24,6 @@
 }
 .login__button {
     padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,1 +1,29 @@
 @import "../../assets/scss/utils/vars.scss";
+
+.registration {
+    box-shadow: $box-shadow;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.registration__title {
+    font-size: 26px;
+    color: $neutral-secondary-color;
+    margin-bottom: 10px;
+}
+// .registration__form {
+
+// }
+
+.registration__field {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.registration__label {
+    margin-bottom: 10px;
+    color: $neutral-secondary-color;
+}
+.registration__bottom {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
