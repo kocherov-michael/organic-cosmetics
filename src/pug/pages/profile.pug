@@ -1,0 +1,12 @@
+extends ../layout/page.pug
+
+block variables
+	- var title = 'Profile';
+
+block content
+	include ../../blocks/info-card/info-card.pug
+	include ../includes/header.pug
+	.container
+		+path({main: 'Home', subdir: 'Profile'})
+	include ../includes/profile.pug
+	include ../includes/footer.pug

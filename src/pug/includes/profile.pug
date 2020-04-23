@@ -1,0 +1,26 @@
+.profile.container
+    .row
+        .profile__title.col-12 Profile
+        form.profile__form.col-md-6(data-form)
+            .profile__field
+                .profile__label Name
+                +input('Enter your name', 'name', 'text')(data-form-input readonly).input--readonly
+            .profile__field
+                .profile__label Email
+                +input('Enter your email', 'email', 'email')(data-form-input readonly).input--readonly
+            .profile__field
+                .profile__label Password
+                +input('Enter password', 'password', 'password')(data-form-input readonly).input--readonly
+            .profile__bottom
+                .profile__button
+                    +button({
+                        color: 'primary',
+                        text: 'Edit',
+                        type: 'submit'
+                    })
+                .profile__button
+                    +button({
+                        color: 'tertiary',
+                        text: 'Logout',
+                        href: 'login.html'
+                    })

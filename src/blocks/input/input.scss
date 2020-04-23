@@ -14,4 +14,9 @@
     &--danger {
         background-color: $danger-color-light;
     }
+    &--readonly {
+        &:focus {
+            box-shadow: none;
+        }
+    }
 }
