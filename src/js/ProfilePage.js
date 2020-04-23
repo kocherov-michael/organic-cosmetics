@@ -4,9 +4,18 @@ export default class RegistrationPage extends DefaultPage {
     constructor(args = {}) {
         super(args = {})
         // this.formSubmit()
+        this.checkIsLogin()
         this.fillProfileFields()
         this.listenEditButton()
         this.logoutListener()
+    }
+
+    // проверяем залогинен ли пользователь
+    checkIsLogin() {
+        const account = JSON.parse(localStorage.getItem('account')) || {}
+        if (!account.status || account.status !== 'login') {
+            window.location.replace('login.html')
+        }
     }
 
     // заполнить поля данными пользователя
