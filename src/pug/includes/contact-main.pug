@@ -4,15 +4,15 @@
             .contact-us
                 h2.contact-us__title Contact us
                 .contact-us__form
-                    form.contact-form.container(action="mail.php" method='post')
+                    form.contact-form.container(data-form)
                         .contact-form__item.row
                             .contact-form__item-label.col-4 Email address
                             .contact-form__item-input.col-8
-                                +input('Email', 'email')
+                                +input('Email', 'email')(data-form-input)
                         .contact-form__item.row
                             .contact-form__item-label.col-4 Message
                             .contact-form__item-textarea.col-8
-                                +textarea('How can we help?', 'email')
+                                +textarea('How can we help?', 'email')(data-form-input)
                         .contact-form__button
                             +button({submit: true, color: "primary", text: "send"})
 

@@ -567,6 +567,41 @@ export default class DefaultPage {
             }
         })
     }
+    // отправка заявки
+    formSubmit() {
+        const formElement = document.querySelector('[data-form]')
+        // const submitElement = formElement.querySelector('[data-order-submit]')
+        const inputList = formElement.querySelectorAll('[data-form-input]')
+
+        formElement.addEventListener('submit', (event) => {
+            event.preventDefault()
+            let allCorrect = true
+            // создаём объект, который отправим на заказ
+            const data = [{order: this.orderCartArr}]
+
+            // собираем данные из инпутов
+            inputList.forEach((input) => {
+                
+                if(input.value.trim()) {
+                    data.push({[input.name]: input.value.trim()})
+                } else {
+                    allCorrect = false
+                    input.classList.add('input--danger')
+                    setTimeout(() => {
+                        input.classList.remove('input--danger')
+                    }, 1000)
+                }
+
+            })
+            // return
+            if (allCorrect) {
+                this.showPopUp('.info-card-wrapper', 500)
+                DefaultPage.postData('http://organics-myshop.org/order', data)
+            }
+        })
+    }
+
+
     // отправка почты подписки
     static async postData(url = '', data = {}) {
         const response = await fetch(url, {
