@@ -1,7 +1,7 @@
 .profile.container
     .row
         .profile__title.col-12 Profile
-        form.profile__form.col-md-6(data-form)
+        form.profile__form.col-md-8.col-lg-7.col-xl-6(data-form)
             .profile__field
                 .profile__label Name
                 +input('Enter your name', 'name', 'text')(data-form-input readonly).input--readonly
@@ -17,10 +17,10 @@
                         color: 'primary',
                         text: 'Edit',
                         type: 'submit'
-                    })
+                    })(data-submit-button)
                 .profile__button
                     +button({
                         color: 'tertiary',
                         text: 'Logout',
                         href: 'login.html'
-                    })
+                    })(data-logout-button)
