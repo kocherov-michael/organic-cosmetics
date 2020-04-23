@@ -1,12 +1,15 @@
 .wrapper.container.header
 	.header__top
 		.header__row
-			.header__left-space
+			.header__left-links
 				a.header__link(href='index.html') Home
 				a.header__link(href='contacts.html') Contact us
 			.header__logo
 				a.logo(href="index.html")
 					img.logo__img(src="./assets/img/logo/organic-cosmetics-logo.png", alt="")
+			.header__account
+				a.header__link(href='login.html') Login
+				a.header__link(href='registration.html') Registration
 			.header__icons
 				include ../../blocks/cart-card/cart-card.pug
 				.icon-cart(data-cart-icon)
