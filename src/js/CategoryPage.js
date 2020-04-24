@@ -17,7 +17,7 @@ export default class CategoryPage extends DefaultPage {
         this.fillCategoryGrid()
         this.fillBrandFilter()
         this.fillSubcategoriesFilter()
-        
+        super.quantityInput()
         super.listenAddCartButton()
         this.useFilterForGoods()
         super.listenClosePupUp()
