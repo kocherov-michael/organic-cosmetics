@@ -2214,11 +2214,402 @@ export const goodsObj = {
             id: '145098024',
             category_id: 14,
             subcategory_id: 509,
+            popular: false,
+            new: false,
+            limited: true,
+            bestseller: false
+        },
+        {
+            brand: 'Acorelle',
+            name: 'Eau de toilette Fleur Poivree',
+            subtitle: 'A Powerful Perfume with Black Pepper, Vanilla and Sandalwood',
+            details: `A powerful fragrance that combines notes of red chilli and black pepper on a base woody sensual vanilla and sandalwood. 
+            French perfumes from natural raw materials developed in collaboration with Acorelle perfume makers of Grasse, the perfume capital, and produced and packaged at the headquarters of the company in western France.
+            100% natural alcohol from beetroot
+            DO NOT contain denatured alcohol
+            They do not contain phthalates
+            They do not contain colorants
+            They do not contain MUSK of synthetic or animal origin`,
+            usage: `For persistence of smell, apply on the wrists and in the area of ​​the neck, even after bathing.`,
+            ingredients: `Ingrédients : ALCOHOL, PARFUM, AQUA, ALPHA ISOMETHYL IONONE, HYDROXYCITRONELLAL, HYDROXYISOHEXYL 3-CYCLOHEXENE CARBOXALDEHYDE, LIMONENE, LINALOOL`,
+            skin: '',
+            value: '50ml',
+            src: 'fleur09871.png',
+            price: '19.50',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Perfumes',
+            id: '145098104',
+            category_id: 14,
+            subcategory_id: 509,
             popular: true,
             new: true,
             limited: false,
-            bestseller: true
+            bestseller: false
         },
+        {
+            brand: 'Avril',
+            name: 'Eau De Toilette | Bouquet Royal',
+            subtitle: 'A Powerful Perfume with Black Pepper, Vanilla and Sandalwood',
+            details: `Enjoy the sophisticated arrogance of Eau de toilette water Bouquet royal certified organic Avril.
+            This royal fragrance invites in an intoxicating waltz of elegant notes, sometimes chypre, sometimes floral, always unexpected.
+            Family : chypre and floral
+            Gender : female
+            Top note : Bergamot orange, galbanum, lemon and young-grain bigarade
+            Heart note : True laveder, immortal , purple note and raspberry 
+            Base note : Patchouly, sandalwood amyris, vanilla and whites peaches notes
+            Certified orgnic by Ecocert
+            Vegan`,
+            usage: `For persistence of smell, apply on the wrists and in the area of ​​the neck, even after bathing.`,
+            ingredients: `Alcohol denat., rosa damascena flower water, parfum (fragrance), benzyl benzoate, citral, citronellol, coumarin, eugenol, farnesol, geraniol, isoeugenol, limonene, linalool.`,
+            skin: '',
+            value: '50ml',
+            src: 'bouquet523.png',
+            price: '16.00',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Perfumes',
+            id: '145098105',
+            category_id: 14,
+            subcategory_id: 509,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Florascent Parfumers',
+            name: 'Chypre',
+            subtitle: 'Eau de Toilette',
+            details: `Created as a tribute to the glamourous women. A flowery accord of sunny jasmin, orangeflower and enchanting narcisses. Aromatic notes of Gourmand gives this scent its structure and character: tonka and vanilla get accentuated by the lively-aromatic pink pepper. The reverberation is marked by accentuated contrasty woody notes.
+            * Hypoallergenic ~ ideal for sensitive skins.
+            * Florascent use natural essential oils rather than synthetics.
+            * Florascent perfumes are phthalate free.
+            * Florascent perfumes  do NOT contain animal Musk / Nitromusk compounds.
+            * Florascent perfumes do NOT test on animals.
+            * Florascent perfumes do NOT use preservatives or artificial colours.
+            * Florascent perfumes contain exclusively herbal components.
+            * Suitable for Vegans`,
+            usage: `Ideally, spray in the air and walk through the cloud of your perfume mist..
+            The amount of perfume that will fall into your hair and clothes is ideal for a soft and discrit result.
+            Spray your perfume onto your "pulse points." These points are places where blood vessels are close to the skin such as collarbones, knees, necklines. There is extra heat at these points, and fragrances need time and the warmth of your body to reveal.
+            Never rub your fragrance because you will destroy its top notes and alter its identity aroma.
+            Spray on the prefered points of your body, dab 2-3 times and let your skin to absorb it.`,
+            ingredients: `This exclusive formula contains a composition of natural essential oils. Ingredients (INCI): Alcohol, Aqua (Water), Parfum (Fragrance), Limonene, Linalool, Citronellol, Geraniol, Coumarin, Citral, Eugenol, Benzyl Benzoate, Cinnamyl Alcohol, Benzyl Alcohol, Anise Alcohol, Benzyl Salicylate, Isoeugenol, Benzyl Cinnamate, Farnesol, Cinnamal, Evernia Prunastri Extract.`,
+            skin: '',
+            value: '60ml',
+            src: 'aromat7334.png',
+            price: '49.90',
+            oldprice: '59.00',
+            category: 'aromatherapy',
+            subcategory: 'Perfumes',
+            id: '145098106',
+            category_id: 14,
+            subcategory_id: 509,
+            popular: false,
+            new: true,
+            limited: true,
+            bestseller: false
+        },
+        {
+            brand: 'Biorganic',
+            name: 'Lavender Floral Water 100ml',
+            subtitle: '100% Pure & Natural',
+            details: `100% pure and natural, steam distilled Lavender floral water.
+            A pure floral water that cleanses, tones and balances the skin with a wonderful relaxing and revitalizing fragrance.
+            Ideal for face, body & hair
+            Suitable for all skin types
+            Cleanses, tones, balances & moisturizes the skin
+            Ideal for acne, dark spots & discolorations
+            Tames frizzy hair and combats greasiness
+            Soothes the skin after shaving`,
+            usage: `Usage:
+            Skincare
+            Haircare
+            Aromatherapy
+            Applications:
+            Skincare/Haircare
+            Cleansing, energizing, and toning for all skin types - a perfect finish for your daily cleansing routine.
+            Use this aromatic mist to soften and hydrate your skin and hair and indulge in the magnetizing lavender aroma.
+            Aromatherapy
+            The rejuvenating fragrance uplifts the spirits and harmonizes the mind. It can be used to increase concentration and improve inner balance.
+            Use as a bathtub supplement for stress-relief or spray your room, bed sheets, and clothing.`,
+            ingredients: `Lavender -L. angustifolia,
+            Lavandula Angustifolia, var. Hemus flower water`,
+            skin: '',
+            value: '100ml',
+            src: 'lav2313.png',
+            price: '3.90',
+            oldprice: '5.20',
+            category: 'aromatherapy',
+            subcategory: 'Flower Waters',
+            id: '145218107',
+            category_id: 14,
+            subcategory_id: 521,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Biorganic',
+            name: '100% Rose Water',
+            subtitle: 'Double Distilled',
+            details: `10  Rosewater Benefits
+            1. Rosewater helps maintain the skin's pH balance, and also controls excess oil.
+            2. Rose water has anti-inflammatory properties that can help reduce the redness of irritated skin, get rid of acne, dermatitis and eczema. It is a great cleanser and aids in removing oil and dirt accumulated in clogged pores.
+            3. Rose water helps hydrate, revitalise and moisturise the skin giving it with that refreshed look.
+            4. Due to its antibacterial properties, rose water also aids in healing scars, cuts and wounds.
+            5. The antioxidant properties of rose water help to strengthen skin cells and regenerate skin tissues.
+            6. Due to the astringent like properties it possesses, rose water helps clean pores and tone the skin. Applying rose water after steaming tightens capillaries, reduces redness and blotchiness.
+            7. The aroma of roses is said to be a powerful mood enhancer. It rids you of feelings of anxiety and promotes emotional well-being, thereby making you feel more relaxed.
+            8. The nourishing and moisturising properties of rose water enhance the quality of hair. It is known to treat mild scalp inflammations and get rid of dandruff. Rosewater works wonders as a natural conditioner and revitaliseshair growth.
+            9. The scent of rose water on your pillow also helps you sleep better after a long day, making you wake up refreshed.
+            10. It also helps aging skin, keeping fine lines and wrinkles at bay.`,
+            usage: `Usage:
+            Skincare
+            Haircare
+            Aromatherapy
+            Applications:
+            Skincare/Haircare
+            Cleansing, energizing, and toning for all skin types - a perfect finish for your daily cleansing routine.
+            Use this aromatic mist to soften and hydrate your skin and hair and indulge in the magnetizing lavender aroma.
+            Aromatherapy
+            The rejuvenating fragrance uplifts the spirits and harmonizes the mind. It can be used to increase concentration and improve inner balance.
+            Use as a bathtub supplement for stress-relief or spray your room, bed sheets, and clothing.`,
+            ingredients: `Rose water, Rose - Rosa Damascena , Rosa centifolia,
+            100% Rose Water`,
+            skin: '',
+            value: '100ml',
+            src: 'rose6121.png',
+            price: '6.50',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Flower Waters',
+            id: '145218108',
+            category_id: 14,
+            subcategory_id: 521,
+            popular: true,
+            new: true,
+            limited: true,
+            bestseller: false
+        },
+        {
+            brand: 'Haut-Segala Laboratoire',
+            name: 'Organic Lemon Verbena Water',
+            subtitle: 'Firming! Anti-Cellulite!',
+            details: `Originally from South America, Lemon verbena is a plant well-know for its soothing, relaxing and sedative properties.
+            The verbena water softens and refreshes the skin and gives firmness and tonus to it.
+            It brings an invigorating sensation  and contributes to strengthen the tissues.
+            This product is preservative free therefore relatively sensitive.`,
+            usage: `Spray on to skin.`,
+            ingredients: `LIPPIA CITRIODORA FLOWER WATER*, LIMONENE, CITRAL.
+            99,6% of the total is from natural origin.
+            22,5% of the total ingredients are from organic forming.`,
+            skin: '',
+            value: '250ml',
+            src: 'verb25045.png',
+            price: '9.90',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Flower Waters',
+            id: '145218109',
+            category_id: 14,
+            subcategory_id: 521,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Haut-Segala Laboratoire',
+            name: 'Organic Neroli Water',
+            subtitle: 'Soothing!',
+            details: `This delicately-scented flower water refreshes, calms and softens all skin types.
+            Applied as a compress, it immediately relieves from heating sensations due to sun exposure.
+            Neroli (Orange blossom) water is also used to perfume pastry and tea.
+            Mixed with water, it becomes a calming drink recommended for children and elderly people.`,
+            usage: `Use one spray on a cotton pad then apply.`,
+            ingredients: `CITRUS AURANTIUM AMARA FLOWER WATER*, LINALOL, LIMONENE, FARNESOL, GERANIOL, CITRAL
+            99,8% of the total is from natural origin.
+            99,8% of the total ingredients are from organic forming.`,
+            skin: '',
+            value: '250ml',
+            src: 'ner250543.png',
+            price: '9.45',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Flower Waters',
+            id: '145218110',
+            category_id: 14,
+            subcategory_id: 521,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Alteya Organics',
+            name: '100% Organic Melissa Water',
+            subtitle: '100% Pure & Natural',
+            details: `This delicately-scented flower water refreshes, calms and softens all skin types.
+            Applied as a compress, it immediately relieves from heating sensations due to sun exposure.
+            Neroli (Orange blossom) water is also used to perfume pastry and tea.
+            Mixed with water, it becomes a calming drink recommended for children and elderly people.`,
+            usage: `Use one spray on a cotton pad then apply.`,
+            ingredients: `CITRUS AURANTIUM AMARA FLOWER WATER*, LINALOL, LIMONENE, FARNESOL, GERANIOL, CITRAL
+            99,8% of the total is from natural origin.
+            99,8% of the total ingredients are from organic forming.`,
+            skin: '',
+            value: '100ml',
+            src: 'melissa121.png',
+            price: '7.90',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Flower Waters',
+            id: '145218111',
+            category_id: 14,
+            subcategory_id: 521,
+            popular: false,
+            new: false,
+            limited: true,
+            bestseller: false
+        },
+        {
+            brand: 'SO’BiO etic FLOWER WATER',
+            name: 'Rose Flower Water Spray',
+            subtitle: 'Refreshes & tones the skin',
+            details: `Reduces irritation & redness
+            Refreshes & tones the skin
+            For a more even complexion
+            This floral water is rich in active ingredients and provides extra freshness on a daily basis. It soothes irritation and redness and is ideal for people with sensitive skin. Complexion becomes more even thanks to the nourishing care.
+            suitable for all skin types - including sensitive skin
+            regenerates & tones
+            even complexion
+            very refreshing
+            dermatologically tested
+            without parabens, silicone & synthetic fragrances
+            99% of the total ingredients are of natural orgin
+            99% of the total ingredients come from controlled organic farming`,
+            usage: `Apply to skin mornings and/or evenings with a cotton pad.`,
+            ingredients: `Rose - Rosa Damascena ,
+            Rosa damascena flower water *, dehydroacetic acid, benzyl alcohol, aqua (water), citronellol, genariol
+            Paraben free
+            Ether Glycol, PEG  free
+            GMO free
+            No petrochemical compounds 
+            Not  tested on animals.
+            No animal by-product
+            Not use colouring agents
+            100% natural fragrance`,
+            skin: '',
+            value: '200ml',
+            src: 'bio1121.png',
+            price: '12.00',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Flower Waters',
+            id: '145218112',
+            category_id: 14,
+            subcategory_id: 521,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Primavera',
+            name: 'Witch Hazel Water Bio',
+            subtitle: 'Refreshing body spray',
+            details: `Tones the skin
+            Refines the pores
+            Vegan
+            The herbaceous and spicy organic water has a positive effect on oily skin due to its astringent properties and can be incorporated into DIY deodorant-spray mixtures.
+            The organic water doubles as a refreshing body spray that can be used when needed.`,
+            usage: `Spray on face and/or body.
+            Use as a mist after make-up application.
+            Can be used for wet packs and compresses.`,
+            ingredients: `Witch Hazel,
+            Witch Hazel Virginiana.`,
+            skin: 'For oily skin types',
+            value: '100ml',
+            src: 'prima9981.png',
+            price: '11.30',
+            oldprice: '11.90',
+            category: 'aromatherapy',
+            subcategory: 'Flower Waters',
+            id: '145218113',
+            category_id: 14,
+            subcategory_id: 521,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Laboratoire Altho',
+            name: 'Tropical Room Spray',
+            subtitle: 'With Organic Orange, Patchouli, Palmarosa, Verbena & Ylang Ylang Essential Oils!',
+            details: `Your living spaces will be transformed by just a few spritzes of this spray.
+            Enjoy the sweet tropical notes of this fragrance.
+            With organic orange, patchouli, palmarosa, exotic verbena, Indian verbena, and ylang ylang essential oils!`,
+            usage: `Spray in your living spaces to spread a fragrant atmosphere.
+            This scent can also be used on textiles such as sheets, pillows, curtains, etc. `,
+            ingredients: `Berberine , Patchouli, Orange - Citrus aurantium , Ylang - Ylang - Cananga Odorata,
+            This completely natural scent is made with organic orange, patchouli, palmarosa, exotic verbena, Indian verbena, and ylang ylang essential oils`,
+            skin: '',
+            value: '200ml',
+            src: 'altho5642.png',
+            price: '11.00',
+            oldprice: '',
+            category: 'aromatherapy',
+            subcategory: 'Room Fragrances',
+            id: '145228114',
+            category_id: 14,
+            subcategory_id: 522,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Primavera ',
+            name: 'Organic Airspray Harmony',
+            subtitle: 'A sensual fragrance for your home',
+            details: `Pampers the senses
+            Seductive fragrance
+            Increases well-being
+            The flowery soft scent of organic oranges and roses absolutely pampers the senses.
+            Primavera Life offers a wide range of luxury natural and organic skincare products based on aromatherapy, for your face and body.
+            Each body and face care product contains organic and natural essential oils to give you the perfect fragranced product for skin and senses.`,
+            usage: `Usage: Spray if required in the air`,
+            ingredients: `Rose - Rosa Damascena, Orange, Rose Absolue`,
+            skin: '',
+            value: '30ml',
+            src: 'harm6562.png',
+            price: '8.00',
+            oldprice: '8.40',
+            category: 'aromatherapy',
+            subcategory: 'Room Fragrances',
+            id: '145228115',
+            category_id: 14,
+            subcategory_id: 522,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+
+
+
+
+
+
+
+
+
+
+
         {
             brand: 'Laboratoire Altho',
             name: 'Organic Respiratory Massage Oil',
@@ -3015,6 +3406,84 @@ export const goodsObj = {
             limited: false,
             bestseller: false
         },
+        {
+            brand: 'Lavera',
+            name: 'Eyebrow Pencil No.1 - Brown',
+            subtitle: 'No.1 - Brown',
+            details: `Well-shaped eyebrows make your eyes appear larger, and give your face definition and character.
+            This Eyebrow Pencil by Lavera gets your brows in tip-top shape. It smoothes out any unevenness and adds the perfect finishing touch to your eye make-up.
+            With organic ingredients, such as organic jojoba oil and organic shea butter, the pencil has a lovely soft texture and creates long-lasting results.`,
+            usage: `Brush the eyebrows into shape.
+            Colour and fix the brows in one simple step.`,
+            ingredients: `Mica (CI 77019), Hydrogenated Jojoba Oil, Caprylic/Capric Triglyceride, Iron Oxide (CI 77499), Simmondsia Chinensis (Jojoba) Seed Oil*, Hydrogenated Vegetable Oil, Iron Oxide (CI 77491), Butyrospermum Parkii (Shea Butter)*, Iron Oxide (CI 77492), Canola Oil, Titanium Dioxide (CI 77891), Copernicia Cerifera (Carnauba) Wax*, Glyceryl Caprylate, Euphorbia Cerifera (Candelilla) Wax, Tocopherol, Helianthus Annuus (Sunflower) Seed Oil, Ascorbyl Palmitate`,
+            skin: '',
+            value: '1.05gr',
+            src: 'pencil11.png',
+            price: '3.15',
+            oldprice: '3.50',
+            category: 'makeup',
+            subcategory: 'Brows & Lashes',
+            id: '155238116',
+            category_id: 15,
+            subcategory_id: 523,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Lavera',
+            name: 'Styling Gel for Brows & Lashes',
+            subtitle: 'Crystal Clear Gel Care for Brows & Lashes!',
+            details: `The Eyebrow Styling Gel keep eyebrows in good shape - in just two steps.
+            The comb strokes into shape and the quick-drying gel fixes the eyebrows for the whole day.
+            Available in two colour shades:
+            Transparent: intensifies the natural colour of the eyebrows
+            Hazel Blonde: subtly tints the eyebrows.`,
+            usage: `Brush the eyebrows into shape before applying the gel to fix.`,
+            ingredients: `Liquorice, Lime, Mallow - Malva sylvestris, Rose - Rosa Damascena , sea-buckthorn,
+            Water (Aqua), Alcohol*, Sucrose*, Dehydroxanthan Gum, Citrus Medica Limonum (Lemon) Fruit Extract*, Shellac, Argania Spinosa Kernel Oil*, Glycyrrhiza Glabra (Licorice) Root Extract*, Hippophae Rhamnoides Fruit Extract*, Butyrospermum Parkii (Shea Butter)*, Cocos Nucifera (Coconut) Oil*, Camelina Sativa Seed Oil, Vegetable Oil (Olus Oil), Theobroma Cacao (Cocoa) Seed Butter*, Olea Europaea (Olive) Fruit Oil*, Hydrogenated Lecithin, Malva Sylvestris (Mallow) Flower Extract*, Rosa Centifolia Flower Extract*, Tilia Cordata Flower Extract*, Ascorbyl Palmitate, Tocopherol, Helianthus Annuus (Sunflower) Seed Oil, Fragrance (Parfum)**, Limonene**, Linalool**, Citral**, Geraniol**, Citronellol**, Benzyl Benzoate`,
+            skin: '',
+            value: '9ml',
+            src: 'brown6651.png',
+            price: '6.20',
+            oldprice: '6.90',
+            category: 'makeup',
+            subcategory: 'Brows & Lashes',
+            id: '155238117',
+            category_id: 15,
+            subcategory_id: 523,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Lavera',
+            name: 'Styling Gel for Brows & Lashes - Hazel Blonde',
+            subtitle: 'Gel Care for Brows & Lashes!',
+            details: `The Eyebrow Styling Gel keep eyebrows in good shape - in just two steps.
+            The comb strokes into shape and the quick-drying gel fixes the eyebrows for the whole day.
+            Available in two colour shades:
+            Transparent: intensifies the natural colour of the eyebrows
+            Hazel Blonde: subtly tints the eyebrows.`,
+            usage: `Brush the eyebrows into shape before applying the gel to care for, colour and fix the brows in one simple step.`,
+            ingredients: `Water (Aqua), Alcohol*, Stearic Acid, Beeswax (Cera Alba)*, Hydrolyzed Jojoba Esters, Algin, Glycyrrhiza Glabra (Licorice) Root Extract*, Iron Oxide (CI 77499), Shellac, Iron Oxide (CI 77492), Mica (CI 77019), Titanium Dioxide (CI 77891), Jojoba Esters, Iron Oxide (CI 77491), Tocopherol, Helianthus Annuus (Sunflower) Seed Oil, Ascorbyl Palmitate, Fragrance (Parfum)**, Limonene**, Citronellol**, Geraniol**, Linalool**, Citral**, Benzyl Alcohol`,
+            skin: '',
+            value: '9ml',
+            src: 'style412.png',
+            price: '6.75',
+            oldprice: '7.50',
+            category: 'makeup',
+            subcategory: 'Brows & Lashes',
+            id: '155238118',
+            category_id: 15,
+            subcategory_id: 523,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
 
 
 
@@ -3141,6 +3610,14 @@ export const goodsObj = {
                     subcategory: 'Massage Oils',
                     subcategory_id: 510
                 },
+                {
+                    subcategory: 'Flower Waters',
+                    subcategory_id: 521
+                },
+                {
+                    subcategory: 'Room Fragrances',
+                    subcategory_id: 522
+                },
             ]
         },
         {
@@ -3161,6 +3638,10 @@ export const goodsObj = {
                 {
                     subcategory: 'Eye shadow',
                     subcategory_id: 513
+                },
+                {
+                    subcategory: 'Brows & Lashes',
+                    subcategory_id: 523
                 },
             ]
         },
