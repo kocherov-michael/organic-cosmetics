@@ -431,6 +431,312 @@ export const goodsObj = {
             limited: true,
             bestseller: false
         },
+        {
+            brand: 'Lavera',
+            name: 'Sensitive Sun Spray SPF 20',
+            subtitle: 'Gentle protection for the whole family',
+            details: `Suitable for people with atopic dermatitis
+            Medium UVA & UVB protection
+            Waterproof
+            The Sensitive Sun Spray by lavera offers medium UVA and UVB protection in a ratio of 1:3 as recommended by the EU Commission. Its waterproof formula is suitable for sensitive skin as well as people with atopic dermatitis. It conditions the skin with organic oils obtained from sunflower kernels and coconut and offers immediate mineral protection.`,
+            usage: `Application:
+            Shake well before use.
+            Apply a generous amount of product to the skin prior to sun exposure.
+            Repeat application every few hours, especially after swimming and sweating.
+            Note:
+            Protect babies and small children against direct sunlight by using sunscreen with a high SPF and protective clothing.
+            Even sunscreens with a high protection factor do not offer complete protection against the harmful effects of the sun.
+            Avoid the midday sun.
+            Excessive sunbathing poses a serious health risk.
+            Avoid contact with the eyes.
+            Avoid direct contact with textiles - may cause stains.`,
+            ingredients: `Coco Caprylate/ CaprateDicaprylyl EtherZinc oxidePongamia Glabra Seed OilHelianthus Annuus (Sunflower) Seed Oil [1]Glycine Soja (Soybean) Oil [1]Alcohol Denattitanium dioxideBrassica Campestris/aleurites Fordi Oil CopolymerPolyhydroxystearic AcidCocos Nucifera (Coconut) Oil [1]Mangifera Indica (Mango) Fruit Extract [1]Carica Papaya (Papaya) Fruit Extract [1]Stearic AcidGlyceryl OleatePolyglyceryl-3 PolyricinoleateSilicaAqua (Water)OryzanolPongamolOlea Europaea (Olive) Oil UnsaponifiablesTocopherolFragrance (Parfum) [2]Limonene [2]Linalool [2]Geraniol [2]Citronellol [2]Citral [2]Coumarin [2]Eugenol [2]Benzyl Benzoate [2]
+            from controlled organic agriculture
+            from natural essential oils`,
+            skin: '',
+            value: '100ml',
+            src: '1265218.png',
+            price: '16.90',
+            oldprice: '',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148061',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Lavera',
+            name: 'Sensitive Sun Spray SPF 30',
+            subtitle: 'Gentle protection for the whole family',
+            details: `Suitable for people with atopic dermatitis
+            Medium UVA & UVB protection
+            Waterproof
+            The Sensitive Sun Spray by lavera offers medium UVA and UVB protection in a ratio of 1:3 as recommended by the EU Commission. Its waterproof formula is suitable for sensitive skin as well as people with atopic dermatitis. It conditions the skin with organic oils obtained from sunflower kernels and coconut and offers immediate mineral protection.`,
+            usage: `Application:
+            Shake well before use.
+            Apply a generous amount of product to the skin prior to sun exposure.
+            Repeat application every few hours, especially after swimming and sweating.
+            Note:
+            Protect babies and small children against direct sunlight by using sunscreen with a high SPF and protective clothing.
+            Even sunscreens with a high protection factor do not offer complete protection against the harmful effects of the sun.
+            Avoid the midday sun.
+            Excessive sunbathing poses a serious health risk.
+            Avoid contact with the eyes.
+            Avoid direct contact with textiles - may cause stains.`,
+            ingredients: `Coco Caprylate/ CaprateZinc oxidePongamia Glabra Seed OilDicaprylyl Ethertitanium dioxideGlycine Soja (Soybean) Oil [1]Helianthus Annuus (Sunflower) Seed Oil [1]Alcohol DenatBrassica Campestris/aleurites Fordi Oil CopolymerPolyhydroxystearic AcidStearic AcidCocos Nucifera (Coconut) Oil [1]Mangifera Indica (Mango) Fruit Extract [1]Carica Papaya (Papaya) Fruit Extract [1]Glyceryl OleatePolyglyceryl-3 PolyricinoleateSilicaAqua (Water)OryzanolPongamolOlea Europaea (Olive) Oil UnsaponifiablesTocopherolFragrance (Parfum) [2]Limonene [2]Linalool [2]Geraniol [2]Citronellol [2]Citral [2]Coumarin [2]Eugenol [2]Benzyl Benzoate [2]
+            from controlled organic agriculture
+            from natural essential oils`,
+            skin: '',
+            value: '100ml',
+            src: '126522845.png',
+            price: '17.90',
+            oldprice: '',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148062',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Eco cosmetics',
+            name: 'Suntan Cream SPF50+ toned',
+            subtitle: 'with Sea Buckthorn & Olive oils',
+            details: `The combination of sea buckthorn and olive in the sun products provides protection for your skin from the sun and prevents dehydration at the same time.
+            All sun products can be rubbed onto the skin easily without leaving any visible traces.
+            They offer reliable protection against the rays of the sun and have a pleasant fresh fragrance.`,
+            usage: `Cover all over the face evenly with the sunscreen.
+            Apply sunscreen to dry skin 15 minutes before sun exposure and renew every 2 hours and after swimming or towel drying.`,
+            ingredients: `Olive, sea-buckthorn, Titanium Dioxide,
+            Aqua, Glycine Soja Oil*, Titanium Dioxide, Caprylic/Capric Triglyceride, Polyglyceryl-2 Dipolyhydroxystearate, Polyglyceryl-3 Diisostearate, Butyrospermum Parkii Butter*, Glycerin, Olea Europaea Fruit Oil*, Olea Europaea Leaf Extract*, Punica Granatum Extract*, Glyceryl Oleate, Canola Oil, Hippophae Rhamnoides Oil*, Rosa Moschata Oil*, Simmondsia Chinensis Oil*, Oenothera Biennis Oil*, Oryza Sativa Bran Oil, Macadamia Ternifolia Oil, Glycyrrhiza glabra Extract, Lecithin, Tocopherol, Bisabolol, Magnesium Sulfate, Mica, Tocopheryl Acetate, Alcohol, Stearic Acid, Aluminium Hydroxide, Parfum, Limonene, Linalool, Citronellol
+            100 % of the total ingredients are from natural origin.  
+            95,3 % of the total ingredients are from natural origin.
+            26,28 % of the total ingredients are from Organic Farming.`,
+            skin: '',
+            value: '75ml',
+            src: '30390654.png',
+            price: '19.80',
+            oldprice: '',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148063',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Eco cosmetics',
+            name: 'Tattoo Sun Lotion SPF 30',
+            subtitle: 'Ideal for the Care of Tattoos',
+            details: `Eco Cosmetics Tattoo Sun Lotion SPF 30 with noni extract is a mineral light protection specially developed for tattooed skin.
+            So that you may enjoy the summer undisturbed!!`,
+            usage: `Apply the product 20 minutes before sun exposure.
+            Repeat frequently to maintain protection, especially after perspiring, swimming or toweling.`,
+            ingredients: `Aqua, Caprylic/Capric Triglyceride, Glycine Soja Oil*, Titanium Dioxide, Butyrospermum Parkii Butter*, Glycerin, Pongamia Glabra Seed Oil*, Punica Granatum Fruit Water*, Glycerin, Alumina, Polyglyceryl-2 Dipolyhydroxystearate, Stearic Acid, Polyglyceryl-3 Diisostearate, Zinc oxide, Morinda Citrifolia Fruit Extract, Glyceryl Oleate, Tricaprylin, Canola Oil, Punica Granatum Seed Oil*, Hippophae Rhamnoides Oil*, Olea Europaea Fruit Oil*, Oenothera Biennis Oil*, Simmondsia Chinensis Seed Oil*, Rosa Moschata Oil*, Tocopherol, Panthenol, Bisabolol, Magnesium Sulfate, Oryza Sativa Bran Oil, Parfum
+            * From certified organic farming`,
+            skin: '',
+            value: '100ml',
+            src: '654818195.png',
+            price: '19.90',
+            oldprice: '24.95',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148064',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Alba Botanica',
+            name: 'Hawaiian Sunscreen Aloe Vera Lotion spf 30',
+            subtitle: 'Perfect for daily wear!',
+            details: `This botanically moisturizing sunscreen provides broad spectrum protection.
+            Made with preferred sunscreen ingredients, this revitalizing lotion is non-greasy, quick-absorbing, water resistant and perfect for daily wear.
+            Aloe vera, sunflower oil and tropical fruit extracts absorb quickly and effectively to nourish sun-exposed skin.
+            Free of oxybenzone, octinoxate, PABA, nano-sunscreens and Vitamin A.
+            Alba Botanica® sunscreens are free of active ingredients that may harm coral reefs.
+            broad spectrum protection
+            water resistant (80 minutes) 
+            Skin Cancer Foundation recommendation
+            coral reef safe & biodegradable`,
+            usage: `Apply liberally 15 minutes before sun exposure.
+            Reapply after 80 minutes of swimming or sweating, immediately after towel drying and at least every 2 hours.
+            Children under 6 months: ask a doctor.`,
+            ingredients: `Active Ingredients: Avobenzone - 3.0% (Sunscreen), Homosalate - 7.5% (Sunscreen), Octocrylene - 7.5% (Sunscreen), Octyl Salicylate - 5.0% (Sunscreen) Inactive Ingredients: Aqua (Water), Cetyl Alcohol, Glycerin, Caprylic/Capric Triglyceride, Glyceryl Stearate SE, Dimethicone, VP/Hexadecene Copolymer, Citrus Aurantium Dulcis (Orange) Peel Oil, Aloe Barbadensis Leaf Juice (1), Ananas Sativus (Pineapple) Fruit Extract (1), Camellia Sinensis Leaf Extract (1), Carica Papaya (Papaya) Fruit Extract (1), Hibiscus Sabdariffa Flower Extract (1), Mangifera Indica (Mango) Fruit Extract (1), Passiflora Incarnata Flower Extract (1), Psidium Guajava Fruit Extract, Tocopheryl Acetate, Alcohol, Cetearyl Alcohol, Cetearyl Olivate, Citric Acid, Linalyl Accetate, Polysorbate 60, Sodium Chloride, Sodium Stearoyl Glutamate, Sorbitan Olivate, Triethyl Citrate, Xanthan Gum, Benzyl Alcohol, Potassium Sorbate, Sodium Benzoate, Amyl Cinnamal, Citral, Citronellol, Geraniol, Hydroxycitronellal, Limonene, Linalool. (1) Certified Organic Ingredient`,
+            skin: '',
+            value: '113ml',
+            src: 'alba-bot1.png',
+            price: '13.90',
+            oldprice: '',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148065',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Alba Botanica',
+            name: 'Hawaiian dry Coconut Oil Sunscreen Spf 15',
+            subtitle: 'Smooth and not Greasy!',
+            details: `Coconut spf 15 Spray on, Sunshine
+            Escape to paradise with this tropically tantalizing and botanically moisturizing dry oil with sunburn protection. 
+            Made with preferred sunscreen ingredients, this silky oil blends quickly to leave skin soft, smooth and not greasy.
+            Coconut oil, shea butter and vitamin E help keep sun-exposed skin nourished, moisturized and healthy-looking. 
+            Water resistant. Alba Botanica® sunscreens are free of active ingredients that may harm coral reefs.
+            water resistant (40 minutes) 
+            gluten free 
+            coral reef safe & biodegradable`,
+            usage: `Apply liberally 15 minutes before sun exposure.
+            Reapply after 80 minutes of swimming or sweating, immediately after towel drying and at least every 2 hours.
+            Children under 6 months: ask a doctor.`,
+            ingredients: `Active Ingredient: Avobenzone 2.0% ,Octocrylene 7.5%, Octyl Salicylate 5.0%. Inactive Ingredients: Carthamus Tinctorius (Safflower) Seed Oil(1), Ethylhexyl Palmitate, Cocos Nucifera (Coconut) Oil(1), Butyrospermum Parkii (Shea) Butter Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Daucus Carota Sativa (Carrot) Seed Oil, Juniperus Virginiana Oil, Macadamia Ternifolia Seed Oil, Tocpherol, Tocopheryl Acetate, Allyl Caproate, Caprylic/Capric Triglyceride, Ethyl Acetate, Gamma Decalactone, Gamma-Nonalactone, Gamma-Undecalactone, Isoamyl Acetate, Triethyl Citrate, Vanillin, Phenoxyethanol, Geraniol, Limonene, Linalool (1)Certified Organic Ingredient`,
+            skin: '',
+            value: '133ml',
+            src: 'alba-bot2.png',
+            price: '13.90',
+            oldprice: '',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148066',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Eco Cosmetics',
+            name: 'Sun Sprey Sensitive SPF 50',
+            subtitle: 'Maximum Protection for sensitive skin',
+            details: `The company Eco Cosmetics has developed a new line of sunscreen, the use of which helps protect and care for the skin. The spray tube allows the cosmetic to be spread evenly over the body and face due to the resulting mist.
+            The sun spray leaves a protective and caring film on the skin. The composition lacks alcohol and other aggressive ingredients, which also allows use by people with sensitive skin.
+            Nourishing pomegranate oil protects the skin against moisture loss and helps its regeneration. Raspberry seed oil * cares for the skin, maintaining flexibility and protecting against premature aging of the skin. He even ascribes his natural ability to protect himself from UV.
+            Vitamin E of vegetable origin binds oxygen atoms to free radicals, slowing down the oxidation process in the skin.`,
+            usage: `Cover all over the face evenly with the sunscreen.
+            Apply sunscreen to dry skin 15 minutes before sun exposure and renew every 2 hours and after swimming or towel drying.`,
+            ingredients: `Dicaprylyl Carbonate, Caprylic/Capric Triglyceride, Titanium Dioxide, Glycine Soja Oil*,  Polyglyceryl-3 Diisostearate, Rubus Idaeus Kernel Oil*, Alumina, Olea Europaea Fruit Oil*, Canola Oil, Stearic Acid, Punica Granatum Seed Oil*, Oryzanol, Tocopherol, Parfum, Limonene, Linalool
+            *składniki z upraw ekologicznych`,
+            skin: '',
+            value: '100ml',
+            src: 'eco-cosm1.png',
+            price: '13.90',
+            oldprice: '',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148067',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Eco Cosmetics',
+            name: 'Eco CC Cream SPF 30 Light Toned',
+            subtitle: 'with OPC, Coenzyme Q10 and Hyaluronic Acid',
+            details: `Color correction, UV protection and anti-aging combined in one cream. This rich cream reduces wrinkles, tones and smooths contours for a younger appearance. SPF 30 protects against harmful UV rays. OPC from grape seeds provides cells with fresh energy. Hyaluronic acid and Q10 lend elasticity and suppleness. Gives skin an even complexion. For a fresh natural look.
+            A combination of three substances can help your skin keep or even regain its youthful appearance. ECO Cosmetics relies on the strength of OPC (oligomore proanthocyanidine from grape seeds) to protect cells. OPC is known as one of the strongest plant-based antioxidants. It releases the skin from oxidation protection. Cells use energy reserves released in this way for their optimization. According to long-term studies cells may even be able to rejuvenate. Extra support is provided by Q10 and hyaluronic acid, which are already successfully utilized in numerous anti-aging products. `,
+            usage: `Cover face and body evenly with the sunscreen.
+            Apply sunscreen to dry skin 15 minutes before sun exposure and renew every 2 hours and after swimming or towel drying.`,
+            ingredients: `Aqua, Caprylic/Capric Triglyceride, Titanium Dioxide, Glycine Soja Oil*, Punica Granatum Fruit Water*, Dicaprylyl Carbonate, Vitis Vinifera Seed Extract, Pongamia Glabra Seed Oil*, Butyrospermum Parkii Butter*, Hydrogenated Coco-Glycerides, Glyceryl Stearate Citrate, Talc, Zinc Oxide, Isoamyl Laurate, Glyceryl Citrate/Lactate/Linoleate/Oleate, Alumina, Polyglyceryl-2-dipolyhydroxystearate, Glycerin, Stearic Acid, Polyglyceryl-3 Diisostearate, Sodium Hyaluronate, Ubiquinone, Oryzanol, Xanthan Gum, Cetearyl Glucoside, Simmondsia Chinensis Seed Oil*, Punica Granatum Seed Oil*, Cetearyl Alcohol, Sodium PCA,Tocopherol, Parfum, Benzyl Salicylate, Limonene, Linalool, Citronellol, Geraniol, CI 77491, CI 77492, CI 77499.`,
+            skin: '',
+            value: '50ml',
+            src: 'eco-cosm2.png',
+            price: '10.90',
+            oldprice: '',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148068',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Coola',
+            name: 'Face SPF 30 Cucumber Moisturizer',
+            subtitle: 'Moisturizing sunscreen creme with cucumber and SPF 30',
+            details: `Protect and boost your skin's defense against aging caused by the sun with this Farm to Face® sourced, antioxidant-infused, broad spectrum SPF 30 sunscreen with a refreshing cucumber scent.
+            Designed for all skin types, this non-greasy formula is crafted with 70%+ certified organic ingredients. Organic Evening Primrose and Linseed Oils calm, tone, and hydrate stressed skin.
+            Safflower Oleosomes provide lasting hydration while the phyto-protector Plankton Extract stimulates and rejuvenates weathered skin. Organic Acai Oil, known for its visual anti-aging benefits, delivers abundant antioxidants through its Omegas-3/6/9, Vitamins B1/2/3, and Vitamins C and E.`,
+            usage: `Apply liberally 15 minutes before sun exposure.
+            Reapply:
+            • immediately after swimming or sweating
+            • immediately after towel drying
+            • at least every 2 hours`,
+            ingredients: `Cucumber, Evening Primrose ,
+            Ingredients
+            Aqua/Water/Eau, Citrus Aurantium Dulcis (Orange) Fruit Extract* , Carthamus Tinctrorius Oleosomes, Dicaprylyl Carbonate, Linum Usitatissium Seed Oil* , Ethylhexyl Methoxycinnamate, Butyl Methoxydibenzoylmethane, Propanediol, Glycerin*, Cucumis Sativus (Cucumber) Fruit Extract* ,  Helianthus Annus Seed Extract, Hydrogenated Polydecene, Sodium Polyacryloyldimethyl Taurate, Sodium Stearoyl Glutamate, Xanthan, Gum, Caprylhydroxamic Acid, Parfum/Fragrance, Trisodium Ethylenediamine Disuccinate, Trideceth-10, Sodium Chloride, Tocopherol, Benzyl Benzoate, Benzyl Alcohol, Hydroxycitronellal, Benzyl Salicylate, Linalool, Amyl cinnamal, Hexyl Cinnamal, Butyphenyl Methylpropional, Citronellol`,
+            skin: '',
+            value: '50ml',
+            src: 'cucumber.png',
+            price: '38.00',
+            oldprice: '',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148069',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Alteya Organics',
+            name: 'Organic Face Sunscreen Cream SPF30',
+            subtitle: 'Tinted with Rose, Calendula & Chamomile',
+            details: `Organic sunscreen cream for face (body), SPF30
+            With rose, geranium and sandal wood.
+            100% Natural
+            95% Organic Non Nano Zinc Oxide
+            Made with organic ingredients
+            UVA + UVB protection
+            Active ingredient: Non-Nano Uncoated Zinc Oxide 24,75%
+            Helps prevent sunburn. If used as directed with other sun protection measures, decreases the chance of skin cancer, early skin aging and other harmful effects caused by the sun.`,
+            usage: `Cover all over the face evenly with the sunscreen.
+            Apply sunscreen to dry skin 15 minutes before sun exposure and renew every 2 hours and after swimming or towel drying.`,
+            ingredients: `Calendula, Rose - Rosa Damascena , Chamomile - Matricaria recutita,
+            Distilled Thermal Water, Zinc Oxide, Helianthus Annuus (Sunflower) Oil*, Cocos Nucifera (Coconut) Oil*, Glycerin*, Cucurbita Pepo (Pumpkin) Seed Oil*, Butyrospermum Parkii (Shea butter)*, Simmondsia Chinensis (Jojoba) Oil*, Copernicia Cerifera (Carnauba) Wax*, Macadamia Integrifolia (Macadamia) Oil*, Garlic / Capric Triglycerides, Polygliceril-6 Stearate (and) Polygliceril-6 Behenate, Isoamyl Laurate, Cera Alba (BeesWax)*, Lecithin*, Glyceryl Caprylate, Glyceryl Undecylenate, Cyamopsis Tetragonoloba (Guar) Gum*, Aloe Barbadensis (Aloe) Leaf Juice*, Persea Gratissima (Avocado) Oil*, Rosa Damascena Flower Extract, Iron Oxides (CI 77492, CI 77491, CI 77499), Tocopherol (Vitamin E), Hippophae Rhamnoides (Seabuckthorn) Fruit Extract*, Calndula Officinalis (Flower) Extract*, Lavandula Angustifolia (Lavender) Oil*, Cymbopogon Martini (Palmarosa) Oil*, Anthemis Nobilis (Roman Chamomile) Flower Oil`,
+            skin: '',
+            value: '50ml',
+            src: 'Sunscreen50.png',
+            price: '19.95',
+            oldprice: '',
+            category: 'face',
+            subcategory: 'Sunscreens',
+            id: '115148070',
+            category_id: 11,
+            subcategory_id: 514,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+
+
+
 
 
 
@@ -647,6 +953,389 @@ export const goodsObj = {
             limited: false,
             bestseller: true
         },
+        {
+            brand: 'Biorganic ',
+            name: 'Organic Macadamia Oil',
+            subtitle: '100% Virgin and Pure, First Cold Press',
+            details: `100% pure and virgin, first cold press
+            This oil is exceptionally good at restructuring, softening, and improving the suppleness of the skin.
+            This oil penetrates the skin deeply, making it a great basis for massage oils, especially those aimed at older skins.
+            This is also due to its nourishing and protective properties, along with its effect on blood flow.
+            It is a go to treatment for burns, chapped skin, racked skin, and stretch marks.
+            Macadamia nut oil has an incredibly impressive Palmitoleic fatty acid profile, which means it helps delay skin and cell aging. The Macadamia oil offers great penetrative qualities and being rich in Oleic Acid it has it regenerative and moisturising properties. While the Linoleic acid present in the oil helps prevent trans-epidermal water loss which keeps the skin hydrated.
+            It is also high in phytosterols, which are the building blocks for skin cells, and add to the oil’s healing and repairing attributes. Macadamia nut oil has a non greasy feel on the skin and can also help reduce itchiness and inflammation. It is ideal for dry and damaged skin and aging skin. It helps renew skin, restore moisture and improve skin quality.`,
+            usage: `Nourishes the skin, has a genle aroma, it's largely used for hair as well as skin care. Could be used directly on the skin, or it can be added in home-made or commercial cosmetics. Suitable for home-made hair masks.`,
+            ingredients: `Macadamia,
+            Macadamia Ιntegrifolia (Macadamia) Seed oil`,
+            skin: 'All skin types',
+            value: '50ml',
+            src: 'Macadamia-50.png',
+            price: '5.90',
+            oldprice: '',
+            category: 'body',
+            subcategory: 'Body Oils',
+            id: '125158071',
+            category_id: 12,
+            subcategory_id: 515,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: true
+        },
+        {
+            brand: 'Biorganic ',
+            name: 'Organic Apricot Kernel Oil',
+            subtitle: 'Anti-dryness with Vitamin F',
+            details: `Biorganic' bio apricot kernel oil has a light and gentle texture that is fast-absorbing and easy to apply.
+            It's commonly used in various creams and cosmetics. Apricot kernel oil is rich in vitamins and minerals, among which is vitamin F.
+            Aids skin regeneration and reduces skin dryness. It can be used for massaging babies and children.`,
+            usage: `Used as a skin care product and massaging oil for adults, children, and babies`,
+            ingredients: `Apricot,
+            Prunus Armeniaca (Apricot) Kernel Oil.`,
+            skin: 'All skin types',
+            value: '50ml',
+            src: 'verykokou-50.png',
+            price: '5.90',
+            oldprice: '',
+            category: 'body',
+            subcategory: 'Body Oils',
+            id: '125158072',
+            category_id: 12,
+            subcategory_id: 515,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: true
+        },
+        {
+            brand: 'Omum',
+            name: 'La Surdouée Stretch Mark Dry Body Oil',
+            subtitle: 'Effectively Prevents the Formation of Stretch Marks!',
+            details: `Strengthening - beneficial - nourishing.
+            This bio-complex consisting of nine dry oils is optimally suitable for the prevention of stretch marks. This oil strengthens the skin of expectant mothers, while healing and nourishing it. The secret: Aloe Vera in combination with nine organic oils filled containing omega 3, 6 and 9 fatty acids, strengthens the structure and elasticity of the skin. It aborbs quickly and does not leave an oily residue. 
+            A small bonus: A pleasantly delicate scent that is optimally adapted  to the sensitive sense of smell that expectant mothers tend to have!
+            Active ingredients: Aloe Vera, sesame oil, plum oil, apricot oil, argan oil. evening primrose oil, camellia oil, borage oil, safflower oil.`,
+            usage: `Shake well before use! Apply the oil gently to the stomach, chest, thigh and backside and softly massage until the oil is fully absorbed into the skin. A small amount of oil is sufficient. Apply the oil twice daily during the entire coarse of pregnancy.`,
+            ingredients: `Aloe vera, Argan , Apricot, Plum, Camellia, Borage -Starflower, Evening Primrose , Sesame seed oil,
+            Sesamum indicum (sesame) seed oil*, Simmondsia chinensis (jojoba) seed oil*, Prunus domestica seed oil*, Prunus armeniaca (apricot) kernel oil*, Maranta arundinacea root powder*, Aloe barbadensis leaf juice*, Argania spinosa kernel oil*, Oenothera biennis (evening primrose) oil*, Camelina sativa seed oil*, Borago officinalis seed oil*, Carthamus tinctorius (safflower) seed oil*, tocopherol, Glycine soja (soybean) oil.
+           * Ingrédients issus de l’agriculture biologique / Organic ingredients`,
+            skin: 'All skin types',
+            value: '50ml',
+            src: 'oil-677607.png',
+            price: '31.50',
+            oldprice: '',
+            category: 'body',
+            subcategory: 'Body Oils',
+            id: '125158073',
+            category_id: 12,
+            subcategory_id: 515,
+            popular: false,
+            new: false,
+            limited: true,
+            bestseller: false
+        },
+        {
+            brand: 'Tahiti Organics',
+            name: 'Vanilla Monoi Oil Tahiti',
+            subtitle: '100% Natural! Nourishing Elixir for Skin & Hair!',
+            details: `Authentic Tahitian Monoi oil, our Vanilla Monoi 100% natural Hair and Body oil is a multipurpose beauty oil for daily moisturizing, massaging or hair softener and hair repair.
+            Traditionnal french polynesian Monoi de Tahiti oil is created by soaking fresh Tiare flowers in refined coconut oil.
+            Capturing Monoi de Tahiti oil in its purest state, Vanilla Monoi oil creates glowing, healthy looking, and naturally fragrant skin.
+            It is also used as a hair conditioner and nourishing treatment for dry or damaged hair.`,
+            usage: `Face - Body - Hair:
+            After the shower to soak and wonderful scent your skin
+            After shampooing as serum to give shine , nourish and protect the ends of your hair .
+            After your cleansing put a few drops Tahiti Organics - Vanilla Monoi and gently massage on face, neck and décolleté .
+            It will relax you with its unique aroma aromatherapist and simultaneously give a silky texture to your skin`,
+            ingredients: `INCI: Cocos nucifera (coconut) oil, Gardenia Tahitensis flower, Fragrance, Tocopherol.`,
+            skin: 'For Dry hair',
+            value: '100ml',
+            src: 'vanilla.png',
+            price: '18.00',
+            oldprice: '',
+            category: 'body',
+            subcategory: 'Body Oils',
+            id: '125158074',
+            category_id: 12,
+            subcategory_id: 515,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: true
+        },
+        {
+            brand: 'Tahiti Organics',
+            name: 'Grapefruit Monoi Oil Tahiti',
+            subtitle: '100% Natural! Nourishing Elixir for Skin & Hair!',
+            details: `Authentic Tahitian Monoi oil, our Grapefruit Monoi 100% natural Hair and Body oil is a multipurpose beauty oil for daily moisturizing, massaging or hair softener and hair repair.
+            Traditionnal french polynesian Monoi de Tahiti oil is created by soaking fresh Tiare flowers in refined coconut oil.
+            This product is certified COSMOS NATURAL by Ecocert Greenlife according to COSMOS standard.
+            Capturing Monoi de Tahiti oil in its purest state, Grapefruit Monoi oil creates glowing, healthy looking, and naturally fragrant skin.
+            It is also used as a hair conditioner and nourishing treatment for dry or damaged hair.
+            Pure Monoi de Tahiti oil becomes solid below 24°C.
+            Place in the sun or under warm water to liquefy, then shake gently to blend the ingredients.`,
+            usage: `Face - Body - Hair:
+            After the shower to soak and wonderful scent your skin
+            After shampooing as serum to give shine , nourish and protect the ends of your hair .
+            After your cleansing put a few drops Tahiti Organics - Vanilla Monoi and gently massage on face, neck and décolleté .
+            It will relax you with its unique aroma aromatherapist and simultaneously give a silky texture to your skin`,
+            ingredients: `INCI: Cocos nucifera (coconut) oil, Gardenia Tahitensis flower, Citrus grandis (grapefruit) fruit extract, Tocopherol.`,
+            skin: 'For Dry hair',
+            value: '100ml',
+            src: 'grapefr6.png',
+            price: '18.00',
+            oldprice: '',
+            category: 'body',
+            subcategory: 'Body Oils',
+            id: '125158075',
+            category_id: 12,
+            subcategory_id: 515,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: true
+        },
+        {
+            brand: 'Haut-Segala Laboratoire',
+            name: 'Organic Aloe Vera Oil',
+            subtitle: 'Ideal for Dry & Damaged Skins!',
+            details: `For dry and damaged skin - Hydrating
+            Aloe vera, also called Desert Lily, is a cactus which grows in warm and dry places.
+            Aloe vera oil is known for its nourishing and astringent properties.
+            It also offers great hydration for the skin.
+            Aloe vera oil can also be used on hair to fortify and add shine.
+            Natural color and odor.
+            For Dry & Damaged Skins
+            Hydrating
+            Dry Oil
+            Day & Night`,
+            usage: `Massage on to clear skin on face.
+            Can be used on whole body, to dry areas that need immediate nourishing!`,
+            ingredients: `Aloe vera,
+            Helianthus annuus seed oil*, aloe barbadensis leaf extract*.
+            100% of the total ingredients are from organic forming.`,
+            skin: 'For Dry skin',
+            value: '50ml',
+            src: 'aloevera.png',
+            price: '13.80',
+            oldprice: '',
+            category: 'body',
+            subcategory: 'Body Oils',
+            id: '125158076',
+            category_id: 12,
+            subcategory_id: 515,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Haut-Segala Laboratoire',
+            name: 'Organic Carrot Oil',
+            subtitle: 'Suitable for All Skin Types!',
+            details: `Highly concentrated in beta carotene (provitamin A), carrot oil is ideal to prepare and comfort the skin before and after sun exposure.
+            It accelerates tanning and adds color and life to your complexion.
+            Also recommended for dry skin, carrot oil regenerates the skin and restores suppleness to the epidermis.
+            Natural color and odor.
+            For All Skin Types
+            Nourishing
+            Dry Oil
+            Day & Night`,
+            usage: `Massage on to clear skin on face and body.`,
+            ingredients: `Carrot,
+            Daucus carota extract*, helianthus annuus seed oil*, tocopherol`,
+            skin: 'For all skin types',
+            value: '50ml',
+            src: 'carrot5.png',
+            price: '13.80',
+            oldprice: '',
+            category: 'body',
+            subcategory: 'Body Oils',
+            id: '125158077',
+            category_id: 12,
+            subcategory_id: 515,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Lavera',
+            name: 'Basis Gentle Care Hand Wash',
+            subtitle: 'with Organic Aloe Vera & Chamomile',
+            details: `Discover the lavera secret of naturally mild care soap: our carefully balanced natural composition with organic aloe vera and organic chamomile offers your hands a compatible, mild cleansing without drying them out.
+            The pH skin-neutral formula with delicate care foam gives the hands a well-groomed skin feeling when washing.
+            Also suitable for sensitive and dry skin.
+            The good feeling of 100% certified natural cosmetics - without compromise.`,
+            usage: `Apply a small amount to wet skin, soap and rinse thoroughly .`,
+            ingredients: `Aqua (Water), Glycerin, Sodium Coco-Sulfate, Coco Glucoside, Lauryl Glucoside, Aloe Barbadensis Leaf Juice*, Melissa Officinalis Leaf Extract*, Chamomille Recutita (Matricaria) Flower Extract*, Hamamelis Virginiana (Witch Hazel) Leaf Extract*, Maris Sal (Sea Salt), Disodium Cocoyl Glutamate, Cetearyl Alcohol, Glyceryl Oleate, Glyceryl Caprylate, Hydrogenated Rapeseed Oil, Sodium Cetearyl Sulfate, Glyceryl UndecylenateTocopherol, Hydrogenated Palm Glycerides Citrate, Lecithin, Ascorbyl Palmitate (Vitamin C), Alcohol Denat, Levulinic Acid, Fragrance (Parfum)`,
+            skin: 'For dry skin',
+            value: '250ml',
+            src: 'basis-hand.png',
+            price: '4.20',
+            oldprice: '5.50',
+            category: 'body',
+            subcategory: 'Soaps',
+            id: '125168078',
+            category_id: 12,
+            subcategory_id: 516,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Lavera',
+            name: 'Berry Care Hand Wash',
+            subtitle: 'with Organic Goji & Acai Extracts',
+            details: `Discover the lavera secret of naturally fruity care soap: Our carefully balanced natural composition with organic goji and organic acai offers your hands a compatible, mild cleansing without drying them out.
+            The pH skin-neutral formula with delicate care foam gives the hands a well-groomed skin feeling when washing.
+            The good feeling of 100% certified natural cosmetics - without compromise.`,
+            usage: `Apply a small amount to wet skin, soap and rinse thoroughly .`,
+            ingredients: `Aqua (Water), Glycerin, Sodium Coco-Sulfate, Coco Glucoside, Lauryl Glucoside, Aloe Barbadensis Leaf Juice*, Euterpe Oleracea Fruit Extract*, Salvia Hispanica Seed Extract*, Lycium Barbarum (Goji) Fruit Extract*, Punica Granatum Fruit Extract*, Maris Sal (Sea Salt), Disodium Cocoyl Glutamate, Glyceryl Oleate, Glyceryl Caprylate, Glyceryl Undecylenate, Tocopherol, Hydrogenated Palm Glycerides Citrate, Lecithin, Ascorbyl Palmitate (Vitamin C), Alcohol Denat, Levulinic Acid, Fragrance (Parfum)`,
+            skin: 'For dry skin',
+            value: '250ml',
+            src: 'hand-wash.png',
+            price: '4.20',
+            oldprice: '5.50',
+            category: 'body',
+            subcategory: 'Soaps',
+            id: '125168079',
+            category_id: 12,
+            subcategory_id: 516,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Moroccan Natural',
+            name: 'African Liquid Black Soap',
+            subtitle: 'Vitamin A, E, and Iron',
+            details: `ncredible wash for anyone who wants to improve the quality of their skin and enhance hair condition.
+            Not just your average everyday black soap is completely pure and chemical free, known as quite the wonder product. 
+            Enjoy a brand new shower experience with our incredibly invigorating African Liquid Black Soap.
+            Natures essence, captured in a bottle.
+            African Black Soap originates from West Africa and is a natural source of Vitamin A, E and Iron. It has been used for centuries in Ghana and Nigeria. Its methods and secrets have been passed down from generation to generation to keep the soap close to mother nature and avoid exploitation and imitations.
+            When you support Moroccan Natural Black Soap you provide an incentive for villagers to continue producing these ancient natural formula that sustained Africans long before the advent of chemically based substitutes.
+            No Parabens, No artificial chemical`,
+            usage: `Face & Body Cleanser
+            Moisten skin, work into a lather with warm water and massage onto the face and body as you would use soap.
+            Rinse clean.
+            Shampoo
+            Recommended for all hair lengths.
+            Apply to wet hair and scalp and massage into a rich lather.
+            Wash out thoroughly.`,
+            ingredients: `Vitamin A , Vitamin E,
+            Water (Aqua) Cocoa Pod, Coconut Oil.`,
+            skin: 'For all skin types',
+            value: '200ml',
+            src: 'africanmilk.png',
+            price: '14.50',
+            oldprice: '16.30',
+            category: 'body',
+            subcategory: 'Soaps',
+            id: '125168080',
+            category_id: 12,
+            subcategory_id: 516,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Olivos',
+            name: 'Baby Body Soap',
+            subtitle: 'Ideal for Baby Skin!',
+            details: `Baby Body soap offers moisturizing, rich lather, and gentle cleansing functions with its 100% extra virgin olive oil.
+            Produced with pure olive oil from the Edremit region, Baby Body soap prepares baby for a peaceful sleep thanks to its relaxing aroma and mild ingredients.
+            Its formula contains no colouring additives, alcohol, chemical foaming or hardening agents, animal fat or its derivatives.
+            Consistent with the pH levels of baby skin and hypoallergenic.
+            Dermatologically tested.
+             With special handmade soap design together with handmade natural rope inside, Baby Body soap offers hygienic easy soap use  for baby body.`,
+            usage: `For baby body, it is particularly important to use a very mild soap. Baby Body Soap with totally natural ingredients cleans the sensitive skin of baby very gently and prevents the skin from drying out by maintaining the natural moisture balance.`,
+            ingredients: `Sodium Olivate (Oleic Acid Sodium Salt), Aqua, Sodium Chloride (Sea Salt), Parfum`,
+            skin: 'For baby skin',
+            value: '80gr',
+            src: 'babysoap.png',
+            price: '6.50',
+            oldprice: '',
+            category: 'body',
+            subcategory: 'Soaps',
+            id: '125168081',
+            category_id: 12,
+            subcategory_id: 516,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Pure Elements',
+            name: 'Foot and Leg Gel',
+            subtitle: 'with Chestnut Extract',
+            details: `Refreshing and stimulating foot and leg gel with the blood circulation promoting characteristics of horse chestnuts .
+            Ideal to care strained feet and legs after an exhausting day .
+            Is enriched with rock crystal and essential oils that bust energy.
+            What is the Rock Crystal or quartz:
+            It is internationally known as “Quartz”, a valuable mineral-silica.
+            Wherever it is placed, it gives energy and power.
+            Quartz Crystal, especially as a polished sphere is an excellent source of help for meditation!
+            A tonic of the intuition that balances and harmonizes the aura.`,
+            usage: `Apply to the legs and feet and massage gently with circular movements.
+            Use daily, ideally after a shower or bath.`,
+            ingredients: `Horse chestnut, Peppermint - Mentha spicata,
+            Aqua, alcohol, xanthan gum, menthol, rosa canina seed oil, aesculus hippocastanum extract, mentha arvensis, C.I. 75810`,
+            skin: '',
+            value: '200ml',
+            src: '4828298249.png',
+            price: '12.95',
+            oldprice: '',
+            category: 'body',
+            subcategory: 'Feet Care',
+            id: '125178082',
+            category_id: 12,
+            subcategory_id: 517,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Najel',
+            name: 'Alumstone Powder',
+            subtitle: 'Suitable as footbath & deodorant for the feet',
+            details: `Hypoallergenic & odour-free
+            100% natural alumstone
+            Eliminates odour-causing bacteria
+            The alumstone powder by Najel is obtained from the alum crystal stone that arises naturally in alum works.
+            A footbath with alum stone powder helps to effectively fight against perspiration and athlete's foot.
+            In addition, it prevents the formation of odour-causing bacteria.`,
+            usage: `Apply some alumstone powder on your feet before before putting on socks and shoes. 
+            This way you are optimally prepared for hikes, and summer shoes, such as ballerinas, in which you wear usually no socks during summer, remain fresh.`,
+            ingredients: `100% Potassium Alum`,
+            skin: '',
+            value: '200ml',
+            src: 'alumstone-powder.png',
+            price: '10.60',
+            oldprice: '13.20',
+            category: 'body',
+            subcategory: 'Feet Care',
+            id: '125178083',
+            category_id: 12,
+            subcategory_id: 517,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+
+
+
+
+
+
+
         {
             brand: 'Cosnature Naturkosmetik',
             name: 'Moisture Shampoo Wildrose',
@@ -1760,16 +2449,20 @@ export const goodsObj = {
             Fight against expression lines, wrinkles under the eyes, dark circles around the eye area, blemishes, acne, dehydration of the skin, dryness, oily skin…`,
             subcategories: [
                 {
-                    subcategory: 'face cleaners',
+                    subcategory: 'Face cleaners',
                     subcategory_id: 501
                 },
                 {
-                    subcategory: 'anti-aiging',
+                    subcategory: 'Anti-aiging',
                     subcategory_id: 502
                 },
                 {
                     subcategory: 'Night Creams',
                     subcategory_id: 503
+                },
+                {
+                    subcategory: 'Sunscreens',
+                    subcategory_id: 514
                 },
             ]
         },
@@ -1781,12 +2474,24 @@ export const goodsObj = {
             desc: `Maintain optimum skin health and radiance with our huge range of confidence inducing body care products from beauty essentials to pure pampering.`,
             subcategories: [
                 {
-                    subcategory: 'Shower gels',
+                    subcategory: 'Shower Gels',
                     subcategory_id: 504
                 },
                 {
-                    subcategory: 'Hand care',
+                    subcategory: 'Hand Care',
                     subcategory_id: 505
+                },
+                {
+                    subcategory: 'Body Oils',
+                    subcategory_id: 515
+                },
+                {
+                    subcategory: 'Soaps',
+                    subcategory_id: 516
+                },
+                {
+                    subcategory: 'Feet Care',
+                    subcategory_id: 517
                 },
             ]
         },
