@@ -19,7 +19,7 @@ export default class LoginPage extends DefaultPage {
             const data = super.collectInputValues(event)
             // если не получили данные, то дальше не выполняем
             if (!data) return
-            DefaultPage.postData('request.php', data)
+            DefaultPage.postData('assets/php/request.php', data)
             const account = JSON.parse(localStorage.getItem('account')) || {}
             // проверяем пароль и почту на совпадения
             if (account.email === data.email && account.password === data.password) {

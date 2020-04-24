@@ -20,8 +20,6 @@ export default class DefaultPage {
         const goodCardButtonsList = wrapperElement.querySelectorAll('[data-card-look]')
         if (goodCardButtonsList.length > 0) {
 
-           
-
             for(let i = 0; i < goodCardButtonsList.length; i++) {
         
                 goodCardButtonsList[i].addEventListener('click', () => {
@@ -169,7 +167,7 @@ export default class DefaultPage {
         addToCartIconElement.forEach((iconElement) => {
             iconElement.addEventListener('click', () => {
                 // получаем id товара
-                const id = iconElement.getAttribute('data-goods-card-icon-to-cart')
+                const id = +iconElement.getAttribute('data-goods-card-icon-to-cart')
                 const obj = { id, quantity: 1 }
                 // добавить в корзину
                 this.addToCart( obj )
@@ -290,7 +288,7 @@ export default class DefaultPage {
                                 <i class="zmdi zmdi-close" data-thumb-remove="${this.goodsArr[j].id}"></i>
                             </div>
                             <div class="card-thumb__price">${this.goodsArr[j].price}&nbsp;${this.currency}</div>
-                            <div class="card-thumb__info">${this.goodsArr[j].value}, Skin type: ${this.goodsArr[j].skin}</div>
+                            <div class="card-thumb__info">${this.goodsArr[j].value}, ${this.goodsArr[j].skin}</div>
                         </div>
                         </div>
                         <div class="cart-thumb__bottom">
@@ -563,7 +561,7 @@ export default class DefaultPage {
             // если уже подписались, то не отправляем второй раз
             if (!isSubscribed) {
                 isSubscribed = true
-                DefaultPage.postData('request.php', data)
+                DefaultPage.postData('assets/php/request.php', data)
                 // имитируем ожидание ответа от сервера
                 setTimeout(()=> {
                     formSuccessElement.classList.add('subscribe__success--active')
@@ -583,7 +581,7 @@ export default class DefaultPage {
         // собираем данные инпутов
         const data = this.collectInputValues(event)
         // отправляем данные в php файл    
-        DefaultPage.postData('request.php', data)
+        DefaultPage.postData('assets/php/request.php', data)
     }
 
     // собираем данные инпутов

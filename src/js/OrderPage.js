@@ -15,7 +15,7 @@ export default class OrderPage extends DefaultPage {
     }
     // заполнить поля формы данными пользователя
     fillInputsUsersData() {
-        console.log(this.userData)
+        // console.log(this.userData)
         // если пользователь залогинен
         if (this.userData.status === 'login') {
             const formElement = document.querySelector('[data-form]')

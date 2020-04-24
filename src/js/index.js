@@ -38,42 +38,43 @@ import ProfilePage from './ProfilePage.js'
 // console.log(location)
 // console.log(location.pathname)
 if (location.pathname.includes('index.html')) {
-    console.log('/index.html')
+    // console.log('/index.html')
     const page = new MainPage()
 }
 else if (location.pathname.includes('cart.html')) {
-    console.log('/cart.html')
+    // console.log('/cart.html')
     const page = new CartPage()
 }
 else if (location.pathname.includes('contacts.html')) {
-    console.log('/contacts.html')
+    // console.log('/contacts.html')
     const page = new ContactsPage()
 }
 else if (location.pathname.includes('product.html')) {
-    console.log('/product.html')
+    // console.log('/product.html')
     const page = new ProductPage()
 }
 else if (location.pathname.includes('category')) {
-    console.log('/category.html')
+    // console.log('/category.html')
     const page = new CategoryPage()
 }
 else if (location.pathname.includes('order.html')) {
-    console.log('/order.html')
+    // console.log('/order.html')
     const page = new OrderPage()
 }
 else if (location.pathname.includes('login.html')) {
-    console.log('/login.html')
+    // console.log('/login.html')
     const page = new LoginPage()
 }
 else if (location.pathname.includes('registration.html')) {
-    console.log('/registration.html')
+    // console.log('/registration.html')
     const page = new RegistrationPage()
 }
 else if (location.pathname.includes('profile.html')) {
-    console.log('/profile.html')
+    // console.log('/profile.html')
     const page = new ProfilePage()
 }
 else {
-    console.log('else')
+    // console.log('else')
+    window.location.replace('index.html')
     const page = new MainPage()
 }

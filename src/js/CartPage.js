@@ -1,19 +1,11 @@
-// import {goodsArr} from './goods.js'
-// import {quantityInput} from '../blocks/quantity-input/quantity-input.js'
 import DefaultPage from './DefaultPage.js'
 
 export default class CartPage extends DefaultPage {
     constructor(args = {}) {
         super(args = {})
-        // this.goodsArr = goodsArr[0]
-        // this.cart = JSON.parse(localStorage.getItem('cart')) || []
-        // super.showCartLength()
-        // super.fillCartCard()
-        // this.fillCartPage()
         this.cartCardIsRefreshed = false
         this.cartPageIsRefreshed = false
         this.saveCartToStorage()
-        // super.listenAddCartButton()
     }
 
     // обновление карточки корзины и впридачу страницы, если она ещё не обновлена
@@ -28,12 +20,10 @@ export default class CartPage extends DefaultPage {
         // если все карточка корзины не обновлена, то обновляем
         if (!this.cartCardIsRefreshed) {
             // говорим, что обновлены
-            // console.log('card')
             this.cartCardIsRefreshed = true
             super.fillCartCard()
         }
         if (!this.cartPageIsRefreshed) {
-            // console.log('cart')
             this.cartPageIsRefreshed = true
             this.fillCartPage()
         }
@@ -53,8 +43,6 @@ export default class CartPage extends DefaultPage {
       </div>`
         let innerElement = ''
 
-        // console.log(this.cart)
-        // console.log(this.goodsArr)
         for ( let i = 0; i < this.cart.length; i++ ) {
             for ( let j = 0; j < this.goodsArr.length; j++ ) {
                 if (this.cart[i].id == this.goodsArr[j].id) {
@@ -69,7 +57,7 @@ export default class CartPage extends DefaultPage {
                                 <div class="cart-item__picture col-4 col-sm-5 col-md-2">
                                     <img class="cart-item__img" src="./assets/img/goods/${this.goodsArr[j].src}" data-cart-thumb-card-img=""></div>
                                 <div class="cart-item__title col-6 col-md-3"><a class="cart-item__link" href="product.html">${this.goodsArr[j].name}</a>
-                                <div class="cart-item__info">${this.goodsArr[j].value}, Skin type: ${this.goodsArr[j].skin}</div>
+                                <div class="cart-item__info">${this.goodsArr[j].value}, ${this.goodsArr[j].skin}</div>
                                 </div>
                                 <div class="cart-item__price col-3 col-sm-6 col-md-2" data-price="${this.goodsArr[j].price}">${this.goodsArr[j].price} ${this.currency}</div>
                                 <div class="cart-item__input col-6 col-sm-3 col-md-2">
@@ -96,7 +84,6 @@ export default class CartPage extends DefaultPage {
         this.quantityInputListener()
         this.showItemSumm()
         
-        // console.log('cart page')
         this.cartPageIsRefreshed = true
         this.fillCartCard()
     }
@@ -109,7 +96,7 @@ export default class CartPage extends DefaultPage {
         for ( let i = 0; i < removeCartItemList.length; i++ ) {
             removeCartItemList[i].addEventListener('click', () => {
                 const idRemove = removeCartItemList[i].getAttribute('data-cart-item-remove')
-                // console.log(idRemove)
+                
                 this.removeFromCart(idRemove)
                 this.fillCartCard()
                 this.showCartLength()
@@ -120,12 +107,12 @@ export default class CartPage extends DefaultPage {
 
     // прослушка изменения инпута
     quantityInputListener() {
-        // console.log(this.cart)
+        
         const inputList = document.querySelectorAll('[data-input-value]')
         for (let i = 0; i < inputList.length; i++) {
-            // console.log(inputList[i].value)
+            
             inputList[i].addEventListener('input', () => {
-                // console.log(inputList[i])
+                
                 
                 this.saveInputValues(inputList[i])
             })
@@ -145,7 +132,7 @@ export default class CartPage extends DefaultPage {
                 // сохраняем в память
                 localStorage.setItem('cart', JSON.stringify(this.cart))
                 this.showItemSumm()
-                // this.showTotalSumm()
+                
                 this.fillCartCard()
             }
         }
@@ -154,11 +141,11 @@ export default class CartPage extends DefaultPage {
     // считаем сумму одного товара в зависимости от количества
     showItemSumm() {
         const itemElement = document.querySelectorAll('[data-cart-item]')
-        // console.log(itemElement)
+        
         for (let i = 0; i < itemElement.length; i++) {
             const price = itemElement[i].querySelector('[data-price]').getAttribute('data-price')
             const count = itemElement[i].querySelector('[data-input-value]').value
-            // console.log(price, count)
+            
             itemElement[i].querySelector('[data-item-summ]').textContent = (Math.round(price * count * 100) / 100).toFixed(2)
         }
     }
@@ -166,34 +153,12 @@ export default class CartPage extends DefaultPage {
     // сохраняем заказы в память при переходе к оформлению
     saveCartToStorage() {
         const proceedButtonElement = document.querySelector('[data-order-link]')
-        // console.log(proceedButtonElement)
+        
         proceedButtonElement.addEventListener('click', (event) => {
-            // event.preventDefault()
-            // console.log(event)
+            
             localStorage.setItem('order', JSON.stringify(this.cart))
         })
     }
 
-    // // считаем общую сумму
-    // showTotalSumm() {
-    //     let summ = 0
-    //     for (let i = 0; i < this.cart.length; i++) {
-    //         summ += Math.round(this.cart[i].price * this.cart[i].quantity * 100) / 100
-    //     }
-    //     console.log( Math.round(summ * 100) / 100 )
-    //     summ = Math.round(summ * 100) / 100
-    //     // выводим сумму в общий счёт
-    //     document.querySelectorAll('[data-amount-summ]').forEach((elem) => {
-    //         elem.textContent = summ
-    //     })
-    //     // считаем значение налога 5%
-    //     document.querySelectorAll('[data-amount-tax]').forEach((elem) => {
-    //         elem.textContent = Math.round(summ * 5) / 100 
-    //     })
-    //     // сумма + налог = всего
-    //     document.querySelectorAll('[data-amount-total]').forEach((elem) => {
-    //         elem.textContent = Math.round(summ * 105) / 100
-    //     })
-    // }
 
 }

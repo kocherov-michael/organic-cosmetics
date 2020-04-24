@@ -226,7 +226,7 @@ export default class CategoryPage extends DefaultPage {
     sortGoods() {
       const selectElement = document.querySelector('[data-category-select]')
       selectElement.addEventListener('change', () => {
-        console.log(selectElement.value)
+        
         // выводим заново товары на тсраницу уже с использованием фильтра
         this.sort = selectElement.value
         this.fillCategoryGrid()
