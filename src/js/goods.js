@@ -1354,10 +1354,10 @@ export const goodsObj = {
             id: '135068015',
             category_id: 13,
             subcategory_id: 506,
-            popular: true,
+            popular: false,
             new: true,
             limited: false,
-            bestseller: true
+            bestseller: false
         },
         {
             brand: 'Cosnature Naturkosmetik',
@@ -1371,16 +1371,16 @@ export const goodsObj = {
             value: '200ml',
             src: 'avocadoshampoo.png',
             price: '3.98',
-            oldprice: '',
+            oldprice: '4.40',
             category: 'hair',
             subcategory: 'shampoo',
             id: '135068016',
             category_id: 13,
             subcategory_id: 506,
-            popular: true,
+            popular: false,
             new: true,
             limited: false,
-            bestseller: true
+            bestseller: false
         },
         {
             brand: 'Lavera',
@@ -1408,7 +1408,7 @@ export const goodsObj = {
             category_id: 13,
             subcategory_id: 506,
             popular: true,
-            new: true,
+            new: false,
             limited: false,
             bestseller: true
         },
@@ -1436,34 +1436,630 @@ export const goodsObj = {
             id: '135068018',
             category_id: 13,
             subcategory_id: 506,
-            popular: true,
+            popular: false,
             new: true,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Biorganic',
+            name: 'Avocado Oil, Organic Cold Pressed',
+            subtitle: '100% Pure & Natural',
+            details: `Produced from the flesh of the avocado fruit. It has a rich texture and is high in vitamins A, B, C, D, E, and particularly F, oleic acid, omega 3 and omega 6. Contains a significant amount of lecithin.
+            - Ideal for face, body and hair with nutritious action! 
+           - Improves elasticity and softness the skin! 
+           - Known for its anti-wrinkle properties on face, neck and eyes!
+           - Strengthens nails and illuminates dry and lank hair! 
+           - It is considered the nature’s sunscreen as it protects from UV radiation.`,
+            usage: `Usage:
+            - Apply a few drops and hydrate face and body!
+            - Apply a small amount on dry hair and leave for 30’. Rinse thoroughly!
+            - Mix with butter or other essential oil
+            For external use only!
+            Store in a cool and shady place.`,
+            ingredients: `Avocado - Persea americana, Persea Gratissima `,
+            skin: 'For dry hair',
+            value: '20ml',
+            src: 'biorganic-avocado.png',
+            price: '3.80',
+            oldprice: '4.90',
+            category: 'hair',
+            subcategory: 'hair oils',
+            id: '135078084',
+            category_id: 13,
+            subcategory_id: 507,
+            popular: true,
+            new: false,
+            limited: true,
+            bestseller: true
+        },
+        {
+            brand: 'Khadi Natural',
+            name: 'Ayurvedic Amla Hair Oil',
+            subtitle: 'Paraben & Mineral Oil Free',
+            details: `Pure Amla Oil the richness of the organic ingredients allows the oil to soak deep into the root of the hair follicle to strengthen it, thus boosting hair growth while maintaining your hair’s natural health.
+            Ideal for both men and women, whose premature greying, thinning, and damaged hairs.`,
+            usage: `Part you hair and apply oil all over the scalp, massage the scalp gently with finger in a circular motion so that the oil gradually gets absorbed into the scalp, leave for an hour or more before washing and keeping it overnight is also very beneficial`,
+            ingredients: `Amla, Sunflower oil (Helianthus Annuus), Sesame oil (Sesamum Indicum), Almond oil (Prunus amygdalus), Amla (emblica officinalis), Wheatgerm oil (Triticum Vulgare), Grapeseed oil (Vitis Vinifera), Brahmi (Bacopa monnieri), Nagarmotha (Cyperus rotundus), Lodhra (Symplocos Racemos), Neem oil (Azadirachta Indica), Henna oil (Lawsonia inermis), Camphor oil (Cinnamomum Camphora), Basil oil (Ocimum Basilicum)`,
+            skin: 'For damaged hair',
+            value: '200ml',
+            src: 'amla2.png',
+            price: '15.50',
+            oldprice: '17.90',
+            category: 'hair',
+            subcategory: 'hair oils',
+            id: '135078085',
+            category_id: 13,
+            subcategory_id: 507,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Khadi Natural',
+            name: 'Ayurvedic Vitalising Hair Oil',
+            subtitle: 'Paraben & Mineral Oil Free',
+            details: `Pure Amla Oil the richness of the organic ingredients allows the oil to soak deep into the root of the hair follicle to strengthen it, thus boosting hair growth while maintaining your hair’s natural health.
+            Ideal for both men and women, whose premature greying, thinning, and damaged hairs.`,
+            usage: `Part you hair and apply oil all over the scalp, massage the scalp gently with finger in a circular motion so that the oil gradually gets absorbed into the scalp, leave for an hour or more before washing and keeping it overnight is also very beneficial`,
+            ingredients: `Sesame Oil (Sesamum Indicum), Coconut Oil (Cocos Nucifera), Castor Oil (Ricinus Communis), Wheatgerm Oil (Triticum Vulgare), Bhringraj (Eclipta Alba), Grapeseed Oil (Vitis Vinifera), Brahmi Ext (Bacopa Monnieri), Rosemary Oil (Rosmarinus Officinalis), Carrotseed Oil (Daucus Carota Oil), Ratanjyot (Abrus Precatorios), Sadahabahar Flower (Vinca Rosea), Peppermint Oil (Mentha Piperita), Ylang Ylang Oil (Canaga Odorata)`,
+            skin: 'For damaged hair',
+            value: '200ml',
+            src: 'vital1.png',
+            price: '13.50',
+            oldprice: '15.90',
+            category: 'hair',
+            subcategory: 'hair oils',
+            id: '135078086',
+            category_id: 13,
+            subcategory_id: 507,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Bio Select',
+            name: 'Natural Hair Elixir',
+            subtitle: 'with Dictamelia, Avocado oil & Baobab oil',
+            details: `Hair elixir with 100% natural photoprotective agent!
+            The precious oil from karanja tree absorbs UVB radiation and protects hair from oxidative stress.
+            Dictamelia enhances the antioxidant protection and contributes to the preservation of hair's elasticity.
+            Avocado, jojoba and baobab oils hydrate and nourish, giving a healthy look and a radiant shine to your hair.`,
+            usage: `Before shampooing apply on length and tips and massage gently.
+            Leave-on for 10 minutes or more, depending on the needs of the hair shaft.
+            Suitable for daily use on hair ends without rinsing it off.`,
+            ingredients: `Avocado - Persea americana, Baobab, Dictamnus,
+            Caprylic/ Capric Triglyceride*, Simmondsia Chinensis (Jojoba) Seed Oil*, Pongamia Glabra (Karanja) Seed Oil*, Isoamyl Laurate, Adansonia Digitata (Baobab) Seed Oil*, Persea Gratissima (Avocado) Oil*, Olea Europaea (Olive) Fruit oil*, Parfum**, Origanum Dictamnus Flower/Leaf/ Stem Extract`,
+            skin: 'For all hair types',
+            value: '150ml',
+            src: 'hairelixir.png',
+            price: '9.45',
+            oldprice: '18.90',
+            category: 'hair',
+            subcategory: 'hair oils',
+            id: '135078087',
+            category_id: 13,
+            subcategory_id: 507,
+            popular: true,
+            new: false,
+            limited: true,
+            bestseller: true
+        },
+        {
+            brand: 'Sukin',
+            name: 'Oil Balancing Conditioner',
+            subtitle: 'And Burdock, Nettle & Horsetail Extracts!',
+            details: `Our gentle and nourishing Conditioner is formulated to achieve naturally balanced, healthy hair.
+            Botanical extracts of Burdock, Nettle and Horsetail promote natural lustre and revitalised hair.
+            A blend of Baobab and Sesame Oils add shine to the hair while leaving it hydrated, healthy and silky soft.
+            Feel energised with a burst of Sukin’s Signature Scent of Mandarin, Tangerine, Lavender and Vanillin.`,
+            usage: `Following Sukin’s Natural Balance Shampoo, massage Sukin’s Natural Balance Conditioner into the hair, focusing on the ends. Rinse thoroughly.`,
+            ingredients: `Water (Aqua), Aloe Barbadensis Leaf Juice, Cetyl Alcohol, Cetrimonium Chloride, Sesamum Indicum (Sesame) Seed Oil, Glycerin, Adansonia Digitata Seed Oil (Baobab), Equisetum Arvense Extract (Horsetail), Arctium Lappa Root Extract (Burdock), Urtica Dioica (Nettle) Leaf Extract, Citrus Tangerina (Tangerine) Peel Oil, Citrus Nobilis (Mandarin Orange) Peel Oil, Lavandula Angustifolia (Lavender) Oil, Vanillin, Tocopherol (Vitamin E), Isopropyl Alcohol, Citric Acid, Phenoxyethanol, Benzyl Alcohol, Limonene*, Linalool*. *Natural component of essential oils`,
+            skin: 'For all hair types',
+            value: '500ml',
+            src: 'jp1lapsld.png',
+            price: '11.95',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Conditioner',
+            id: '135188088',
+            category_id: 13,
+            subcategory_id: 518,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Sukin',
+            name: 'Natural Volumizing Conditioner',
+            subtitle: 'With Pineapple, Mango and Papaya Extracts',
+            details: `Our lightweight and nourishing Conditioner energises hair with volume and bounce, leaving it soft and weightless.
+            Fine and limp hair is strengthened and hydrated with Rice Protein, while an infusion of botanical extracts including Pineapple, Mango and Papaya promote healthy, vibrant and glossy hair.
+            A natural Mango aroma refreshes the senses.
+            Suitable for Fine and Limp Hair`,
+            usage: `Following Sukin’s Natural Balance Shampoo, massage Sukin’s Natural Balance Conditioner into the hair, focusing on the ends. Rinse thoroughly.`,
+            ingredients: `Water (Aqua), Aloe Barbadensis Leaf Juice, Cetyl Alcohol, Cetrimonium Chloride, Sesamum Indicum (Sesame) Seed Oil, Glycerin, Crambe Abyssinica Seed Oil Phytosterol Esters, Hydrolyzed Rice Protein, Mangifera Indica (Mango) Fruit Extract, Carica Papaya (Papaya) Fruit Extract, Ananas Sativus (Pineapple) Fruit Extract, Tocopherol (Vitamin E), Fragrance (Parfum)*, Isopropyl Alcohol, Citric Acid, Phenoxyethanol, Benzyl Alcohol.*Natural Fragrance`,
+            skin: 'For all hair types',
+            value: '500ml',
+            src: 'conditioner02.png',
+            price: '11.95',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Conditioner',
+            id: '135188089',
+            category_id: 13,
+            subcategory_id: 518,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Sukin',
+            name: 'Natural Hydrating Conditioner',
+            subtitle: 'With Shea Butter and Coconut Extract',
+            details: `Our Hydrating Conditioner is rich in moisturising Shea Butter, Coconut and Sesame Oils to help nourish, strengthen and repair dry and damaged hair. An infusion of Olive Oil and Vitamin E add lustre to dull hair and help reduce frizz. 
+            Hair is left feeling deeply hydrated, soft and more manageable, while an aroma of Coconut and Lime invigorate the senses.
+            Suitable for Dry and Damaged Hair
+            Main Ingredients:  Coconut Oil, Shea Butter, Olive Oil`,
+            usage: `Following Sukin’s Natural Balance Shampoo, massage Sukin’s Natural Balance Conditioner into the hair, focusing on the ends. Rinse thoroughly.`,
+            ingredients: `Water (Aqua), Aloe Barbadensis Leaf Juice, Cetyl Alcohol, Cetrimonium Chloride, Cocos Nucifera (Coconut) Oil, Butyrospermum Parkii (Shea) Butter, Olea Europaea (Olive) Fruit Oil, Sesamum Indicum (Sesame) Seed Oil, Glycerin, Tocopherol (Vitamin E), Fragrance (Parfum)*, Isopropyl Alcohol, Citric Acid, Phenoxyethanol, Benzyl Alcohol, Limonene**, Citral**. *Natural Fragrance **Component of Natural Fragrance`,
+            skin: 'For all hair types',
+            value: '500ml',
+            src: 'sukin561.png',
+            price: '11.95',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Conditioner',
+            id: '135188090',
+            category_id: 13,
+            subcategory_id: 518,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Lavera',
+            name: 'Colour Shine Hair Conditioner',
+            subtitle: 'With Shea Butter and Coconut Extract',
+            details: `Lavera colour & shine conditioner contains high-quality organic mango & organic avocado to care colour-treated or highlighted hair, giving hair a natural shine.`,
+            usage: `Massage into freshly cleaned hair, leave in for a minimum of 1-3 minutes to lock in nourishment, then rinse.`,
+            ingredients: `Avocado - Persea americana, Cranberry,
+            Water (Aqua), Alcohol*, Glycine Soja (Soybean) Oil*, Cetearyl Alcohol, Myristyl
+            Alcohol, Glyceryl Stearate Citrate, Isoamyl Laurate, Lauryl Laurate, Fragrance
+            (Parfum)**, Persea Gratissima (Avocado) Oil*, Mangifera Indica (Mango) Fruit
+            Extract*,Triticum Vulgare (Wheat) Germ Extract*, Oryza Sativa (Rice) Extract*,
+            Prunus Amygdalus Dulcis (Sweet Almond) Seed Extract*, Avena Sativa (Oat)
+            Straw Extract*, Glycine Soja (Soybean) Germ Extract*, Camellia Oleifera Leaf
+            Extract*, Gossypium Herbaceum (Cotton) Extract, Sodium PCA, PCA Glyceryl
+            Oleate, Hydrolyzed Wheat Protein, Xanthan Gum, Potassium Cetyl Phosphate,
+            Disodium Cocoyl Glutamate, Sodium Cocoyl Glutamate, Tocopherol, Helianthus
+            Annuus (Sunflower) Seed Oil, Glycerin, Ascorbyl Palmitate, Limonene**,
+            Linalool**, Citral**, Citronellol`,
+            skin: 'For colour-treated hair',
+            value: '200ml',
+            src: 'lamangoarge.png',
+            price: '5.30',
+            oldprice: '5.90',
+            category: 'hair',
+            subcategory: 'Conditioner',
+            id: '135188091',
+            category_id: 13,
+            subcategory_id: 518,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Faith in Nature',
+            name: 'Hair Conditioner with Tea Tree & Lemon',
+            subtitle: 'For all hair types',
+            details: `Made with Organic Lemon and natural Tea Tree Oil known for their cleansing and antimicrobial properties, our refreshing new Lemon & Tea Tree Conditioner provides a citrus blast to uplift and energise your day.
+            100% Natural Fragrance.
+            With Essential Oils.
+            Free from Parabens and SLS.`,
+            usage: `Apply to the length of washed hair and work your way up to the roots.
+            Let it act for a few minutes.
+            Rinse thoroughly with lukewarm water.`,
+            ingredients: `Tea Tree, Lemon - Citrus medica,
+            Aqua (Water), Cetearyl alcohol*, Caprylic/capric triglyceride*, Citrus limon peel extract / Citrus medica limonum (lemon) peel extract**, Citrus limon peel oil / Citrus medica limonum (lemon) peel oil*, Melaleuca alternifolia (tea tree) leaf oil*, Citrus aurantium dulcis (orange) peel oil**, Zingiber officinale (ginger) root extract**,Cymbopogon citratus extract**, Litsea cubeba fruit oil*, Tocopherol*, Helianthus annuus (sunflower) seed oil*, Cetrimonium chloride*, Sodium benzoate, Potassium sorbate, Citric acid*, Curcumin CI 75300*, Limonene`,
+            skin: 'For all hair types',
+            value: '400ml',
+            src: 'conditioner-lemon.png',
+            price: '8.70',
+            oldprice: '9.95',
+            category: 'hair',
+            subcategory: 'Conditioner',
+            id: '135188092',
+            category_id: 13,
+            subcategory_id: 518,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Jason',
+            name: 'Thin To Thick Hair Spray',
+            subtitle: 'Ideal Hair Loss',
+            details: `Our weightless body-building formula delivers tremendous lift and support with long-lasting, flexible hold.
+            Hair-strengthening Biotin, Panthenol and natural Green Tea helps stimulate hair growth, restoring full-bodied thickness to thinning, weak hair.
+            Nourishing Vitamins A, B5 and H and natural styling polymers give a touchably soft, long-lasting hold.`,
+            usage: `Hold bottle upright about 10-15 inches away from the hair.
+            Cover eyes while spraying.`,
+            ingredients: `Green tea Camelia sinensis,
+            Aqua (Water), SD Alcohol 40-B, Methacryloyl Ethyl Betaine/Acrylates Copolymer, Polysorbate 20, Aloe Barbadensis Leaf Juice*, Camellia Sinensis Leaf Extract*,Chamomilla Recutita (Matricaria) Flower Extract*, Biotin, Glycerin, Glycoproteins, Panthenol, Retinyl Palmitate, Potassium Sorbate, Sodium Benzoate, Alcohol*, Alpha-Isomethyl Ionone, Amyl Cinnamal, Benzyl Benzoate, Benzyl Salicylate, Butylphenyl Methylpropional, Cinnamyl Alcohol, Coumarin, Eugenol, Geraniol, Hexyl Cinnamal, Linalool, Fragrance (Parfum) *Certified Organic Ingredient.`,
+            skin: 'For all hair types',
+            value: '237ml',
+            src: 'hairspray72.png',
+            price: '10.80',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Hair Styling',
+            id: '135198093',
+            category_id: 13,
+            subcategory_id: 519,
+            popular: false,
+            new: true,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Sante',
+            name: 'Natural Form Hair Wax',
+            subtitle: 'with Coconut Oil , Jojoba, Sesame Oil & Beeswax',
+            details: `The hair wax form gives your hair volume and shine .
+            It is soft and easy to apply .`,
+            usage: `Place your hand, a small amount (about as much as a pea), from the product and pass it from around his head with fingers . Giving your hair, the "look" desired.`,
+            ingredients: `Coconut, Beeswax, Sesame seed oil, Jojoba ,
+            Cocos Nucifera (Coconut) Oil, Lanolin, Cera Alba (Beeswax), Simmondsia Chinensis (Jojoba) Seed Oil, Behenyl Alcohol, Sesamum Indicum (Sesame) Seed Oil, Tocopherol, Helianthus Annuus (Sunflower) Seed Oil, Parfum (Essential Oils)`,
+            skin: 'For all hair types',
+            value: '50ml',
+            src: '106428219.png',
+            price: '9.50',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Hair Styling',
+            id: '135198094',
+            category_id: 13,
+            subcategory_id: 519,
+            popular: true,
+            new: false,
             limited: false,
             bestseller: true
         },
         {
-            brand: 'Cosnature Naturkosmetik',
-            name: 'Moisture Shampoo Wildrose',
-            subtitle: 'For Dry & Normal Hair!',
-            details: `Cosnature Moisture Shampoo Wild Rose
-            is specially designed for the needs of dry and stressed hair. The gentle cleansing shampoo with wheat protein and rich wild rose oil from certified organic farming provides moisture and shine.`,
-            usage: `Apply to your hair and then rinse with water.`,
-            ingredients: `Aqua, Coco-Glucoside, Sodium Coco-Sulfate, Sucrose, Sodium Chloride, Citric Acid, Glyceryl Oleate, Hydrogenated Wheat Protein, Tocopherol, Hydrogenated Palm Glycerides Citrate, Lecithin, Ascorbyl Palmitate, Rosa Canina Fruit Oil, Parfum, Linalool, Geraniol, Citronellol, Limonene, Sodium Benzoate.`,
-            skin: 'Dry hair type',
-            value: '200ml',
-            src: 'wildroseshmapoo.png',
-            price: '3.98',
-            oldprice: '4.50',
+            brand: 'Sante',
+            name: 'Styling Gel',
+            subtitle: 'Molds & Strengthens the Hair!',
+            details: `The SANTE Styling Gel Natural Former gives body and care for natural styling.
+            Valuable active ingredients such as plant sugars and bio-birch leaf essence strengthen the hair and provide valuable moisture.
+            For all hair types.
+            Molds and sets.
+            Moisturizes.
+            Suitable for all hair types.
+            Strengthens the hair.`,
+            usage: `Apply to damp or dry hair.
+            Rub a small amount into palms and work the gel evenly into the hair.`,
+            ingredients: `Aqua (Water), Alcohol denat., Glycerin, Dehydroxanthan Gum, Sorbitol, Coco-Glucoside, Betula Alba Leaf Extract, Citric Acid, Sodium Citrate, Parfum (Fragrance), CI 75120 (Annatto)`,
+            skin: 'For all hair types',
+            value: '50ml',
+            src: 'jp1hairgel2.png',
+            price: '6.70',
+            oldprice: '',
             category: 'hair',
-            subcategory: 'hair oils',
-            id: '135078019',
+            subcategory: 'Hair Styling',
+            id: '135198095',
             category_id: 13,
-            subcategory_id: 507,
+            subcategory_id: 519,
+            popular: false,
+            new: false,
+            limited: true,
+            bestseller: false
+        },
+        {
+            brand: 'Green People',
+            name: 'Styling Gel',
+            subtitle: 'Quinoa & Avocado',
+            details: `Style and condition your hair, light hold gel suitable for sensitive scalps.
+            Keep your style in place without stickiness or weighing your hair down
+            Quinoa protein delivers weightless volume, shine and bounce
+            Avocado oil is rich in antioxidants that powerfully condition and reverse damage
+            Use as a leave-in conditioner to give high shine and brilliance to all hair types
+            Refreshing and exotic, natural Ginger and citrus aroma
+            Vitamin Rich
+            96% organic`,
+            usage: `As a styling gel, just rub a small amount between your palms and work through wet or dry hair to texturize and style as desired.
+            If you want to use it as a leave in conditioner, just work a small amount through damp, towel-dried hair, focussing on ends.
+            You don't need to wash this out, once applied, you can style your hair as normal.`,
+            ingredients: `Avocado - Persea americana,
+            Aqua (Spring Water), Glycerin* (Vegetable Derived), Levulinic Acid (Plant Derived), Aloe Barbadensis (Aloe Vera) Leaf Juice Powder*, Helianthus Annuus (Sunflower) Seed Oil*, Olea Europaea (Olive) Fruit Oil*, Persea Gratissima (Avocado) Oil*, Aroma [Zingiber Officinale (Ginger) Root Oil*^, Citrus Limon (Lemon) Peel Oil*, Cymbopogon Citratus (Lemongrass) Leaf Oil*^, Citrus Aurantium Dulcis (Sweet Orange) Peel Oil*, Eugenia Caryophyllus (Clove) Bud Oil*^], Rosmarinus Officinalis (Rosemary) Leaf Extract*, Hydrolysed Quinoa, Panthenol (Conditioning Agent), Faex (Yeast) Extract, Xanthan Gum (Corn Starch Gum), Chondrus Crispus (Irish Moss) Powder, Potassium Sorbate, Citral*, Eugenol*, Limonene*. *96.8% Organic, ^Fairly Traded (Period After Opening 12m).`,
+            skin: 'For all hair types',
+            value: '100ml',
+            src: '6531579.png',
+            price: '14.50',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Hair Styling',
+            id: '135198096',
+            category_id: 13,
+            subcategory_id: 519,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Cultivator',
+            name: 'Organic Hair Colour - Brown',
+            subtitle: 'BEST QUALITY - CERTIFIED ORGANIC',
+            details: `COSMOS ORGANIC Certified – ECOCERT France
+            USDA NOP Certified Organic
+            Cruelty free ,
+            Vegan and Non-GMO
+            Kosher and Halal Certified
+            Water miscible and Pure Raw Powder
+            Provide brilliant color, shine and volume, while strengthen your hair.
+            Our products are 100% free from chemical ingredients.
+            Cultivator’s Herbal Hair Colors contain only 100% natural coloring and conditioning ingredients.
+            “semi-permanent” colors that typically provide long-lasting color.
+            They doesn’t wash out quickly.`,
+            usage: `Storage
+            If cared properly; our organic herbal hair colors has a shelf life of three years.
+            To preserve the freshness of this product: avoid exposure to heat. The powder will remain fresh if stored at room temperature or below.avoid exposure to direct sunlight.squeeze all of the air out of the bag before sealing.seal the bag tightly after each use.store the powder in a dry place, and avoid all contact with moisture.
+            Tips: 
+            If chemical dye has been used on the hairs, leave the hairs at least 5-6 weeks before using Cultivator’s herbal hair colors on your hair.
+            Keep in mind that grey hairs is notoriously difficult to cover and you may need to apply 2 to 3 applications to cover the grey hairs completely. As the product is completely natural, you can do this on consecutive days without the risk of damaging your hairs.
+            A strand test is recommended prior to coloring all your hair.
+            To get a darker or more intensive color result, it is sometimes necessary to color your hair twice. However, you should wait at least 12 hours before coloring a second time.
+            Lightening your hair color with a Cultivator’s Herbal Hair Color is not possible.`,
+            ingredients: `Cassia auriculata (Cassia) Powder, Indigofera tinctoria (Indigo) Powder, Lawsonia inermis (Henna) Powder, Emblica officinalis (Amla) Powder, Ziziphus spina-Christi (Ziziphus) Powder, Eucalyptus globulus (Eucalyptus) Powder, Aloe barbadensis (Aloe Vera) Powder, Curcuma longa (Turmeric) Powder, Matricaria recutita (Chamomile) Powder.`,
+            skin: 'For all hair types',
+            value: '100gr',
+            src: 'Brown6353.png',
+            price: '12.50',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Bio Hair Colors',
+            id: '135208097',
+            category_id: 13,
+            subcategory_id: 520,
             popular: true,
-            new: true,
+            new: false,
             limited: false,
             bestseller: true
         },
+        {
+            brand: 'Cultivator',
+            name: 'Organic Hair Colour - Golden Blonde',
+            subtitle: 'BEST QUALITY - CERTIFIED ORGANIC',
+            details: `COSMOS ORGANIC Certified – ECOCERT France
+            USDA NOP Certified Organic
+            Cruelty free ,
+            Vegan and Non-GMO
+            Kosher and Halal Certified
+            Water miscible and Pure Raw Powder
+            Provide brilliant color, shine and volume, while strengthen your hair.
+            Our products are 100% free from chemical ingredients.
+            Cultivator’s Herbal Hair Colors contain only 100% natural coloring and conditioning ingredients.
+            “semi-permanent” colors that typically provide long-lasting color.
+            They doesn’t wash out quickly.`,
+            usage: `Storage
+            If cared properly; our organic herbal hair colors has a shelf life of three years.
+            To preserve the freshness of this product: avoid exposure to heat. The powder will remain fresh if stored at room temperature or below.avoid exposure to direct sunlight.squeeze all of the air out of the bag before sealing.seal the bag tightly after each use.store the powder in a dry place, and avoid all contact with moisture.
+            Tips: 
+            If chemical dye has been used on the hairs, leave the hairs at least 5-6 weeks before using Cultivator’s herbal hair colors on your hair.
+            Keep in mind that grey hairs is notoriously difficult to cover and you may need to apply 2 to 3 applications to cover the grey hairs completely. As the product is completely natural, you can do this on consecutive days without the risk of damaging your hairs.
+            A strand test is recommended prior to coloring all your hair.
+            To get a darker or more intensive color result, it is sometimes necessary to color your hair twice. However, you should wait at least 12 hours before coloring a second time.
+            Lightening your hair color with a Cultivator’s Herbal Hair Color is not possible.`,
+            ingredients: `Cassia auriculata (Cassia) Powder, Emblica officinalis (Amla) Powder, Lawsonia inermis (Henna) Powder, Ziziphus spina-Christi (Ziziphus) Powder, Eucalyptus globulus (Eucalyptus) Powder, Aloe barbadensis (Aloe Vera) Powder, Curcuma longa (Turmeric) Powder, Matricaria recutita (Chamomile) Powder.`,
+            skin: 'For all hair types',
+            value: '100gr',
+            src: 'GoldenBlonde.png',
+            price: '12.50',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Bio Hair Colors',
+            id: '135208098',
+            category_id: 13,
+            subcategory_id: 520,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Cultivator',
+            name: 'Organic Hair Colour Wine Red',
+            subtitle: 'BEST QUALITY - CERTIFIED ORGANIC',
+            details: `COSMOS ORGANIC Certified – ECOCERT France
+            USDA NOP Certified Organic
+            Cruelty free ,
+            Vegan and Non-GMO
+            Kosher and Halal Certified
+            Water miscible and Pure Raw Powder
+            Provide brilliant color, shine and volume, while strengthen your hair.
+            Our products are 100% free from chemical ingredients.
+            Cultivator’s Herbal Hair Colors contain only 100% natural coloring and conditioning ingredients.
+            “semi-permanent” colors that typically provide long-lasting color.
+            They doesn’t wash out quickly.`,
+            usage: `Storage
+            If cared properly; our organic herbal hair colors has a shelf life of three years.
+            To preserve the freshness of this product: avoid exposure to heat. The powder will remain fresh if stored at room temperature or below.avoid exposure to direct sunlight.squeeze all of the air out of the bag before sealing.seal the bag tightly after each use.store the powder in a dry place, and avoid all contact with moisture.
+            Tips: 
+            If chemical dye has been used on the hairs, leave the hairs at least 5-6 weeks before using Cultivator’s herbal hair colors on your hair.
+            Keep in mind that grey hairs is notoriously difficult to cover and you may need to apply 2 to 3 applications to cover the grey hairs completely. As the product is completely natural, you can do this on consecutive days without the risk of damaging your hairs.
+            A strand test is recommended prior to coloring all your hair.
+            To get a darker or more intensive color result, it is sometimes necessary to color your hair twice. However, you should wait at least 12 hours before coloring a second time.
+            Lightening your hair color with a Cultivator’s Herbal Hair Color is not possible.`,
+            ingredients: `Rubia cordifolia (Manjistha) Powder, Beta vulgaris (Beet root) Powder, Aloe barbadensis (Aloe Vera) Powder, Emblica officinalis (Amla) Powder, Ziziphus spina-Christi (Ziziphus) Powder, Eucalyptus globulus (Eucalyptus) Powder, Curcuma longa (Turmeric) Powder, Matricaria recutita (Chamomile) Powder.`,
+            skin: 'For all hair types',
+            value: '100gr',
+            src: 'red5323.png',
+            price: '12.50',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Bio Hair Colors',
+            id: '135208099',
+            category_id: 13,
+            subcategory_id: 520,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Radico Organic Hair Colour',
+            name: '001 Soft Black',
+            subtitle: 'Soft Black',
+            details: `An organic hair color dye, which is a perfect blend of rare hair treatment herbs without any chemicals.
+            This is the first certified organic hair dye which covers gray hair effectively and properly in one step with no synthetic ingredients. 
+            Manufactured by using ayurvedic, natural and organic herbs, it gently coats your hair for vibrant stable color that lasts long.
+            It balances and nourishes the hair shaft to prevent breakage and overdrying. Leaves hair shiny, thick, lustrous and naturally healthy.
+            Radico Organic Hair Colors are a 100% Natural way to color your hair.
+            Radico Organic Hair Colors are absolutely natural and organic certified by Ecocert.
+            Completely safe and healthy products, manufactured using only organic certified herbs.
+            Ideal for those who are sensitive and allergic to chemicals.`,
+            usage: `Take the required amount of powder as per hair length:
+            20gm to 30gm – For Short Hair
+            40gm to 60gm – For shoulder length hair (Medium size hair)
+            70gm to 100gm – For waist length (Long hair)
+            Add warm water to Organic Hair Color in 1:3 ratios (1 part of Organic Hair Color and 3 part of water).
+            Adjust the quantity of water as required to achieve a "yogurt or ketchup like" consistency. Paste should not be too thick or too thin.
+            Apply the paste immediately after mixing, starting from the roots and spread evenly to the ends.
+            Grey hair may require a heavier application of paste.
+            Use the enclosed shower cap to cover hair after paste is evenly distributed
+            Wait at least 60 minutes after application of paste.
+            If a darker color is desired leave the paste on for a longer period of time.
+            It is safe for paste to remain on hair for two to three hours.
+            Heat can also be applied with a hair dryer during this time to intensify results.
+            After 60 minutes or more as desired, rinse hair with running water until the water runs clear.
+            No shampoo is needed. Style and dry hair as desired.`,
+            ingredients: `Indigofera Tinctoria (Indigo), Lawsonia Inermis (Henna), Phyllanthus Emblica (Amla), Eclipta Prostrata (Bhringraj)`,
+            skin: 'For all hair types',
+            value: '100gr',
+            src: 'blacj134.png',
+            price: '12.50',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Bio Hair Colors',
+            id: '135208100',
+            category_id: 13,
+            subcategory_id: 520,
+            popular: true,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Radico Organic Hair Colour',
+            name: '020 Champagne Blonde',
+            subtitle: 'Champagne Blonde',
+            details: `An organic hair color dye, which is a perfect blend of rare hair treatment herbs without any chemicals.
+            This is the first certified organic hair dye which covers gray hair effectively and properly in one step with no synthetic ingredients. 
+            Manufactured by using ayurvedic, natural and organic herbs, it gently coats your hair for vibrant stable color that lasts long.
+            It balances and nourishes the hair shaft to prevent breakage and overdrying. Leaves hair shiny, thick, lustrous and naturally healthy.
+            Radico Organic Hair Colors are a 100% Natural way to color your hair.
+            Radico Organic Hair Colors are absolutely natural and organic certified by Ecocert.
+            Completely safe and healthy products, manufactured using only organic certified herbs.
+            Ideal for those who are sensitive and allergic to chemicals.`,
+            usage: `Take the required amount of powder as per hair length:
+            20gm to 30gm – For Short Hair
+            40gm to 60gm – For shoulder length hair (Medium size hair)
+            70gm to 100gm – For waist length (Long hair)
+            Add warm water to Organic Hair Color in 1:3 ratios (1 part of Organic Hair Color and 3 part of water).
+            Adjust the quantity of water as required to achieve a "yogurt or ketchup like" consistency. Paste should not be too thick or too thin.
+            Apply the paste immediately after mixing, starting from the roots and spread evenly to the ends.
+            Grey hair may require a heavier application of paste.
+            Use the enclosed shower cap to cover hair after paste is evenly distributed
+            Wait at least 60 minutes after application of paste.
+            If a darker color is desired leave the paste on for a longer period of time.
+            It is safe for paste to remain on hair for two to three hours.
+            Heat can also be applied with a hair dryer during this time to intensify results.
+            After 60 minutes or more as desired, rinse hair with running water until the water runs clear.
+            No shampoo is needed. Style and dry hair as desired.`,
+            ingredients: `Cassia Obovata (Colorless Henna), Lawsonia Inermis (Henna), Rubia Tinctorum (Manjistha), Phyllanthus Emblica (Amla), Eclipta Prostrata (Bhringraj), Bacopa monnieri (Brahmi), Hibiscus Rosa Sinensis (Hibiscus)`,
+            skin: 'For all hair types',
+            value: '100gr',
+            src: 'champag8nlonde4.png',
+            price: '12.50',
+            oldprice: '',
+            category: 'hair',
+            subcategory: 'Bio Hair Colors',
+            id: '135208101',
+            category_id: 13,
+            subcategory_id: 520,
+            popular: false,
+            new: false,
+            limited: false,
+            bestseller: false
+        },
+        {
+            brand: 'Logona',
+            name: 'Herbal Hair Color Cream 220 Wine Red',
+            subtitle: 'For intensive luminous, glossy & voluminous hair',
+            details: `The Wine Red nuance is particularly suitable for medium blonde to brown hair.
+            The LOGONA Herbal Hair Colour Cream covers each individual hair like a film of colour. As a result, the original hair colour also determines the individual dye result.
+            The unique composition of colouring plants and natural care ingredients ensures vibrant colour, shine and volume.`,
+            usage: `APPLICATION AS COLOUR CREAM: 15 mins - 2 hours
+            The Wine Red nuance is particularly suitable for medium blonde and medim brown hair.
+            We strongly recommend to do a strand test in advance.`,
+            ingredients: `Aqua (Water), Alcohol denat.*, Coco-Glucoside, Glycerin, Montmorillonite, Erythrulose, Lawsonia Inermis (Henna) Extract, Sorbitol, Xanthan Gum, Maltodextrin, Quercus Robur Bark Extract, Algin, Sodium Citrate, Citric Acid, Parfum (Fragrance)**, Linalool**, Limonene**, Eugenol**, CI 77499 (Iron Oxides), CI 77491 (Iron Oxides)`,
+            skin: 'For all hair types',
+            value: '150ml',
+            src: 'jp69358454.png',
+            price: '11.90',
+            oldprice: '14.20',
+            category: 'hair',
+            subcategory: 'Bio Hair Colors',
+            id: '135208102',
+            category_id: 13,
+            subcategory_id: 520,
+            popular: false,
+            new: false,
+            limited: true,
+            bestseller: false
+        },
+        {
+            brand: 'Logona',
+            name: 'Mineral Clay Pre-Treatment',
+            subtitle: 'For a radiant result',
+            details: `LOGONA mineral clay pretreatment prepares your hair for dyeing with LOGONA plant-based hair dyes. Containing green mineral clay and moisturizing birch leaf extract, this natural formula intensively cleanses the scalp and effectively rids the hair of care & styling product residue, products containing silicone, skin cells and excess oil, ensuring that the plant-based hair dye can be significantly better absorbed by the hair. Read carefully the instruction sheet before using.`,
+            usage: `Using the LOGONA dye brush, apply to dry or damp hair strand by strand beginning at the roots, and then apply to the rest of the hair. Leave for approx 10 - 15 minutes. Finally, carefully rinse the hair with plenty of water. For chemically dyed hair, we recommend using the mineral clay pre-treatment two days in a row. Finally, thoroughly rinse the hair with lukewarm water. The hair is now perfectly prepared for dyeing with plant-based hair dye.`,
+            ingredients: `Aqua (Water), Bentonite, Alcohol denat., Glycerin, Coco Glucoside, Xanthan Gum, Betula Alba Leaf Extract*, Parfum (Fragrance), Limonene`,
+            skin: 'For all hair types',
+            value: '100ml',
+            src: 'lo42342.png',
+            price: '11.90',
+            oldprice: '14.20',
+            category: 'hair',
+            subcategory: 'Bio Hair Colors',
+            id: '135208103',
+            category_id: 13,
+            subcategory_id: 520,
+            popular: false,
+            new: false,
+            limited: true,
+            bestseller: false
+        },
+
+
+
+
+
+
+
+
+
+
+
+
         {
             brand: 'Laboratoire Altho',
             name: 'Organic Tea Tree Essential oil',
@@ -2503,12 +3099,24 @@ export const goodsObj = {
             desc: `All hair care products are a blend of 100% natural and organic ingredients, enriched with organic essential oils and active natural ingredients to address the needs of specific hair types.`,
             subcategories: [
                 {
-                    subcategory: 'shampoo',
+                    subcategory: 'Shampoo',
                     subcategory_id: 506
                 },
                 {
-                    subcategory: 'hair oils',
+                    subcategory: 'Hair Oils',
                     subcategory_id: 507
+                },
+                {
+                    subcategory: 'Conditioner',
+                    subcategory_id: 518
+                },
+                {
+                    subcategory: 'Hair Styling',
+                    subcategory_id: 519
+                },
+                {
+                    subcategory: 'Bio Hair Colors',
+                    subcategory_id: 520
                 },
             ]
         },
