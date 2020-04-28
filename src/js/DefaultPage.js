@@ -3,7 +3,10 @@ import {goodsObj} from './goods.js'
 export default class DefaultPage {
     constructor(args = {}) {
         this.cart = JSON.parse(localStorage.getItem('cart')) || []
-        this.goodsArr = goodsObj.goodsArr
+        // перемешиваем изначальный массив товаров
+        this.goodsArr = goodsObj.goodsArr.sort(function(){
+            return Math.random() - 0.5;
+          });
         this.currency = goodsObj.info.currency
         // показать в шапке количество позиций в корзине
         this.showCartLength()

@@ -147,7 +147,7 @@ export const goodsObj = {
             bestseller: true
         },
         {
-            brand: 'Cosnature',
+            brand: 'Cosnature Naturkosmetik',
             name: 'MED Face Cream Brine & Chamomille',
             subtitle: 'Enhanced Moisturisation for the Irritated and Dry Skin!',
             details: `Cosnature® MED FACE CARE NATURAL BRINE & CAMOMILE with natural care substances has been specifically formulated as a special care treatment for irritated and dry skin.
@@ -506,7 +506,7 @@ export const goodsObj = {
             bestseller: false
         },
         {
-            brand: 'Eco cosmetics',
+            brand: 'Eco Cosmetics',
             name: 'Suntan Cream SPF50+ toned',
             subtitle: 'with Sea Buckthorn & Olive oils',
             details: `The combination of sea buckthorn and olive in the sun products provides protection for your skin from the sun and prevents dehydration at the same time.
@@ -535,7 +535,7 @@ export const goodsObj = {
             bestseller: false
         },
         {
-            brand: 'Eco cosmetics',
+            brand: 'Eco Cosmetics',
             name: 'Tattoo Sun Lotion SPF 30',
             subtitle: 'Ideal for the Care of Tattoos',
             details: `Eco Cosmetics Tattoo Sun Lotion SPF 30 with noni extract is a mineral light protection specially developed for tattooed skin.
@@ -2068,7 +2068,7 @@ export const goodsObj = {
 
             Here are just a few of the problems that it is traditionally recommended for: Wounds, acne, abscesses, sores, mycoses, urinary tract infections, ulcers, fungal infections, sinusitis, bronchitis, pharyngitis, otitis, mosquito bites.`,
             usage: `Oral administration: Take 2 drops of organic essential oil 3 times a day, with some honey or syrup, or on a lozenge, to help treat all infections. However, do not use for over 7 days at a time.
-            On the skin: Mix 3 drops of organic tea tree essential oil with 2 drops of organic musk rose oil, and apply to skin mycoses.
+            On the skin : Mix 3 drops of organic tea tree essential oil with 2 drops of organic musk rose oil, and apply to skin mycoses.
             By diffusion: Diffusing tea tree essential oil will purify and disinfect the surrounding air. It will stimulate and invigorate one’s psyche during periods of mental dips.`,
             ingredients: `Tea Tree,
             Melaleuca alternifolia * 

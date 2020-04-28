@@ -3,12 +3,12 @@ import DefaultPage from './DefaultPage.js'
 export default class MainPage extends DefaultPage {
     constructor(args = {}) {
         super(args = {})
-        // пока отключил
+        
         this.fillMainPage()
         super.listenAddCartButton()
         super.quantityInput()
         super.listenClosePupUp()
-        // console.log(this)
+        
         this.listenSortButtons()
         this.listenLinkCards()
         super.fillGoodsBottom()

@@ -40,8 +40,8 @@ export default class OrderPage extends DefaultPage {
                         <div class="cart-thumb__main"><img class="cart-thumb__img" src="./assets/img/goods/${this.goodsArr[j].src}" data-cart-thumb-card-img="">
                         <div class="cart-thumb__desc"><a class="cart-thumb__title" href="product.html?id=${this.goodsArr[j].id}">${this.goodsArr[j].name}</a>
                             
-                            <div class="card-thumb__price">${this.goodsArr[j].price} $</div>
-                            <div class="card-thumb__info">${this.goodsArr[j].value}, Skin type: ${this.goodsArr[j].skin}</div>
+                            <div class="card-thumb__price">${this.goodsArr[j].price}&nbsp;${this.currency}</div>
+                            <div class="card-thumb__info">${this.goodsArr[j].value}, ${this.goodsArr[j].skin}</div>
                         </div>
                         </div>
                         <div class="cart-thumb__bottom">

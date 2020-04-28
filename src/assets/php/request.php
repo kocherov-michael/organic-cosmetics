@@ -1,5 +1,8 @@
 <?php 
-// $incoming = file_get_contents('php://input');
+$incoming = file_get_contents('php://input');
 sleep(1);
-echo 'success';
+if ($incoming) {
+
+    echo 'success';
+}
 ?>
