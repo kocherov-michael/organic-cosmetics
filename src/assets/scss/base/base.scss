@@ -5,18 +5,19 @@ html, body {
 	padding: 0;
     margin: 0;
     font-family: $secondaryFont;
-    // background-color: rgb(166, 204, 248);
+    background-color: $default-color;
+    color: $neutral-secondary-color;
 }
-.container {
+// .container {
     // width: 100%;
     // padding-right: 15px;
     // padding-left: 15px;
     // margin-right: auto;
     // margin-left: auto; 
-}
-.br {
-    border: 1px solid red;
-}
+// }
+// .br {
+    // border: 1px solid red;
+// }
 // .middle {
 //     img {
 //         max-width: 100%;
